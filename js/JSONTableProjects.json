@@ -1,0 +1,18 @@
+[
+    {
+        "jsonTypeFileShow" : "vid",
+        "jsonFileShow" : "MuseumApp.mp4",
+        "jsonTitle": "MuseumApp",
+        "jsonLangs": "#Xcode #QR #JSON",
+        "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar.",
+        "jsonGitHub": "XCode-iFab2020-MuseumApp"
+    },
+    {
+        "jsonTypeFileShow" : "img",
+        "jsonFileShow" : "Chess3D.png",
+        "jsonTitle": "Ajedrez 3D",
+        "jsonLangs": "#Maya3D",
+        "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D.",
+        "jsonGitHub": ""
+    }
+]

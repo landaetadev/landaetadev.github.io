@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mi nombre es Orlando Landaeta, Soy de Caracas, actualmente viviendo en Valencia, España. Licenciado en Computación con habilidades en diferentes ambitos.">
+    
+    <!-- Cargar iconos Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/b94486ef91.js" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <link rel="stylesheet" href="./css/styleTopBar.css">
+    <link rel="stylesheet" href="./css/stylePortada.css">
+    <link rel="stylesheet" href="./css/styleHabilidades.css">
+    <link rel="stylesheet" href="./css/StyleProjects.css">
+    <link rel="stylesheet" href="./css/styleMail.css">
+
+    <!--carga archivos JS-->
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/JSONTableProjects.json"></script>
+    
+    
+
+    <title>LandaetaDev</title>
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
+    
+</head>
+<body>
+
+    <header class="classHeader">
+
+        <div class="class800" id="class800">
+
+            <div class="classLogo"><img class="classLogoImg" src="./assets/images/WebLogo.png" alt="">
+                <h1 class="classTituloH1">LandaetaDev</h1>
+            </div>
+            
+            <div class="classBtnMenu" id="idBtnMenu"><i class="fas fa-bars"></i> &nbsp; Menu
+            </div>            
+            
+            <div class="classBtnsMenuOptions">
+                <a href="./index.html#idAncla1" class="classBtnMenuOpt"><i class="fas fa-home"></i> &nbsp; Inicio</a>
+                <div class="classHR"></div>
+                <a href="./index.html#idAncla2" class="classBtnMenuOpt"><i class="fas fa-tools"></i> &nbsp; Habilidades</a>
+                <div class="classHR"></div>
+                <a href="./index.html#idAncla3" class="classBtnMenuOpt"><i class="fas fa-project-diagram"></i> &nbsp; Proyectos</a>
+                <div class="classHR"></div>
+                <!-- EN CONSTRUCCION -->
+                <!-- <a href="./index.html#idAncla4" class="classBtnMenuOpt"><i class="fas fa-blog"></i> &nbsp; BlogNotes</a>
+                <div class="classHR"></div> -->
+                <!-- EN CONSTRUCCION -->
+                <a href="./index.html#idAncla5" class="classBtnMenuOpt"><i class="far fa-envelope"></i> &nbsp; Contacto</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="classTotalContainer">
+
+        <div class="classCover" id="classPortada">
+            <a class="classAncleCover" id="idAncla1">ANC</a>
+
+            <div class="classMashTrans">
+
+                <div class="classFotoDatos">
+                    <img src="assets/images/MyPic/MyPic.jpg" class="classCoverFoto" alt="Mi Foto">
+                    <div class="classCoverDatos">
+                        <h2 class="classTituloH2">Orlando Landaeta</h2>
+                        <h2 class="classTituloH2">Licenciado en Computación</h2>
+
+                        <p class="classCoverHi">¡Hola!, Me llamo Orlando, soy de Caracas, actualmente viviendo en Valencia, España.
+                            Me encuentro realizando un Máster en Big Data Analytics en la U.P.V. y mis tiempos  
+                            libres me gusta pasarlos entre los videojuegos y el aeromodelismo.</p>
+
+                            <div class="classCoverIcons">
+                                <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
+                                    <i class="fab fa-github-square"></i></a>
+                                    &nbsp; &nbsp;
+                                <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i></a>
+                                    &nbsp; &nbsp;
+                                <a href="./assets/doc/CVOL.pdf" target="_blank" class="btnDocCV" title="CV-PDF">
+                                    <i class="fas fa-file-pdf"></i></a>
+                            </div>
+
+                    </div>
+
+                </div>
+
+                
+                <a class="classAncle" id="idAncla2">ANC2</a>
+            </div>
+            <a href="#idAncla2" class="classArrowDown"><i class="fas fa-angle-double-down"></i></a>
+        </div>
+            
+        <div class="classHabilidades">
+            
+            <h2 class="classTituloH2">HABILIDADES</h2>
+            
+            <p class="classHabilidadesIntro">Mis principales competencias son la gestión y desarrollo de 
+                proyectos en el ámbito informático con habilidades en diferentes áreas.</p>
+
+            <div class="classHabilidadesFlex">
+                <div class="classHabilidad">
+                    <p class="classHabiIcono"><i class="fas fa-desktop"></i></p>
+                    <h3 class="classHabiNombre">Diseño Web</h3>
+                    <p class="classHabiDetalles">HTML - CSS - Bootstrap<br> Wordpress - Prestashop</p>
+                </div>
+                <div class="classHabilidad">
+                    <p class="classHabiIcono"><i class="fas fa-mobile-alt"></i></p>
+                    <h3 class="classHabiNombre">Programación Movil</h3>
+                    <p class="classHabiDetalles">Xcode - Android Studio</p>
+                </div>
+                <div class="classHabilidad">
+                    <p class="classHabiIcono"><i class="fas fa-laptop-code"></i></p>
+                    <h3 class="classHabiNombre">Programación</h3>
+                    <p class="classHabiDetalles">Swift - Java - PHP - Python</p>
+                </div>
+                <div class="classHabilidad">
+                    <p class="classHabiIcono"><i class="fas fa-database"></i></p>
+                    <h3 class="classHabiNombre">Manejo de datos</h3>
+                    <p class="classHabiDetalles">MySQL - JSON<br> RAID - GlusterFS </p>
+                </div>
+                <div class="classHabilidad">
+                    <p class="classHabiIcono"><i class="fas fa-network-wired"></i></p>
+                    <h3 class="classHabiNombre">Servidores y Redes</h3>
+                    <p class="classHabiDetalles">Configuración - Administración<br> Unix - Windows Server - VPN</p>
+                </div>
+                <div class="classHabilidad">
+                    <p class="classHabiIcono"><i class="fab fa-unity"></i></p>
+                    <h3 class="classHabiNombre">Realidad Virtual</h3>
+                    <p class="classHabiDetalles">Maya 3D - Unity</p>
+                </div>
+            </div>
+
+        <a class="classAncle" id="idAncla3">ANC3</a>
+        </div>
+
+        <div class="classProjects">
+
+            <h2 class="classTituloH2">PROYECTOS</h2>
+
+            <!-- Slideshow -->
+            <div class="classSlideshowContainer" id="idSlideshowContainer">
+
+            </div>
+
+            <div class="classBtnsPrevNext">
+                <i class="fas fa-angle-left classBtnPrev"></i>
+            &nbsp;&nbsp;
+                <i class="fas fa-angle-right classBtnNext"></i>
+            </div>
+
+            
+            <a class="classAncle" id="idAncla5">ANC5</a>
+        </div>
+
+        <div class="classMail">
+            <h2 class="classTituloH2">CONTACTO</h2>
+    
+            <form class="classFormMail" id="idFormMail" action="https://formspree.io/f/mrgrrawp" method="POST">
+    
+                <input type="text" name="Nombre" class="classFormInput" id="idFormTxtName" placeholder="Nombre">
+                <input type="text" name="E-Mail" class="classFormInput" id="idFormTxtMail" placeholder="E-Mail">
+                <textarea type="text" name="Mensaje" class="classFormInput" id="idFormTxtMsg" rows="7" placeholder="Mensaje"></textarea>
+    
+                <div class="classSendMail">
+                    <i class="classCheckMail fas fa-check-circle"><p>&nbsp;Gracias!!</p></i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="submit" class="classBtnSendMail"><i class="far fa-paper-plane"></i> &nbsp; Enviar</button>
+                </div>
+    
+            </form>
+    
+        </div>
+
+    </section>
+    
+</body> 
+
+
+    
+</html>

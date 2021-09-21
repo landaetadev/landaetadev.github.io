@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "RubikRegular";
+    src: url(../assets/fonts/Rubik-Regular.ttf);
+    src: url(../assets/fonts/Rubik-Regular.woff);
+}
+@font-face {
+    font-family: "RubikSemiBold";
+    src: url(../assets/fonts/Rubik-SemiBold.ttf);
+    src: url(../assets/fonts/Rubik-SemiBold.woff);
+}
+@font-face {
+    font-family: "RubikBold";
+    src: url(../assets/fonts/Rubik-Bold.ttf);
+    src: url(../assets/fonts/Rubik-Bold.woff);
+}
+
+:root {
+    
+    --varRubikRegular: 'RubikRegular';
+    --varRubikSemiBold: 'RubikSemiBold';
+    --varRubikBold: 'RubikBold';
+    --varFontColor: #E8FFEB;
+    --varBodyBackColor1: #404040;
+    --varBodyBackColor2: #262626;
+    
+
+    --varTopBarBackColor: #204B89;
+    --varTopBarHeight: 3rem;
+
+    --varBtnsCan1: red;
+    --varBtnsCan2: white;
+
+    --varMinHeightClassScreen:calc(100vh - var(--varTopBarHeight));
+
+    --varIcoColorGitHub: #7DBBE6;
+    --varIcoColorLinkedIn: #3B65BE;
+    --varIcoColorPDF: #DF2F21;
+
+    --varHabColorHR1 : #873E2F;
+    --varHabColorHR2 : #EABE6A;
+    --varHabColorHR3 : white;
+
+    --varMailFormBackColor: #DCDCDC;
+    --varMailFontColor: #494545;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a:link, a:visited, a:hover a:active {
+	text-decoration: none;
+}
+
+
+body {
+    min-width: 320px;
+    min-height: 600px;
+}
+
+.classTituloH1 {
+    font-family: var(--varRubikSemiBold);
+    color: var(--varFontColor);
+    font-size: x-large;
+}
+.classTituloH2 {
+    /* border: 3px solid red; */
+    font-family: var(--varRubikSemiBold);
+    color: var(--varFontColor);
+    font-size: x-large;
+    margin: 0 0 .5rem 0;
+}
+
+.classTituloH3 {
+    font-family: var(--varRubikSemiBold);
+    color: var(--varFontColor);
+}
+
+.classMashTrans,
+.classHabilidades,
+.classProjects,
+.classMail {
+    padding: 2rem .5rem;
+}
+
+.classMail,
+.classProjects,
+.classHabilidades {
+    min-height: var(--varMinHeightClassScreen);
+}
+
+/*---------CONTENEDOR TOTAL---------*/
+
+.classAncleCover {
+    border: 3px solid darkgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.classAncle {
+    border: 3px solid darkgray;
+    color: white;
+    height: var(--varTopBarHeight);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+/*---------CONTENEDOR TOTAL---------*/
+
+/*---------RESPONSIVE---------*/
+
+@media (max-width:280px) {
+
+    .classTituloH2 {
+        font-size: medium;
+    }
+}

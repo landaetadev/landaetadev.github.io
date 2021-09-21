@@ -1,0 +1,181 @@
+/*---------PORTADA---------*/
+.classCover {
+    background: url("../assets/images/backgrounds/dreamstime.jpg") no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classMashTrans {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classFotoDatos {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.classCoverFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 3px solid white;
+    width: 13rem;
+    height: auto;
+    margin: .5rem;
+}
+
+.classCoverDatos {
+
+    color: var(--varFontColor);
+    padding: 0 .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.classFotoDatos .classTituloH2 {
+    text-align: left;
+}
+
+.classCoverHi {
+    font-family: var(--varRubikRegular);
+    font-size: 16px;
+    line-height : 20px;
+    text-align: justify;
+    padding: .5rem 0 .5rem 0;
+}
+
+.btnGitHub,
+.btnLinkedIn,
+.btnDocCV {
+    font-size: 2rem;
+}
+
+.classCoverIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnGitHub {
+    color: var(--varIcoColorGitHub);
+}
+.btnLinkedIn {
+    color: var(--varIcoColorLinkedIn);
+}
+.btnDocCV {
+    color: var(--varIcoColorPDF);
+}
+
+.classArrowDown {
+    color: red;
+    position: absolute;
+    bottom: 4rem;
+    font-size: 2rem;
+    -webkit-animation: animArrow 2.5s ease-in-out infinite;
+            animation: animArrow 2.5s ease-in-out infinite;
+}
+
+@keyframes animArrow {
+    0% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-color: var(--varBtnsCan1);
+                color: var(--varBtnsCan1);
+    }
+    25% {
+        -webkit-color: var(--varBtnsCan2);
+                color: var(--varBtnsCan2);
+    }
+    50% {
+        -webkit-transform: translateY(2rem);
+                transform: translateY(2rem);
+        -webkit-color: var(--varBtnsCan1);
+                color: var(--varBtnsCan1);
+    }
+    75% {
+        -webkit-color: var(--varBtnsCan2);
+                color: var(--varBtnsCan2);
+    }
+    100% {
+        -webkit-color: var(--varBtnsCan1);
+                color: var(--varBtnsCan1);
+    }
+}
+
+/*---------RESPONSIVE---------*/
+
+@media (max-width:280px) {
+    .btnGitHub,
+    .btnLinkedIn,
+    .btnDocCV {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width:320px) {
+    .classCoverHi {
+        font-size: 14px;
+    }
+    .classArrowDown {
+        bottom: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:360px) {
+    .btnGitHub,
+    .btnLinkedIn,
+    .btnDocCV {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:375px) {
+
+}
+
+@media (max-width:411px) {
+    .classTituloH2 {
+        font-size: medium;
+    }
+}
+@media (max-width:414px) {
+    .classTituloH2 {
+        font-size: medium;
+    }
+}
+
+@media (max-width:540px) {
+
+}
+
+@media (max-width:600px) {
+    .classFotoDatos {
+        flex-direction: column;
+    }
+
+    .classCoverFoto{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+/*---------RESPONSIVE---------*/
+
+

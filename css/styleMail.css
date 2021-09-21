@@ -112,7 +112,6 @@
     cursor: pointer;
 }
 
-
 /*---------RESPONSIVE---------*/
 
 @media (max-width:280px) {
@@ -144,36 +143,3 @@
         font-size: 2rem;
     }
 }
-
-/*---------RESPONSIVE---------*/
-
-@media (max-width:280px) {
-
-}
-
-@media (max-width:320px) {
-
-}
-
-@media (max-width:360px) {
-
-}
-
-@media (max-width:375px) {
-
-}
-
-@media (max-width:411px) {
-
-}
-
-@media (max-width:414px) {
-
-}
-
-@media (max-width:540px) {
-
-}
-
-
-/*---------RESPONSIVE---------*/

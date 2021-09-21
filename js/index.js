@@ -62,64 +62,62 @@ window.onload = (function() {
 	};
 
 
-	//SLIDE PROJECTS
-fetch('js/JSONTableProjects.json')
-.then(response => response.json())
-.then(JSONData => {
-	ReadTable(JSONData);
-});
+		//SLIDE PROJECTS
+	fetch('js/JSONTableProjects.json')
+	.then(response => response.json())
+	.then(JSONData => {
+		ReadTable(JSONData);
+	});
 
-function ReadTable(JSONData) {
+	function ReadTable(JSONData) {
 
-for (var JSONi = 0; JSONi < JSONData.length; JSONi++) {
-//CREATE SLIDE
-varMakeShowHTML += `<div class="classMySlides">`;
-varMakeShowHTML += `<h3 class="classTituloH3 classMyCarouselTitle">${JSONData[JSONi].jsonTitle}</h3>`;
-if (JSONData[JSONi].jsonTypeFileShow == "vid") {
-	varMakeShowHTML += `<video controls class="classFileShow"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
-}
-if (JSONData[JSONi].jsonTypeFileShow == "img") {
-	varMakeShowHTML += `<img src="./assets/images/projects/${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
-}
-varMakeShowHTML += `<p class="classMyCarouselLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
-if (JSONData[JSONi].jsonGitHub != "") {
-	varMakeShowHTML += `<a href="https://github.com/landaetadev/${JSONData[JSONi].jsonGitHub}" target="_blank" class="btnGitHub" title="GitHub"><i class="fab fa-github-square"></i></a>`;
-}
-varMakeShowHTML += `</p>`;
-varMakeShowHTML += `<p class="classMyCarouselDescrip">${JSONData[JSONi].jsonDescript}</p>`;
-varMakeShowHTML += `</div>`;
-varSlideshowContainer.innerHTML = varMakeShowHTML;
+		for (var JSONi = 0; JSONi < JSONData.length; JSONi++) {
+			//CREATE SLIDE
+			varMakeShowHTML += `<div class="classMySlides">`;
+			varMakeShowHTML += `<h3 class="classTituloH3 classMyCarouselTitle">${JSONData[JSONi].jsonTitle}</h3>`;
+			if (JSONData[JSONi].jsonTypeFileShow == "vid") {
+				varMakeShowHTML += `<video controls class="classFileShow"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
+			}
+			if (JSONData[JSONi].jsonTypeFileShow == "img") {
+				varMakeShowHTML += `<img src="./assets/images/projects/${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
+			}
+			varMakeShowHTML += `<p class="classMyCarouselLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
+			if (JSONData[JSONi].jsonGitHub != "") {
+				varMakeShowHTML += `<a href="https://github.com/landaetadev/${JSONData[JSONi].jsonGitHub}" target="_blank" class="btnGitHub" title="GitHub"><i class="fab fa-github-square"></i></a>`;
+			}
+			varMakeShowHTML += `</p>`;
+			varMakeShowHTML += `<p class="classMyCarouselDescrip">${JSONData[JSONi].jsonDescript}</p>`;
+			varMakeShowHTML += `</div>`;
+			varSlideshowContainer.innerHTML = varMakeShowHTML;
 
-var varMySlides = document.querySelectorAll(".classMySlides");
-varMySlides[0].style.display = "flex"
+			var varMySlides = document.querySelectorAll(".classMySlides");
+			varMySlides[0].style.display = "flex"
 
-}
+		}
 
-varBtnPrev.addEventListener("click", function() {
-funcShowSlides(varSlideIndex -= 1);
-});
+		varBtnPrev.addEventListener("click", function() {
+			funcShowSlides(varSlideIndex -= 1);
+		});
 
-varBtnNext.addEventListener("click", function() {
-funcShowSlides(varSlideIndex += 1);
-});
+		varBtnNext.addEventListener("click", function() {
+			funcShowSlides(varSlideIndex += 1);
+		});
 
-//Funcion Btns PREV NEXT
-function funcShowSlides(n) {
+		//Funcion Btns PREV NEXT
+		function funcShowSlides(n) {
 
-if (n > varMySlides.length) {varSlideIndex = 1}
+			if (n > varMySlides.length) {varSlideIndex = 1}
 
-if (n < 1) {varSlideIndex = varMySlides.length}
+			if (n < 1) {varSlideIndex = varMySlides.length}
 
-for (var i = 0; i < varMySlides.length; i++) {
-varMySlides[i].style.display = "none"; 
-}
+			for (var i = 0; i < varMySlides.length; i++) {
+				varMySlides[i].style.display = "none"; 
+			}
 
-varMySlides[varSlideIndex-1].style.display = "flex";
-}
+		varMySlides[varSlideIndex-1].style.display = "flex";
+		}
 
-}
-
-
+	}
 
 	//CHECKMAIL
 	varFormMail.addEventListener ("submit", (event) => {

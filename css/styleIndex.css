@@ -68,7 +68,6 @@ body {
     font-size: x-large;
 }
 .classTituloH2 {
-    /* border: 3px solid red; */
     font-family: var(--varRubikSemiBold);
     color: var(--varFontColor);
     font-size: x-large;

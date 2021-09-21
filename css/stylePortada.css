@@ -84,7 +84,7 @@
 .classArrowDown {
     color: red;
     position: absolute;
-    bottom: 8rem;
+    bottom: 5rem;
     font-size: 2rem;
     -webkit-animation: animArrow 2.5s ease-in-out infinite;
             animation: animArrow 2.5s ease-in-out infinite;
@@ -127,13 +127,12 @@
     }
 }
 
-
 @media (max-width:320px) {
     .classCoverHi {
         font-size: 14px;
     }
     .classArrowDown {
-        bottom: 2rem;
+        bottom: 5rem;
         font-size: 1.5rem;
     }
 }
@@ -144,25 +143,24 @@
     .btnDocCV {
         font-size: 1.5rem;
     }
-}
 
-@media (max-width:375px) {
-
+    .classArrowDown {
+        margin: 0 0 -1.5rem 0;
+    }
 }
 
 @media (max-width:411px) {
     .classTituloH2 {
         font-size: medium;
     }
+    .classArrowDown {
+        bottom: 4rem;
+    }
 }
 @media (max-width:414px) {
     .classTituloH2 {
         font-size: medium;
     }
-}
-
-@media (max-width:540px) {
-
 }
 
 @media (max-width:600px) {

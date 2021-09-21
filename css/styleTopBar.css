@@ -24,7 +24,7 @@
     max-width: 1000px;
     position: relative;
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -158,18 +158,6 @@
 
 /*---------RESPONSIVE---------*/
 
-@media (max-width:280px) {
-    .classBtnMenu {
-        width: 6rem;
-        height: 2rem;
-        font-size: small;
-    }
-    .classBtnMenuOpt {
-        height: 3rem;
-        font-size: medium;
-    }
-}
-
 @media (max-width:320px) {
     .classTituloH1 {
         font-size: large;
@@ -180,17 +168,6 @@
     }
 }
 
-@media (max-width:360px) {
-
-}
-
-@media (max-width:375px) {
-
-}
-
-@media (max-width:411px) {
-
-}
 @media (max-width:414px) {
     .classTituloH1 {
         font-size: large;

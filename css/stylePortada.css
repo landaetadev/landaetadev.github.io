@@ -84,7 +84,7 @@
 .classArrowDown {
     color: red;
     position: absolute;
-    bottom: 4rem;
+    bottom: 6rem;
     font-size: 2rem;
     -webkit-animation: animArrow 2.5s ease-in-out infinite;
             animation: animArrow 2.5s ease-in-out infinite;

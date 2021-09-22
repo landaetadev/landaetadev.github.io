@@ -10,7 +10,7 @@
 }
 
 .classMashTrans {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -23,7 +23,6 @@
     width: 100%;
     max-width: 800px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -40,35 +39,43 @@
 }
 
 .classCoverDatos {
-
     color: var(--varFontColor);
     padding: 0 .5rem;
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.classFotoDatos .classTituloH2 {
+.classCoverDatos .classTituloH2 {
+    width: 100%;
     text-align: left;
 }
 
 .classCoverHi {
     font-family: var(--varRubikRegular);
     font-size: 16px;
-    line-height : 20px;
+    line-height : 25px;
     text-align: justify;
     padding: .5rem 0 .5rem 0;
+}
+
+.classCoverIcons {
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.classCoverIcons a:hover {
+    transition: transform .3s ease;
+    transform: scale(1.15);
 }
 
 .btnGitHub,
 .btnLinkedIn,
 .btnDocCV {
-    font-size: 2rem;
-}
-
-.classCoverIcons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 2.3rem;
 }
 
 .btnGitHub {

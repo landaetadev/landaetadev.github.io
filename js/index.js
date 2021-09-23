@@ -76,7 +76,7 @@ window.onload = (function() {
 			varMakeShowHTML += `<div class="classMySlides">`;
 			varMakeShowHTML += `<h3 class="classTituloH3 classMySlidesTitle">${JSONData[JSONi].jsonTitle}</h3>`;
 			if (JSONData[JSONi].jsonTypeFileShow == "vid") {
-				varMakeShowHTML += `<video controls id="idPlayVideo" class="classFileShow"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
+				varMakeShowHTML += `<video controls class="classFileShow classPlayVideo"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
 			}
 			if (JSONData[JSONi].jsonTypeFileShow == "img") {
 				varMakeShowHTML += `<img src="./assets/images/projects/${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
@@ -90,28 +90,32 @@ window.onload = (function() {
 			varMakeShowHTML += `</div>`;
 			varSlideshowContainer.innerHTML = varMakeShowHTML;
 
-			var varPlayVideo = document.querySelector("#idPlayVideo");
+			var varclassPlayVideo = document.querySelectorAll(".classPlayVideo");
 			var varMySlides = document.querySelectorAll(".classMySlides");
 			varMySlides[0].style.display = "flex"
 
 		}
 
+		//Funtion Btn PREV
 		varBtnPrev.addEventListener("click", function() {
 			funcShowSlides(varSlideIndex -= 1);
 			funcPauseVideo();
-			
 		});
 
+		//Funtion Btn NEXT
 		varBtnNext.addEventListener("click", function() {
 			funcShowSlides(varSlideIndex += 1);
 			funcPauseVideo();
 		});
 
+		//Funtion pause video
 		function funcPauseVideo(){
-			varPlayVideo.pause();
+			for (var varNumMov = 0; varNumMov < varclassPlayVideo.length; varNumMov++) {
+				varclassPlayVideo[varNumMov].pause();
+			}
 		}
 
-		//Funcion Btns PREV NEXT
+		//Funtion Btns PREV NEXT
 		function funcShowSlides(n) {
 
 			if (n > varMySlides.length) {varSlideIndex = 1}

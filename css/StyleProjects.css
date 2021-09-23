@@ -51,6 +51,7 @@
 .classFileShow {
     background-color: black;
     width: 100%;
+    border-radius: .3rem;
 }
 
 .classMySlidesLangs {

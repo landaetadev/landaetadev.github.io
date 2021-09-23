@@ -24,24 +24,19 @@
     max-width: 1000px;
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
-.classLogo {
-    color: whitesmoke;
-    font-family: var(--varRubikSemiBold);
-    font-size: x-large;
+
+.classLogoLink {
     height: 100%;
-    width: 13rem;
-    position: absolute;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.classLogoImg{
-    height: 80%;
+
+.classLogoImg {
+    height: 75%;
     margin: 0 .5rem 0 0;
 }
 

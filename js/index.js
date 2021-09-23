@@ -62,8 +62,8 @@ window.onload = (function() {
 	};
 
 
-		//SLIDE PROJECTS
-	fetch('js/JSONTableProjects.json')
+	//SLIDE PROJECTS
+	fetch('./js/JSONTableProjects.json')
 	.then(response => response.json())
 	.then(JSONData => {
 		ReadTable(JSONData);
@@ -74,22 +74,23 @@ window.onload = (function() {
 		for (var JSONi = 0; JSONi < JSONData.length; JSONi++) {
 			//CREATE SLIDE
 			varMakeShowHTML += `<div class="classMySlides">`;
-			varMakeShowHTML += `<h3 class="classTituloH3 classMyCarouselTitle">${JSONData[JSONi].jsonTitle}</h3>`;
+			varMakeShowHTML += `<h3 class="classTituloH3 classMySlidesTitle">${JSONData[JSONi].jsonTitle}</h3>`;
 			if (JSONData[JSONi].jsonTypeFileShow == "vid") {
-				varMakeShowHTML += `<video controls class="classFileShow"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
+				varMakeShowHTML += `<video controls id="idPlayVideo" class="classFileShow"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
 			}
 			if (JSONData[JSONi].jsonTypeFileShow == "img") {
 				varMakeShowHTML += `<img src="./assets/images/projects/${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
 			}
-			varMakeShowHTML += `<p class="classMyCarouselLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
+			varMakeShowHTML += `<p class="classMySlidesLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
 			if (JSONData[JSONi].jsonGitHub != "") {
 				varMakeShowHTML += `<a href="https://github.com/landaetadev/${JSONData[JSONi].jsonGitHub}" target="_blank" class="btnGitHub" title="GitHub"><i class="fab fa-github-square"></i></a>`;
 			}
 			varMakeShowHTML += `</p>`;
-			varMakeShowHTML += `<p class="classMyCarouselDescrip">${JSONData[JSONi].jsonDescript}</p>`;
+			varMakeShowHTML += `<p class="classMySlidesDescrip">${JSONData[JSONi].jsonDescript}</p>`;
 			varMakeShowHTML += `</div>`;
 			varSlideshowContainer.innerHTML = varMakeShowHTML;
 
+			var varPlayVideo = document.querySelector("#idPlayVideo");
 			var varMySlides = document.querySelectorAll(".classMySlides");
 			varMySlides[0].style.display = "flex"
 
@@ -97,11 +98,18 @@ window.onload = (function() {
 
 		varBtnPrev.addEventListener("click", function() {
 			funcShowSlides(varSlideIndex -= 1);
+			funcPauseVideo();
+			
 		});
 
 		varBtnNext.addEventListener("click", function() {
 			funcShowSlides(varSlideIndex += 1);
+			funcPauseVideo();
 		});
+
+		function funcPauseVideo(){
+			varPlayVideo.pause();
+		}
 
 		//Funcion Btns PREV NEXT
 		function funcShowSlides(n) {
@@ -111,7 +119,7 @@ window.onload = (function() {
 			if (n < 1) {varSlideIndex = varMySlides.length}
 
 			for (var i = 0; i < varMySlides.length; i++) {
-				varMySlides[i].style.display = "none"; 
+				varMySlides[i].style.display = "none";
 			}
 
 		varMySlides[varSlideIndex-1].style.display = "flex";

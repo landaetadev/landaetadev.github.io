@@ -14,6 +14,7 @@
     font-family: var(--varRubikRegular);
     color: var(--varFontColor);
     max-width: 800px;
+    line-height : 20px;
     font-size: medium;
     text-align: justify;
     padding: 0 0 .5rem 0;

@@ -40,16 +40,9 @@
 }
 
 .classBtnMenu {
-    border: 3px solid var(--varBtnsCan1);
-    background-color: var(--varBtnsCan2);
-    font-family: var(--varRubikRegular);
     visibility: hidden;
     position: absolute;
     right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid orange;
 }
 
 .classBtnsMenuOptions {
@@ -61,22 +54,22 @@
     align-items: center;
 }
 .classBtnMenuOpt {
-    background-color: var(--varBtnsCan2);
-    font-family: var(--varRubikRegular);
     margin-left: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .classBtnMenu,
 .classBtnMenuOpt {
     border: 3px solid var(--varBtnsCan1);
-    height: 75%;
-	color: var(--varBtnsCan1);
-	font-size: .8rem;
+    background-color: var(--varBtnsCan2);
+    color: var(--varBtnsCan1);
+    font-family: var(--varRubikRegular);
     border-radius: 2rem;
     width: 7rem;
+    height: 75%;
+	font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -120,9 +113,6 @@
     .classBtnMenuOpt {
         background-color: var(--varBtnsCan2);
         margin-left: .5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .classBtnMenuOpt {

@@ -4,6 +4,7 @@
 	background-color: var(--varTopBarBackColor);
     width: 100%;
     height: var(--varTopBarHeight);
+    padding: 0 .5rem;
     border-radius: 0 0 10px 10px;
     position: fixed;
 	top: -3rem;
@@ -19,7 +20,6 @@
 }
 
 .class800 {
-    margin: 0 .5rem;
     width: 100%;
     max-width: 1000px;
     position: relative;
@@ -171,6 +171,5 @@
         font-size: large;
     }
 }
-
 
 /*---------RESPONSIVE---------*/

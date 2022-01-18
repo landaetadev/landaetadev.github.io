@@ -34,9 +34,9 @@
     background-color: var(--varHabColorHR2);
     color: var(--varHabColorHR1);
     box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
-    border-radius: 5%;
+    border-radius: 2rem;
     width: 210px;
-    height: 235px;
+    height: 245px;
     margin: .5rem;
   }
   
@@ -57,13 +57,16 @@
   }
 
   .classHabiNombre {
+    font-family: var(--varAardvarkCafe);
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 26px;
+    text-shadow: 1px 1px #ffffff;
     align-items: center;
   }
 
 .classHabiDetalles {
-    font-size: .8rem;
+    font-family: var(--varFrutiger);
+    font-size: 14px;
     align-items: flex-start;
   }
 

@@ -1,24 +1,33 @@
 @font-face {
+    font-family: "AardvarkCafe";
+    src: url(../assets/fonts/AardvarkCafe.woff) format("truetype");
+    src: url(../assets/fonts/AardvarkCafe.ttf) format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Frutiger";
+    src: url(../assets/fonts/Frutiger.woff) format("truetype");
+    src: url(../assets/fonts/Frutiger.ttf) format("woff");
+    font-display: swap;
+}
+@font-face {
     font-family: "RubikRegular";
-    src: url(../assets/fonts/Rubik-Regular.ttf);
-    src: url(../assets/fonts/Rubik-Regular.woff);
+    src: url(../assets/fonts/Rubik-Regular.woff) format("truetype");
+    src: url(../assets/fonts/Rubik-Regular.ttf) format("woff");
+    font-display: swap;
 }
 @font-face {
     font-family: "RubikSemiBold";
-    src: url(../assets/fonts/Rubik-SemiBold.ttf);
-    src: url(../assets/fonts/Rubik-SemiBold.woff);
-}
-@font-face {
-    font-family: "RubikBold";
-    src: url(../assets/fonts/Rubik-Bold.ttf);
-    src: url(../assets/fonts/Rubik-Bold.woff);
+    src: url(../assets/fonts/Rubik-SemiBold.woff) format("truetype");
+    src: url(../assets/fonts/Rubik-SemiBold.ttf) format("woff");
+    font-display: swap;
 }
 
 :root {
-    
+    --varAardvarkCafe: 'AardvarkCafe';
+    --varFrutiger: 'Frutiger';
     --varRubikRegular: 'RubikRegular';
     --varRubikSemiBold: 'RubikSemiBold';
-    --varRubikBold: 'RubikBold';
     --varFontColor: #E8FFEB;
     --varBodyBackColor1: #404040;
     --varBodyBackColor2: #262626;
@@ -62,9 +71,10 @@ body {
 }
 
 .classTituloH1 {
-    font-family: var(--varRubikSemiBold);
+    font-family: var(--varAardvarkCafe);
     color: var(--varFontColor);
-    font-size: x-large;
+    text-shadow: 2px 2px var(--varBtnsCan1);
+    font-size: xx-large;
 }
 .classTituloH2 {
     font-family: var(--varRubikSemiBold);

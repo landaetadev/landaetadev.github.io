@@ -21,12 +21,12 @@
 
 .class800 {
     width: 100%;
+    min-width: 350px;
     max-width: 1000px;
     position: relative;
     display: flex;
     align-items: center;
 }
-
 
 .classLogoLink {
     height: 100%;
@@ -154,7 +154,7 @@
 
 @media (max-width:414px) {
     .classTituloH1 {
-        font-size: large;
+        font-size: larger;
     }
     .classBtnMenuOpt {
         height: 3rem;
@@ -164,7 +164,7 @@
 
 @media (max-width:540px) {
     .classTituloH1 {
-        font-size: large;
+        font-size: x-large;
     }
     .classBtnMenuOpt {
         height: 3rem;

@@ -39,6 +39,13 @@
     margin: 0 .5rem 0 0;
 }
 
+.classTituloH1 {
+    font-family: var(--varAardvarkCafe);
+    color: var(--varFontColor);
+    text-shadow: 2px 2px var(--varBtnsCan1);
+    font-size: xx-large;
+}
+
 .classBtnMenu {
     visibility: hidden;
     position: absolute;
@@ -113,6 +120,7 @@
     .classBtnMenuOpt {
         background-color: var(--varBtnsCan2);
         margin-left: .5rem;
+        font-size: larger;
     }
 
     .classBtnMenuOpt {
@@ -143,19 +151,12 @@
 /*---------RESPONSIVE---------*/
 
 @media (max-width:320px) {
-    .classTituloH1 {
-        font-size: large;
-    }
     .classBtnMenuOpt {
-        height: 3rem;
-        font-size: large;
+        height: 2.5rem;
     }
 }
 
 @media (max-width:414px) {
-    .classTituloH1 {
-        font-size: larger;
-    }
     .classBtnMenuOpt {
         height: 3rem;
         font-size: large;
@@ -163,13 +164,10 @@
 }
 
 @media (max-width:540px) {
-    .classTituloH1 {
-        font-size: x-large;
-    }
     .classBtnMenuOpt {
-        height: 3rem;
-        font-size: large;
+        height: 3.5rem;
+        font-size: larger;
     }
-}
+} 
 
 /*---------RESPONSIVE---------*/

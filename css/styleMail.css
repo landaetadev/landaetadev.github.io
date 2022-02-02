@@ -1,6 +1,5 @@
 .classMail {
     background-color: var(--varBodyBackColor1);
-    /* border: 3px solid brown; */
     width: 100%;
     padding: 1rem .5rem;
     display: flex;

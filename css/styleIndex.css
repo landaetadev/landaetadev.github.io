@@ -70,12 +70,6 @@ body {
     min-height: 600px;
 }
 
-.classTituloH1 {
-    font-family: var(--varAardvarkCafe);
-    color: var(--varFontColor);
-    text-shadow: 2px 2px var(--varBtnsCan1);
-    font-size: xx-large;
-}
 .classTituloH2 {
     font-family: var(--varRubikSemiBold);
     color: var(--varFontColor);
@@ -121,12 +115,3 @@ body {
 }
 
 /*---------CONTENEDOR TOTAL---------*/
-
-/*---------RESPONSIVE---------*/
-
-@media (max-width:280px) {
-
-    .classTituloH2 {
-        font-size: medium;
-    }
-}

@@ -2,15 +2,11 @@
 .classCover {
     background: url("../assets/images/backgrounds/dreamstime.jpg") no-repeat center top;
     background-size: cover;
-    height: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
 }
 
 .classMashTrans {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -28,9 +24,6 @@
 }
 
 .classCoverFoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 100%;
     border: 3px solid white;
     width: 13rem;
@@ -67,8 +60,10 @@
 }
 
 .classCoverIcons a:hover {
-    transition: transform .3s ease;
-    transform: scale(1.15);
+    -webkit-transition: transform .5s ease;
+            transition: transform .5s ease;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
 }
 
 .btnGitHub,

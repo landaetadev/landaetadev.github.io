@@ -1,13 +1,4 @@
-.classProjects {
-    background-color: var(--varBodyBackColor2);
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+/*---------PROJECTS---------*/
 .classSlideshowContainer {
     border-radius: .5rem;
     padding: .5rem;
@@ -33,10 +24,10 @@
     to {opacity: 1}
 }
 
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-}
+        @keyframes fade {
+            from {opacity: .4} 
+            to {opacity: 1}
+        }
 
 .classMySlidesTitle {
     color: var(--varFontColor);

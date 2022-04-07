@@ -102,7 +102,8 @@
     }
 
     .classBtnsMenuOptions {
-        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(6px);
+                backdrop-filter: blur(6px);
         position: fixed;
         width: 100%;
         right: -100%;
@@ -147,6 +148,7 @@
     .classHideOverflowY {
         overflow-y: hidden;
     }
+
 }
 
 /*---------RESPONSIVE---------*/

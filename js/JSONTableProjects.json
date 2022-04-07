@@ -3,7 +3,7 @@
         "jsonTitle": "MuseumApp",
         "jsonTypeFileShow" : "vid",
         "jsonFileShow" : "MuseumApp.mp4",
-        "jsonLangs": "#Xcode &nbsp;&nbsp; #QR &nbsp;&nbsp; #JSON &nbsp;&nbsp;",
+        "jsonLangs": "#Xcode &nbsp;&nbsp; #JSON &nbsp;&nbsp; #QR &nbsp;&nbsp;",
         "jsonGitHub": "XCode-iFab2020-MuseumApp",
         "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar."
         

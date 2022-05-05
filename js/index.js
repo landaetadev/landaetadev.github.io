@@ -14,6 +14,8 @@ var varBtnPrev = document.querySelector(".classBtnPrev");
 var varBtnNext = document.querySelector(".classBtnNext");
 var varMakeShowHTML = ``;
 var varSlideIndex = 1;
+let letProjectsFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/FilesProjects/"
+let letGitHubFolder = "https://github.com/landaetadev/"
 
 //VARIABLES MAIL
 var varFormMail = document.querySelector(".classFormMail");
@@ -61,7 +63,6 @@ window.onload = (function() {
 		varCounter = 0;
 	};
 
-
 	//SLIDE PROJECTS
 	fetch('./js/JSONTableProjects.json')
 	.then(response => response.json())
@@ -76,14 +77,14 @@ window.onload = (function() {
 			varMakeShowHTML += `<div class="classMySlides">`;
 			varMakeShowHTML += `<h3 class="classTituloH3 classMySlidesTitle">${JSONData[JSONi].jsonTitle}</h3>`;
 			if (JSONData[JSONi].jsonTypeFileShow == "vid") {
-				varMakeShowHTML += `<video controls class="classFileShow classPlayVideo"> <source src="assets/videos/projects/${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
+				varMakeShowHTML += `<video controls class="classFileShow classPlayVideo"> <source src="${letProjectsFolder}${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
 			}
 			if (JSONData[JSONi].jsonTypeFileShow == "img") {
-				varMakeShowHTML += `<img src="./assets/images/projects/${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
+				varMakeShowHTML += `<img src="${letProjectsFolder}${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
 			}
 			varMakeShowHTML += `<p class="classMySlidesLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
 			if (JSONData[JSONi].jsonGitHub != "") {
-				varMakeShowHTML += `<a href="https://github.com/landaetadev/${JSONData[JSONi].jsonGitHub}" target="_blank" class="btnGitHub" title="GitHub"><i class="fab fa-github-square"></i></a>`;
+				varMakeShowHTML += `<a href="${letGitHubFolder}${JSONData[JSONi].jsonGitHub}" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub</a>`;
 			}
 			varMakeShowHTML += `</p>`;
 			varMakeShowHTML += `<p class="classMySlidesDescrip">${JSONData[JSONi].jsonDescript}</p>`;
@@ -93,7 +94,6 @@ window.onload = (function() {
 			var varclassPlayVideo = document.querySelectorAll(".classPlayVideo");
 			var varMySlides = document.querySelectorAll(".classMySlides");
 			varMySlides[0].style.display = "flex"
-
 		}
 
 		//Funtion Btn PREV

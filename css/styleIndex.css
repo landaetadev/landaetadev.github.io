@@ -36,7 +36,7 @@
 
     --varBtnsCan1: red;
     --varBtnsCan2: white;
-    --varBtnsCanHover: #F1F1F1;
+    --varBtnsCanHover: #F0F0F0;
 
     --varMinHeightClassScreen:calc(100vh - var(--varTopBarHeight));
 
@@ -60,7 +60,7 @@ html {
     scroll-behavior: smooth;
 }
 
-a:link, a:visited, a:hover a:active {
+a:link, a:visited, a:hover, a:active {
 	text-decoration: none;
 }
 

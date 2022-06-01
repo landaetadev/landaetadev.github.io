@@ -36,6 +36,7 @@
 
     --varBtnsCan1: red;
     --varBtnsCan2: white;
+    --varBtnsCanHover: #F1F1F1;
 
     --varMinHeightClassScreen:calc(100vh - var(--varTopBarHeight));
 

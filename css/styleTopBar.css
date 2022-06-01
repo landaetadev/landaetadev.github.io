@@ -66,11 +66,15 @@
 }
 
 .classBtnMenu,
+.classBtnMenuOpt a {
+    color: var(--varBtnsCan1);
+    font-family: var(--varRubikRegular);
+}
+
+.classBtnMenu,
 .classBtnMenuOpt {
     border: 3px solid var(--varBtnsCan1);
     background-color: var(--varBtnsCan2);
-    color: var(--varBtnsCan1);
-    font-family: var(--varRubikRegular);
     border-radius: 2rem;
     width: 120px;
     height: 75%;
@@ -79,6 +83,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+.classBtnMenu:hover,
+.classBtnMenuOpt:hover {
+    background-color: var(--varBtnsCanHover);
 }
 
 .classHR {

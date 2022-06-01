@@ -112,6 +112,9 @@
     height: calc(var(--varTopBarHeight) * 0.8);
     cursor: pointer;
 }
+.classBtnSendMail:hover{
+    background-color: var(--varBtnsCanHover);
+}
 
 /*---------RESPONSIVE---------*/
 

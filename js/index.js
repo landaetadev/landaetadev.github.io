@@ -46,12 +46,14 @@ window.onload = (function() {
 		}
 	});
 
+	//HIDE MENU WHEN CLICK OUTSIDE
 	for (let i = 0; i < varBtnMenuOpt.length; i++) {
 		varBtnMenuOpt[i].addEventListener("click", function() {
 			funcJsHideMenuNav();
 		});
 	};
 
+	//SHOW-HIDE SLIDER
 	function funcJsShowMenuNav() {
 		varBtnsMenuOptions.classList.add("classBtnsMenuOptionsShow");
 		varBody.classList.add("classHideOverflowY");
@@ -96,26 +98,26 @@ window.onload = (function() {
 			varMySlides[0].style.display = "flex"
 		}
 
-		//Funtion Btn PREV
+		//Function Btn PREV
 		varBtnPrev.addEventListener("click", function() {
 			funcShowSlides(varSlideIndex -= 1);
 			funcPauseVideo();
 		});
 
-		//Funtion Btn NEXT
+		//Function Btn NEXT
 		varBtnNext.addEventListener("click", function() {
 			funcShowSlides(varSlideIndex += 1);
 			funcPauseVideo();
 		});
 
-		//Funtion pause video
+		//Function pause video
 		function funcPauseVideo(){
 			for (var varNumMov = 0; varNumMov < varclassPlayVideo.length; varNumMov++) {
 				varclassPlayVideo[varNumMov].pause();
 			}
 		}
 
-		//Funtion Btns PREV NEXT
+		//Function Btns PREV NEXT
 		function funcShowSlides(n) {
 
 			if (n > varMySlides.length) {varSlideIndex = 1}

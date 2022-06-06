@@ -73,22 +73,16 @@
     font-size: 2.5rem;
 }
 
-.btnGitHub {
+
+.btnGitHub:link, .btnGitHub:visited, .btnGitHub:hover, .btnGitHub:active {
     color: var(--varIcoColorGitHub);
 }
-.btnGitHub:hover {
-    color: var(--varIcoColorGitHub);
-}
-.btnLinkedIn {
+
+.btnLinkedIn:link, .btnLinkedIn:visited, .btnLinkedIn:hover, .btnLinkedIn:active {
     color: var(--varIcoColorLinkedIn);
 }
-.btnLinkedIn:hover {
-    color: var(--varIcoColorLinkedIn);
-}
-.btnDocCV {
-    color: var(--varIcoColorPDF);
-}
-.btnDocCV:hover {
+
+.btnDocCV:link, .btnDocCV:visited, .btnDocCV:hover, .btnDocCV:active {
     color: var(--varIcoColorPDF);
 }
 

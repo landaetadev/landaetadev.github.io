@@ -29,7 +29,7 @@
     --varRubikRegular: 'RubikRegular';
     --varRubikSemiBold: 'RubikSemiBold';
     --varFontColor: #E6E6E6;
-    --varBodyBackColor: linear-gradient(-20deg, #404040 20%, #1a1a1a 80%);
+    --varBodyBackColor: #1A1A1A;
 
     --varTopBarBackColor: #204B89;
     --varTopBarHeight: 3rem;
@@ -67,6 +67,11 @@ a:link, a:visited, a:hover, a:active {
 body {
     min-width: 320px;
     min-height: 600px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, var(--varHabColorHR1), var(--varHabColorHR2));
 }
 
 .classCover,
@@ -106,7 +111,7 @@ body {
 .classAncle {
     height: var(--varTopBarHeight);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     visibility: hidden;
 }

@@ -29,7 +29,7 @@
     --varRubikRegular: 'RubikRegular';
     --varRubikSemiBold: 'RubikSemiBold';
     --varFontColor: #E6E6E6;
-    --varBodyBackColor: linear-gradient(-20deg, #404040 20%, #1a1a1a 80%);
+    --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 70%);
 
     --varTopBarBackColor: #204B89;
     --varTopBarHeight: 3rem;
@@ -73,7 +73,7 @@ body {
 .classMail,
 .classHabilidades,
 .classProjects {
-    background: var(--varBodyBackColor);
+    background: #1A1A1A;
     width: 100%;
     position: relative;
     padding: 1rem .5rem;
@@ -82,6 +82,12 @@ body {
     justify-content: center;
     align-items: center;
     min-height: var(--varMinHeightClassScreen);
+}
+
+.LineColor {
+    height: 1px;
+    border: none;
+    background: var(--varLineColor);
 }
 
 .classTituloH2,
@@ -106,7 +112,7 @@ body {
 .classAncle {
     height: var(--varTopBarHeight);
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     visibility: hidden;
 }

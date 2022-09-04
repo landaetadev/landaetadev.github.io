@@ -61,8 +61,10 @@
 }
 
 .classCoverIcons a:hover {
-    transition: transform .5s ease;
-    transform: scale(1.25);
+    -webkit-transition: transform .5s ease;
+            transition: transform .5s ease;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
 }
 
 .btnGitHub,
@@ -89,26 +91,34 @@
     position: absolute;
     bottom: 5rem;
     font-size: 2rem;
-    animation: animArrow 2.5s ease-in-out infinite;
+    -webkit-animation: animArrow 2.5s ease-in-out infinite;
+            animation: animArrow 2.5s ease-in-out infinite;
 }
 
 @keyframes animArrow {
     0% {
-        transform: translateY(0);
-        color: var(--varBtnsCan1);
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        -webkit-color: var(--varBtnsCan1);
+                color: var(--varBtnsCan1);
     }
     25% {
-        color: var(--varBtnsCan2);
+        -webkit-color: var(--varBtnsCan2);
+                color: var(--varBtnsCan2);
     }
     50% {
-        transform: translateY(2rem);
-        color: var(--varBtnsCan1);
+        -webkit-transform: translateY(2rem);
+                transform: translateY(2rem);
+        -webkit-color: var(--varBtnsCan1);
+                color: var(--varBtnsCan1);
     }
     75% {
-        color: var(--varBtnsCan2);
+        -webkit-color: var(--varBtnsCan2);
+                color: var(--varBtnsCan2);
     }
     100% {
-        color: var(--varBtnsCan1);
+        -webkit-color: var(--varBtnsCan1);
+                color: var(--varBtnsCan1);
     }
 }
 

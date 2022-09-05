@@ -108,6 +108,7 @@
         color: var(--varBtnsCan2);
     }
     100% {
+        transform: translateY(0);
         color: var(--varBtnsCan1);
     }
 }

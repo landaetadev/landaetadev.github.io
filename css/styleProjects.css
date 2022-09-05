@@ -13,9 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    -webkit-animation-name: fade;
             animation-name: fade;
-    -webkit-animation-duration: 1.5s;
             animation-duration: 1.5s;
 }
 

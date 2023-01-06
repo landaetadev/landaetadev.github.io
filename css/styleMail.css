@@ -32,15 +32,17 @@
 
 .classSendMail {
     width: 100%;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 .classCheckMail {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
     font-size: 1.5rem;
     color: green;
     visibility: hidden;
@@ -101,32 +103,12 @@
 
 /*---------RESPONSIVE---------*/
 
-@media (max-width:280px) {
-    .classFormMail {
-        width: 270px;
+@media (max-width:350px) {
+    .classCheckMail {
+        font-size: 1rem;
     }
-    .classMail{
-        padding: 0;
-    }
-    .classFormMail {
-        padding: 2rem 0;
-    }
-    .classFormInput {
-        font-size: 14px;
-    }
-    .classCheckMail{
-        padding-right: 1rem;
-        font-size: 2rem;
-        color: green;
-    }
-}
-
-@media (max-width:320px) {
-    .classFormInput {
-        font-size: 14px;
-    }
-    .classCheckMail{
-        padding-right: 1rem;
-        font-size: 2rem;
+    .classBtnSendMail {
+        width: 120px;
+        font-size: small;
     }
 }

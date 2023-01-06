@@ -61,16 +61,22 @@
   }
 
 /*---------RESPONSIVE---------*/
-
-@media (max-width:280px) {
-  .classHabilidadesIntro {
-    font-size: small;
-  }
-}
-
-@media (max-width:320px) {
+@media (max-width:414px) {
   .classHabilidadesIntro {
     font-size: medium;
+  }
+  .classHabilidad {
+    width: 200px;
+    height: 250px;
+  }
+  .classHabiIcono {
+    font-size: 2.5rem;
+  }
+  .classHabiNombre{
+    font-size: 23px;
+  }
+  .classHabiDetalles{
+    font-size: 13px;
   }
 }
 
@@ -78,14 +84,42 @@
   .classHabilidadesIntro {
     font-size: medium;
   }
-}
-
-@media (max-width:414px) {
-  .classHabilidadesIntro {
-    font-size: medium;
+  .classHabilidad {
+    width: 200px;
+    height: 250px;
+  }
+  .classHabiIcono {
+    font-size: 2.5rem;
+  }
+  .classHabiNombre{
+    font-size: 23px;
+  }
+  .classHabiDetalles{
+    font-size: 13px;
   }
 }
 
+@media (max-width:350px) {
+  .classHabilidadesIntro {
+    font-size: medium;
+  }
+  .classHabilidad {
+    width: 180px;
+    height: 230px;
+  }
+  .classHabiIcono {
+    font-size: 2rem;
+  }
+  .classHabiNombre{
+    font-size: 20px;
+  }
+  .classHabiDetalles{
+    font-size: 12px;
+  }
+
+}
+
 /*---------RESPONSIVE---------*/
+
 
 

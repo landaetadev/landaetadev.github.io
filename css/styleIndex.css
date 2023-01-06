@@ -1,25 +1,25 @@
 @font-face {
     font-family: "AardvarkCafe";
-    src: url(../assets/fonts/AardvarkCafe.woff) format("truetype");
-    src: url(../assets/fonts/AardvarkCafe.ttf) format("woff");
+    src: url(../assets/fonts/AardvarkCafe.woff) format("woff");
+    src: url(../assets/fonts/AardvarkCafe.ttf) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Frutiger";
-    src: url(../assets/fonts/Frutiger.woff) format("truetype");
-    src: url(../assets/fonts/Frutiger.ttf) format("woff");
+    src: url(../assets/fonts/Frutiger.woff) format("woff");
+    src: url(../assets/fonts/Frutiger.ttf) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "RubikRegular";
-    src: url(../assets/fonts/Rubik-Regular.woff) format("truetype");
-    src: url(../assets/fonts/Rubik-Regular.ttf) format("woff");
+    src: url(../assets/fonts/Rubik-Regular.woff) format("woff");
+    src: url(../assets/fonts/Rubik-Regular.ttf) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "RubikSemiBold";
-    src: url(../assets/fonts/Rubik-SemiBold.woff) format("truetype");
-    src: url(../assets/fonts/Rubik-SemiBold.ttf) format("woff");
+    src: url(../assets/fonts/Rubik-SemiBold.woff) format("woff");
+    src: url(../assets/fonts/Rubik-SemiBold.ttf) format("truetype");
     font-display: swap;
 }
 
@@ -103,18 +103,63 @@ body {
 
 /*---------CONTENEDOR TOTAL---------*/
 
-.classAncleCover {
+.classAncleCover, .classAncle {
     position: absolute;
-    top: 0;
-    left: 0;
     visibility: hidden;
+    left: 0;
+}
+
+.classAncleCover {
+    top: 0;
 }
 .classAncle {
     height: var(--varTopBarHeight);
-    position: absolute;
     bottom: -1px;
-    left: 0;
-    visibility: hidden;
 }
 
 /*---------CONTENEDOR TOTAL---------*/
+
+/*---------RESPONSIVE---------*/
+
+@media (max-width:900px) {
+    .classCoverFoto{
+        width: 10rem;
+        height: auto;
+    }
+    .classTituloH2 {
+        font-size: 18px;
+    }
+    .classCoverHi {
+        font-size: 16px;
+    }
+    .btnGitHub,
+    .btnLinkedIn,
+    .btnDocCV {
+        font-size: 2rem;
+    }
+
+    .classArrowDown {
+        margin: 0 0 -1.5rem 0;
+    }
+} 
+
+@media (max-width:600px) {
+    .classTituloH2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:414px) {
+    .classCoverFoto{
+        width: 8rem;
+        height: auto;
+    }
+}
+
+@media (max-width:350px) {
+    .classTituloH2 {
+        font-size: small;
+    }
+}
+
+/*---------RESPONSIVE---------*/

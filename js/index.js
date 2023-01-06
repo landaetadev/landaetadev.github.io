@@ -1,4 +1,3 @@
-let letScrollYPosition = 250;
 var varCounter = 0;
 var varBody = document.querySelector("body");
 
@@ -25,12 +24,12 @@ var varValidMailAdd = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2
 var varFormTxtMsg = document.querySelector("#idFormTxtMsg");
 var varCheckMail = document.querySelector(".classCheckMail");
 
-window.onload = (function() {
+// window.onload = (function() {
 
 	//SHOW-HIDE TOPBAR
 	window.onscroll = function () {
-		letScrollYPosition = 200;
-		if (window.pageYOffset > letScrollYPosition) {
+		const letScrollYPosition = 300;
+		if (window.scrollY > letScrollYPosition) {
 			varHeader.classList.add("classShowHeader");
 		} else {
 			varHeader.classList.remove("classShowHeader");
@@ -38,7 +37,7 @@ window.onload = (function() {
 	};
 
 	//SHOW-HIDE VERTICAL MENU
-	varBtnMenu.addEventListener ("click", (e) => {
+	varBtnMenu.addEventListener ("click", () => {
 		if (varCounter == 0) {
 			funcJsShowMenuNav();
 		} else {
@@ -46,7 +45,7 @@ window.onload = (function() {
 		}
 	});
 
-	//HIDE MENU WHEN CLICK OUTSIDE
+	//HIDE MENU WHEN CLICK
 	for (let i = 0; i < varBtnMenuOpt.length; i++) {
 		varBtnMenuOpt[i].addEventListener("click", function() {
 			funcJsHideMenuNav();
@@ -169,4 +168,4 @@ window.onload = (function() {
 		}
 	}
 
-});
+// });

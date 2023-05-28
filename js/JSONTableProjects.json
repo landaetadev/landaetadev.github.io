@@ -17,8 +17,8 @@
     },
     {
         "jsonTitle": "Ajedrez 3D",
-        "jsonTypeFileShow" : "img",
-        "jsonFileShow" : "iFab2020Maya3DChess/Chess3D.webp",
+        "jsonTypeFileShow" : "vid",
+        "jsonFileShow" : "iFab2020Maya3DChess/Chess3D.mp4",
         "jsonLangs": "#Maya3D",
         "jsonGitHub": "",
         "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D."

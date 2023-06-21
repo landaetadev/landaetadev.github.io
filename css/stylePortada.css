@@ -49,13 +49,12 @@
 
 .classCoverHi {
     font-family: var(--varRubikRegular);
-    font-size: 1.1rem;
-    line-height : 1.5rem;
-    padding: .5rem 0 .5rem 0;
+
+    padding: 1rem 0 1rem 0;
 }
 
 .classCoverIcons {
-    width: 9rem;
+    width: 10rem;
     display: flex;
     justify-content: space-between;
 }
@@ -68,9 +67,8 @@
 .btnGitHub,
 .btnLinkedIn,
 .btnDocCV {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
-
 
 .btnGitHub:link, .btnGitHub:visited, .btnGitHub:hover, .btnGitHub:active {
     color: var(--varIcoColorGitHub);

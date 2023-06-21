@@ -97,8 +97,15 @@ body {
 }
 
 .classTituloH2 {
-    font-size: x-large;
-    margin: 0 0 .5rem 0;
+    font-size: 28px;
+    margin: 0 0 1rem 0;
+}
+
+.classCoverHi,
+.classHabilidadesIntro,
+.classMySlidesDescrip {
+    font-size: 18px;
+    line-height : 1.5rem;
 }
 
 /*---------CONTENEDOR TOTAL---------*/

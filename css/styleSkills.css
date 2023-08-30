@@ -26,6 +26,7 @@
   height: 260px;
   margin: .5rem;
 }
+
   
 .classHabiIcono, .classHabiNombre, .classHabiDetalles {
   font-family: var(--varRubikRegular);
@@ -35,12 +36,14 @@
   height: 33.3%;
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.classHabiIcono {
-  font-size: 2.5rem;
-  align-items: center
+.classHabiIcono svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: var(--varHabColorHR1);
 }
 
 .classHabiNombre {
@@ -114,6 +117,12 @@
     font-size: 12px;
   }
 
+}
+
+@media (max-width:320px) {
+  .classHabilidadesIntro {
+    font-size: 12px;
+  }
 }
 
 /*---------RESPONSIVE---------*/

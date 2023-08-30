@@ -18,7 +18,7 @@
 
 .class800 {
     width: 100%;
-    min-width: 350px;
+    min-width: 320px;
     max-width: 1300px;
     position: relative;
     display: flex;
@@ -48,6 +48,7 @@
     position: absolute;
     right: 0;
 }
+
 
 .classBtnsMenuOptions {
     position: absolute;
@@ -88,6 +89,13 @@
     align-items: center;
     cursor: pointer;
 }
+
+.classBtnsMenuOptions ul li svg,
+.classBtnMenu svg {
+    width: 1rem;
+    fill: var(--varBtnsCan1);
+}
+
 .classBtnMenu:hover,
 .classBtnMenuOpt:hover{
     background-color: var(--varBtnsCanHover);
@@ -148,15 +156,13 @@
 
     .classBtnMenuOpt {
         background-color: var(--varBtnsCan2);
-        margin-left: .5rem;
-        font-size: larger;
-    }
-
-    .classBtnMenuOpt {
-        background-color: var(--varBtnsCan2);
         width: 100%;
         height: 4rem;
         margin-left: 0;
+    }
+
+    .classBtnsMenuOptions ul li svg {
+        width: 1.5rem;
     }
 
     .classHR {
@@ -219,12 +225,16 @@
     }
 }
 
-@media (max-width:350px) {
+@media (max-width:320px) {
     .classLogoLink {
-        height: 90%;
+        height: 85%;
     }
+    .classTituloH1 {
+        font-size: 18px;
+    }
+
     .classBtnMenu {
-        width: 6rem;
+        width: 5rem;
         font-size: small;
     }
 

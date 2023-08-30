@@ -3,19 +3,18 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, minimum-scale=1, maximum-scale=5, shrink-to-fit=no">
     <meta name="author" content="Orlando Landaeta">
     <meta name=”title” content=”LandaetaDev”>
     <meta name="description" content="Mi nombre es Orlando Landaeta, licenciado en Computación con habilidades en diferentes ambitos.">
     <meta name=”keywords” content="Portfolio, Habilidades, Proyectos">
     <meta name="robots" content="index, nofollow">
 
-    <!-- Cargar iconos Font Awesome -->
-    <script src="https://kit.fontawesome.com/b94486ef91.js" crossorigin="anonymous"></script>
     <!--CSS-->
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/styleTopBar.css">
     <link rel="stylesheet" href="./css/stylePortada.css">
+    <link rel="stylesheet" href="./css/styleStudies.css">
     <link rel="stylesheet" href="./css/styleSkills.css">
     <link rel="stylesheet" href="./css/styleProjects.css">
     <link rel="stylesheet" href="./css/styleMail.css">
@@ -34,26 +33,55 @@
 
         <div class="class800" id="class800">
 
-            <a href="https://landaetadev.github.io" class="classLogoLink">
-                <img class="classLogoImg" src="./assets/images/WebLogo.webp" alt="Logo">
+            <a href="https://landaetadev.github.io" class="classLogoLink"><img class="classLogoImg" src="./assets/images/WebLogo.webp" alt="Logo">
                 <h1 class="classTituloH1">LandaetaDev</h1>
             </a>
-            
-            <button class="classBtnMenu" id="idBtnMenu"><i class="fas fa-bars"></i> &nbsp; Menu</button>
+
+            <button class="classBtnMenu" id="idBtnMenu">
+                <svg>
+                    <use href="./assets/icons.svg#menu">
+                </svg> &nbsp; 
+                Menu
+            </button>
             
             <nav class="classBtnsMenuOptions">
                 <ul>
-                    <li><a href="./index.html#idAncleHome" class="classBtnMenuOpt"><i class="fas fa-home"></i> &nbsp; Inicio</a></li>
+                    <li><a href="./index.html#idAncleHome" class="classBtnMenuOpt">
+                        <svg>
+                            <use href="./assets/icons.svg#home">
+                        </svg> &nbsp; 
+                        Inicio</a>
+                    </li>
                     <div class="classHR"></div>
-                    <li><a href="./index.html#idAncleSkills" class="classBtnMenuOpt"><i class="fas fa-tools"></i> &nbsp; Habilidades</a></li>
+
+                    <li><a href="./index.html#idAncleProjects" class="classBtnMenuOpt">
+                        <svg>
+                            <use href="./assets/icons.svg#proyectos">
+                        </svg> &nbsp; 
+                        Proyectos</a></li>
                     <div class="classHR"></div>
-                    <li><a href="./index.html#idAncleProjects" class="classBtnMenuOpt"><i class="fas fa-project-diagram"></i> &nbsp; Proyectos</a></li>
+
+                    <li><a href="./index.html#idAncleSkills" class="classBtnMenuOpt">
+                        <svg>
+                            <use href="./assets/icons.svg#habilidades">
+                        </svg> &nbsp; 
+                        Habilidades</a></li>
                     <div class="classHR"></div>
-                    <li><a href="./index.html#idAncleContact" class="classBtnMenuOpt"><i class="far fa-envelope"></i> &nbsp; Contacto</a></li>
-                    <!-- EN CONSTRUCCION -->
-                    <!-- <div class="classHR"></div>
-                    <li><a href="./index.html#idAncla4" class="classBtnMenuOpt"><i class="fas fa-blog"></i> &nbsp; BlogNotes</a></li> -->
-                    <!-- EN CONSTRUCCION -->
+
+                    <li><a href="./index.html#idAncleStudies" class="classBtnMenuOpt">
+                        <svg>
+                            <use href="./assets/icons.svg#estudios">
+                        </svg> &nbsp; 
+                        Estudios</a>
+                    </li>
+                    <div class="classHR"></div>
+
+                    <li><a href="./index.html#idAncleContact" class="classBtnMenuOpt">
+                        <svg>
+                            <use href="./assets/icons.svg#contacto">
+                        </svg> &nbsp; 
+                        Contacto</a></li>
+                    
                 </ul>
             </nav>
 
@@ -69,7 +97,7 @@
             <div class="classMashTrans">
 
                 <div class="classFotoDatos">
-                    <img src="assets/images/MyPic/MyPic.webp" class="classCoverFoto" alt="Mi Foto">
+                    <img src="assets/images/MyPic.webp" class="classCoverFoto" alt="Mi Foto">
                     <div class="classCoverDatos">
                         <h2 class="classTituloH2">Orlando Landaeta</h2>
                         <h2 class="classTituloH2">Licenciado en Computación</h2>
@@ -81,11 +109,22 @@
 
                         <div class="classCoverIcons">
                             <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
-                                <i class="fab fa-github-square"></i></a>
+                                <svg>
+                                    <use href="./assets/icons.svg#GitHub">
+                                </svg>
+                            </a>
+
                             <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i></a>
+                                <svg>
+                                    <use href="./assets/icons.svg#LinkedIn">
+                                </svg>
+                            </a>
+                            
                             <a href="./assets/doc/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
-                                <i class="fas fa-file-pdf"></i></a>
+                                <svg>
+                                    <use href="./assets/icons.svg#pdfIcon">
+                                </svg>
+                            </a>
                         </div>
 
                     </div>
@@ -93,53 +132,13 @@
                 </div>
 
                 
-                <a class="classAncle" id="idAncleSkills"></a>
+                <a class="classAncle" id="idAncleProjects"></a>
             </div>
-            <a href="#idAncleSkills" class="classArrowDown"><i class="fas fa-angle-double-down"></i></a>
-        </div>
-        <hr class="LineColor">
-            
-        <div class="classHabilidades">
-            
-            <h2 class="classTituloH2">HABILIDADES</h2>
-            
-            <p class="classHabilidadesIntro">Mis principales competencias son la gestión y desarrollo de 
-                proyectos en el ámbito informático con habilidades en diferentes áreas.</p>
-
-            <div class="classHabilidadesFlex">
-                <div class="classHabilidad">
-                    <p class="classHabiIcono"><i class="fas fa-desktop"></i></p>
-                    <h3 class="classHabiNombre">Diseño Web</h3>
-                    <p class="classHabiDetalles">HTML - CSS - JS<br> Bootstrap - Wordpress<br> Prestashop</p>
-                </div>
-                <div class="classHabilidad">
-                    <p class="classHabiIcono"><i class="fas fa-mobile-alt"></i></p>
-                    <h3 class="classHabiNombre">Programación Movil</h3>
-                    <p class="classHabiDetalles">Xcode - Android Studio</p>
-                </div>
-                <div class="classHabilidad">
-                    <p class="classHabiIcono"><i class="fas fa-laptop-code"></i></p>
-                    <h3 class="classHabiNombre">Programación</h3>
-                    <p class="classHabiDetalles">Swift - PHP - Python</p>
-                </div>
-                <div class="classHabilidad">
-                    <p class="classHabiIcono"><i class="fas fa-database"></i></p>
-                    <h3 class="classHabiNombre">Manejo de datos</h3>
-                    <p class="classHabiDetalles">MySQL - JSON</p>
-                </div>
-                <div class="classHabilidad">
-                    <p class="classHabiIcono"><i class="fas fa-network-wired"></i></p>
-                    <h3 class="classHabiNombre">Servidores y Redes</h3>
-                    <p class="classHabiDetalles">Configuración - Administración<br> Unix - Windows Server</p>
-                </div>
-                <div class="classHabilidad">
-                    <p class="classHabiIcono"><i class="fab fa-unity"></i></p>
-                    <h3 class="classHabiNombre">Diseño 3D</h3>
-                    <p class="classHabiDetalles">Maya 3D - Unity - OnShape</p>
-                </div>
-            </div>
-
-        <a class="classAncle" id="idAncleProjects"></a>
+            <a href="#idAncleProjects" class="classArrowDown" title="Continuar">
+                <svg>
+                    <use href="./assets/icons.svg#anglesDown">
+                </svg>
+            </a>
         </div>
         <hr class="LineColor">
 
@@ -153,12 +152,167 @@
             </div>
 
             <div class="classBtnsPrevNext">
-                <i class="fas fa-angle-left classBtnPrev"></i>
-                <i class="fas fa-angle-right classBtnNext"></i>
+                <svg class="classBtnPrev">
+                    <use href="./assets/icons.svg#arrowPrev">
+                </svg>
+                &nbsp;&nbsp;
+                <svg class="classBtnNext">
+                    <use href="./assets/icons.svg#arrowNext">
+                </svg>
+
             </div>
 
+            <a class="classAncle" id="idAncleSkills"></a>
+        </div>
+        <hr class="LineColor">
+
+        <div class="classHabilidades">
             
-            <a class="classAncle" id="idAncleContact"></a>
+            <h2 class="classTituloH2">HABILIDADES</h2>
+            
+            <p class="classHabilidadesIntro">Mis principales competencias son la gestión y desarrollo de 
+                proyectos en el ámbito informático con habilidades en diferentes áreas.</p>
+
+            <div class="classHabilidadesFlex">
+                <div class="classHabilidad">
+                    <div class="classHabiIcono">
+                        <svg>
+                            <use href="./assets/icons.svg#desktop">
+                        </svg>
+                    </div>
+                    <h3 class="classHabiNombre">Diseño Web</h3>
+                    <p class="classHabiDetalles">HTML - CSS - JS<br> Bootstrap - Wordpress<br> Prestashop</p>
+                </div>
+
+                <div class="classHabilidad">
+                    <div class="classHabiIcono">
+                        <svg>
+                            <use href="./assets/icons.svg#mobile">
+                        </svg>
+                    </div>
+                    <h3 class="classHabiNombre">Programación Movil</h3>
+                    <p class="classHabiDetalles">Xcode - Android Studio</p>
+                </div>
+
+                <div class="classHabilidad">
+                    <p class="classHabiIcono">
+                        <svg>
+                            <use href="./assets/icons.svg#laptopCode">
+                        </svg>
+                    </p>
+                    <h3 class="classHabiNombre">Programación</h3>
+                    <p class="classHabiDetalles">Swift - PHP - Python</p>
+                </div>
+
+                <div class="classHabilidad">
+                    <p class="classHabiIcono">
+                        <svg>
+                            <use href="./assets/icons.svg#data">
+                        </svg>
+                    </p>
+                    <h3 class="classHabiNombre">Manejo de datos</h3>
+                    <p class="classHabiDetalles">MySQL - JSON</p>
+                </div>
+
+                <div class="classHabilidad">
+                    <p class="classHabiIcono">
+                        <svg>
+                            <use href="./assets/icons.svg#network">
+                        </svg>
+                    </p>
+                    <h3 class="classHabiNombre">Servidores y Redes</h3>
+                    <p class="classHabiDetalles">Configuración - Administración<br> Unix - Windows Server</p>
+                </div>
+
+                <div class="classHabilidad">
+                    <p class="classHabiIcono">
+                        <svg>
+                            <use href="./assets/icons.svg#Unity">
+                        </svg>
+                    </p>
+                    <h3 class="classHabiNombre">Diseño 3D</h3>
+                    <p class="classHabiDetalles">Maya 3D - Unity - OnShape</p>
+                </div>
+            </div>
+
+        <a class="classAncle" id="idAncleStudies"></a>
+        </div>
+        <hr class="LineColor">
+
+        <div class="classEstudios">
+            
+            <h2 class="classTituloH2">ESTUDIOS</h2>
+
+            <div class="cursos">
+                <hr>
+                <div class="curso">
+                    <div class="barra">
+                        <div class="point"></div>
+                    </div>
+                    <p>
+                        Master en Tecnologías Interactivas y Fabricación Digital<br>
+                        Universidad Politécnica de Valencia<br>
+                        2022 - En curso<br>
+                    </p>
+                </div>
+    
+                <!-- <div class="curso">
+                    <div class="barra">
+                        <div class="point"></div>
+                    </div>
+                    <p>
+                        Master en Big Data<br>
+                        Universidad Politécnica de Valencia<br>
+                        2021 - 2022
+                    </p>
+                </div> -->
+    
+                <div class="curso">
+                    <div class="barra">
+                        <div class="point"></div>
+                    </div>
+                    <p>
+                        Especialización en Tecnologías Interactivas<br>
+                        Universidad Politécnica de Valencia<br>
+                        2019 - 2021
+                    </p>
+                </div>
+    
+                <div class="curso">
+                    <div class="barra">
+                        <div class="point"></div>
+                    </div>
+                    <p>
+                        Master en Ingeniería de Computadores y Redes<br>
+                        Universidad Politécnica de Valencia<br>
+                        2017 - 2019
+                    </p>
+                </div>
+    
+                <div class="curso">
+                    <div class="barra">
+                        <div class="point"></div>
+                    </div>
+                    <p>
+                        Licenciado en Computación<br>
+                        Universidad Nueva Esparta - Caracas<br>
+                        2003 - 2007
+                    </p>
+                </div>
+    
+                <div class="curso">
+                    <div class="barra">
+                        <div class="point"></div>
+                    </div>
+                    <p>
+                        T.S.U. en Computación<br>
+                        Instituto Universitario Nueva Esparta - Caracas<br>
+                        1998 - 2002
+                    </p>
+                </div>
+            </div>
+            
+        <a class="classAncle" id="idAncleContact"></a>
         </div>
         <hr class="LineColor">
 
@@ -166,23 +320,40 @@
             <h2 class="classTituloH2">CONTACTO</h2>
     
             <form class="classFormMail" id="idFormMail" action="https://formspree.io/f/mrgrrawp" method="POST">
-    
+                
                 <input type="text" name="Nombre" class="classFormInput" id="idFormTxtName" placeholder="Nombre">
                 <input type="email" name="E-Mail" class="classFormInput" id="idFormTxtMail" placeholder="E-Mail">
                 <textarea type="text" name="Mensaje" class="classFormInput" id="idFormTxtMsg" rows="6" placeholder="Mensaje"></textarea>
     
                 <div class="classSendMail">
-                    <i class="classCheckMail fas fa-check-circle"><p>&nbsp;Gracias!!</p></i>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button type="submit" class="classBtnSendMail"><i class="far fa-paper-plane"></i> &nbsp; Enviar</button>
+                    <div class="classCheckMail">
+                        <svg>
+                            <use href="./assets/icons.svg#checkMail">
+                        </svg>
+                        <p>Gracias!!</p>
+                    </div>
+                    
+                    <button type="submit" class="classBtnSendMail">
+                        <svg>
+                            <use href="./assets/icons.svg#sentMail">
+                        </svg>
+                        Enviar
+                    </button>
                 </div>
-    
+
+                <div class="classMailAddress">
+                    <svg>
+                        <use href="./assets/icons.svg#contacto">
+                    </svg>
+                    &nbsp; <p>orlandolandaeta@gmail.com</p>
+                </div>
+
             </form>
+
+            
     
         </div>
 
     </section>
     
-</body> 
-
-</html>
+</body>

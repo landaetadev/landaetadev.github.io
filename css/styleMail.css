@@ -6,7 +6,6 @@
     width: 100%;
     max-width: 350px;
     padding: 2rem 1rem;
-    /* margin-top: 1rem; */
     border-radius: .5rem;
     display: flex;
     flex-direction: column;
@@ -38,19 +37,22 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    color: green;
+    font-size: 1.3rem;
 }
+
 .classCheckMail {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1.5rem;
-    color: green;
+    font-family: var(--varRubikRegular);
     visibility: hidden;
 }
-.classCheckMail p {
-    font-size: 1.3rem;
-    font-family: var(--varRubikRegular);
+.classCheckMail svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: green;
+    margin-right: .5rem;
 }
 
 .classCheckMailShow {
@@ -88,6 +90,9 @@
     }
 
 .classBtnSendMail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 3px solid var(--varBtnsCan1);
     background-color: var(--varBtnsCan2);
     color: var(--varBtnsCan1);
@@ -102,6 +107,27 @@
     background-color: var(--varBtnsCanHover);
 }
 
+.classBtnSendMail svg {
+    width: 1rem;
+    fill: var(--varBtnsCan1);
+    margin-right: .5rem;
+}
+
+.classMailAddress {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: var(--varRubikRegular);
+}
+
+.classMailAddress svg {
+    width: 1rem;
+    height: 1rem;
+    fill: var(--varBtnsCan1);
+}
+
 /*---------RESPONSIVE---------*/
 
 @media (max-width:350px) {
@@ -111,5 +137,28 @@
     .classBtnSendMail {
         width: 120px;
         font-size: small;
+    }
+}
+
+@media (max-width:320px) {
+    .classFormMail {
+        max-width: 300px;
+    }
+    .classFormInput {
+        font-size: 16px;
+    }
+    .classBtnSendMail {
+        width: 100px;
+        font-size: small;
+    }
+    .classMailAddress {
+        font-size: .8rem;
+    }
+
+    .classCheckMail {
+        font-size: 1rem;
+    }
+    .classCheckMail svg {
+        width: 1rem;
     }
 }

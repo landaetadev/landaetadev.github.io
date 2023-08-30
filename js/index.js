@@ -29,7 +29,7 @@ var varCheckMail = document.querySelector(".classCheckMail");
 	//SHOW-HIDE TOPBAR
 	window.onscroll = function () {
 		const letScrollYPosition = 300;
-		if (window.scrollY > letScrollYPosition) {
+		if (window.scrollY >= letScrollYPosition) {
 			varHeader.classList.add("classShowHeader");
 		} else {
 			varHeader.classList.remove("classShowHeader");
@@ -85,7 +85,11 @@ var varCheckMail = document.querySelector(".classCheckMail");
 			}
 			varMakeShowHTML += `<p class="classMySlidesLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
 			if (JSONData[JSONi].jsonGitHub != "") {
-				varMakeShowHTML += `<a href="${letGitHubFolder}${JSONData[JSONi].jsonGitHub}" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub</a>`;
+				varMakeShowHTML += `<a href="${letGitHubFolder}${JSONData[JSONi].jsonGitHub}" target="_blank" title="GitHub">
+				<svg>
+					<use href="./assets/icons.svg#GitHubCircle">
+				</svg>
+				&nbsp;&nbsp;GitHub</a>`;
 			}
 			varMakeShowHTML += `</p>`;
 			varMakeShowHTML += `<p class="classMySlidesDescrip">${JSONData[JSONi].jsonDescript}</p>`;

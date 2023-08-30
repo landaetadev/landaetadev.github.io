@@ -30,6 +30,7 @@
     width: 13rem;
     height: auto;
     margin: .5rem;
+    aspect-ratio: 1 / 1;
 }
 
 .classCoverDatos {
@@ -64,50 +65,51 @@
     transform: scale(1.25);
 }
 
-.btnGitHub,
-.btnLinkedIn,
-.btnDocCV {
-    font-size: 2.7rem;
+.btnGitHub svg,
+.btnLinkedIn svg,
+.btnDocCV svg,
+.classArrowDown svg {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
-.btnGitHub:link, .btnGitHub:visited, .btnGitHub:hover, .btnGitHub:active {
-    color: var(--varIcoColorGitHub);
+.btnGitHub svg {
+    fill: var(--varIcoColorGitHub);
 }
-
-.btnLinkedIn:link, .btnLinkedIn:visited, .btnLinkedIn:hover, .btnLinkedIn:active {
-    color: var(--varIcoColorLinkedIn);
+.btnLinkedIn svg {
+    fill: var(--varIcoColorLinkedIn);
 }
-
-.btnDocCV:link, .btnDocCV:visited, .btnDocCV:hover, .btnDocCV:active {
-    color: var(--varIcoColorPDF);
+.btnDocCV svg{
+    fill: var(--varIcoColorPDF);
 }
 
 .classArrowDown {
-    color: red;
+    fill: red;
     position: absolute;
     bottom: 5rem;
-    font-size: 2rem;
+    width: 2rem;
     animation: animArrow 2.5s ease-in-out infinite;
 }
+
 
 @keyframes animArrow {
     0% {
         transform: translateY(0);
-        color: var(--varBtnsCan1);
+        fill: var(--varBtnsCan1);
     }
     25% {
-        color: var(--varBtnsCan2);
+        fill: var(--varBtnsCan2);
     }
     50% {
         transform: translateY(2rem);
-        color: var(--varBtnsCan1);
+        fill: var(--varBtnsCan1);
     }
     75% {
-        color: var(--varBtnsCan2);
+        fill: var(--varBtnsCan2);
     }
     100% {
         transform: translateY(0);
-        color: var(--varBtnsCan1);
+        fill: var(--varBtnsCan1);
     }
 }
 
@@ -122,10 +124,11 @@
     .classCoverHi {
         font-size: 16px;
     }
-    .btnGitHub,
-    .btnLinkedIn,
-    .btnDocCV {
-        font-size: 2rem;
+    .btnGitHub svg,
+    .btnLinkedIn svg,
+    .btnDocCV svg {
+        width: 2rem;
+        height: 2rem;
     }
 
     .classArrowDown {
@@ -147,14 +150,9 @@
     .classCoverHi {
         font-size: 14px;
     }
-    .btnGitHub,
-    .btnLinkedIn,
-    .btnDocCV {
-        font-size: 2rem;
-    }
 
-    .classArrowDown {
-        font-size: 1.5rem;
+    .classArrowDown svg {
+        width: 1.5rem;
         bottom: 4rem;
     }
 }
@@ -173,15 +171,7 @@
     .classCoverHi {
         font-size: 14px;
     }
-    .btnGitHub,
-    .btnLinkedIn,
-    .btnDocCV {
-        font-size: 2rem;
-    }
-    .classArrowDown {
-        font-size: 1.5rem;
-        bottom: 4rem;
-    }
+
 }
 
 @media (max-width:350px) {
@@ -195,14 +185,11 @@
     .classCoverHi {
         font-size: small;
     }
-    .btnGitHub,
-    .btnLinkedIn,
-    .btnDocCV {
-        font-size: 1.5rem;
-    }
-    .classArrowDown {
-        font-size: 1.5rem;
-        bottom: 4rem;
+    .btnGitHub svg,
+    .btnLinkedIn svg,
+    .btnDocCV svg {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
 }

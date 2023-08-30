@@ -40,7 +40,7 @@
 .classMySlidesLangs {
     color: var(--varFontColor);
     font-family: var(--varRubikSemiBold);
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     height: 3.5rem;
     margin: 0 .5rem;
@@ -51,7 +51,7 @@
 .classMySlidesLangs a {
     background-color: var(--varTopBarBackColor);
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--varRubikRegular);
     width: 7rem;
     height: 2rem;
@@ -62,8 +62,9 @@
     box-shadow: 0 3px 0 #0059b3;
 }
 
-.fa-brands {
-    font-size: 20px;
+.classMySlidesLangs svg {
+    fill: white;
+    width: 20px;
 }
 
 .classMySlidesDescrip {
@@ -82,10 +83,11 @@
 .classBtnPrev, .classBtnNext {
     border: 3px solid var(--varBtnsCan1);
     background-color: var(--varBtnsCan2);
-    color: var(--varBtnsCan1);
+    fill: var(--varBtnsCan1);
     border-radius: 100%;
     font-size: 2rem;
     width: 2.5rem;
+    height: 2.5rem;
     cursor: pointer;
 }
 
@@ -94,11 +96,30 @@
     background-color: var(--varBtnsCanHover);
 }
 
-.fa-angle-left {
+.classBtnPrev {
 padding: 0 2px 0 0;
 margin-right: .5rem;
 }
-.fa-angle-right {
+.classBtnNext {
 padding: 0 0 0 2px;
 margin-left: .5rem;
 }
+
+/*---------RESPONSIVE---------*/
+@media (max-width:320px) {
+
+    .classMySlidesTitle {
+        font-size: 16px;
+    }
+    
+    .classMySlidesLangs {
+        font-size: 12px;
+    }
+
+    .classMySlidesDescrip {
+        font-size: 14px;
+    }
+
+}
+/*---------RESPONSIVE---------*/
+

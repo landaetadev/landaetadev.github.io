@@ -29,7 +29,7 @@
     --varRubikRegular: 'RubikRegular';
     --varRubikSemiBold: 'RubikSemiBold';
     --varFontColor: #E6E6E6;
-    --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 70%);
+    --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 60%);
 
     --varTopBarBackColor: #204B89;
     --varTopBarHeight: 3rem;
@@ -69,11 +69,15 @@ body {
     min-height: 600px;
 }
 
+.classTotalContainer {
+    background: url("../assets/images/backgrounds/001.webp");
+}
+
 .classCover,
 .classMail,
+.classEstudios,
 .classHabilidades,
 .classProjects {
-    background: #1A1A1A;
     width: 100%;
     position: relative;
     padding: 1rem .5rem;

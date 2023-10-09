@@ -11,6 +11,7 @@
     min-height: 100vh;
     height: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -85,9 +86,7 @@
 
 .classArrowDown {
     fill: red;
-    position: absolute;
-    bottom: 5rem;
-    width: 2rem;
+    margin-top: 10rem;
     animation: animArrow 2.5s ease-in-out infinite;
 }
 
@@ -132,7 +131,7 @@
     }
 
     .classArrowDown {
-        margin: 0 0 -1.5rem 0;
+        margin-top: 8rem;
     }
 } 
 
@@ -151,9 +150,12 @@
         font-size: 14px;
     }
 
+    .classArrowDown {
+        margin-top: 8rem;
+    }
+
     .classArrowDown svg {
         width: 1.5rem;
-        bottom: 4rem;
     }
 }
 
@@ -170,6 +172,10 @@
     }
     .classCoverHi {
         font-size: 14px;
+    }
+
+    .classArrowDown {
+        margin-top: 6rem;
     }
 
 }
@@ -190,6 +196,11 @@
     .btnDocCV svg {
         width: 1.5rem;
         height: 1.5rem;
+    }
+    
+
+    .classArrowDown {
+        margin-top: 4rem;
     }
 
 }

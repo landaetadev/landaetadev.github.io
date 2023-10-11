@@ -1,175 +1,145 @@
-var varCounter = 0;
-var varBody = document.querySelector("body");
+var vCounter = 0;
+var vBody = document.querySelector("body");
 
 //VARIABLES TOPBAR
-var varHeader = document.querySelector(".classHeader");
-var varBtnMenu = document.querySelector("#idBtnMenu");
-var varBtnsMenuOptions = document.querySelector(".classBtnsMenuOptions");
-var varBtnMenuOpt = document.querySelectorAll(".classBtnMenuOpt");
+var vHeader = document.querySelector(".classHeader");
+var vBtnMenu = document.querySelector("#idBtnMenu");
+var vBtnsMenuOptions = document.querySelector(".classBtnsMenuOptions");
+var vBtnMenuOpt = document.querySelectorAll(".classBtnMenuOpt");
 
 //VARIABLES SLIDER
-var varSlideshowContainer = document.querySelector(".classSlideshowContainer");
-var varBtnPrev = document.querySelector(".classBtnPrev");
-var varBtnNext = document.querySelector(".classBtnNext");
-var varMakeShowHTML = ``;
-var varSlideIndex = 1;
+var vShowCards = document.querySelector(".classShowCardsContainer");
+var vMakeCardHTML = ``;
 let letProjectsFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/FilesProjects/"
 let letGitHubFolder = "https://github.com/landaetadev/"
+var vShowProjects = document.querySelector(".classProjectsContainer");
+var vBtnHideProject = document.querySelector(".classBtnHideProject");
+var vShowProjectContainer = document.querySelector(".classShowProjectContainer");
+var vMakeProjectHTML = ``;
 
-//VARIABLES MAIL
-var varFormMail = document.querySelector(".classFormMail");
-var varFormTxtName = document.querySelector("#idFormTxtName");
-var varFormTxtMail = document.querySelector("#idFormTxtMail");
-var varValidMailAdd = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-var varFormTxtMsg = document.querySelector("#idFormTxtMsg");
-var varCheckMail = document.querySelector(".classCheckMail");
-
-// window.onload = (function() {
-
-	//SHOW-HIDE TOPBAR
+//SHOW-HIDE TOPBAR
+window.onload = (function() {
 	window.onscroll = function () {
 		const letScrollYPosition = 300;
 		if (window.scrollY >= letScrollYPosition) {
-			varHeader.classList.add("classShowHeader");
+			vHeader.classList.add("classShowHeader");
 		} else {
-			varHeader.classList.remove("classShowHeader");
+			vHeader.classList.remove("classShowHeader");
 		}
 	};
+});
 
-	//SHOW-HIDE VERTICAL MENU
-	varBtnMenu.addEventListener ("click", () => {
-		if (varCounter == 0) {
-			funcJsShowMenuNav();
-		} else {
-			funcJsHideMenuNav();
-		}
+//SHOW-HIDE VERTICAL MENU
+vBtnMenu.addEventListener ("click", () => {
+	if (vCounter == 0) {
+		funcJsShowMenuNav();
+	} else {
+		funcJsHideMenuNav();
+	}
+});
+
+//HIDE MENU WHEN CLICK
+for (let i = 0; i < vBtnMenuOpt.length; i++) {
+	vBtnMenuOpt[i].addEventListener("click", function() {
+		funcJsHideMenuNav();
 	});
+};
 
-	//HIDE MENU WHEN CLICK
-	for (let i = 0; i < varBtnMenuOpt.length; i++) {
-		varBtnMenuOpt[i].addEventListener("click", function() {
-			funcJsHideMenuNav();
-		});
-	};
+//SHOW-HIDE SLIDER
+function funcJsShowMenuNav() {
+	vBtnsMenuOptions.classList.add("classBtnsMenuOptionsShow");
+	vBody.classList.add("classHideOverflowY");
+	vCounter = 1;
+};
+function funcJsHideMenuNav() {
+	vBtnsMenuOptions.classList.remove("classBtnsMenuOptionsShow");
+	vBody.classList.remove("classHideOverflowY");
+	vCounter = 0;
+};
 
-	//SHOW-HIDE SLIDER
-	function funcJsShowMenuNav() {
-		varBtnsMenuOptions.classList.add("classBtnsMenuOptionsShow");
-		varBody.classList.add("classHideOverflowY");
-		varCounter = 1;
-	};
-	function funcJsHideMenuNav() {
-		varBtnsMenuOptions.classList.remove("classBtnsMenuOptionsShow");
-		varBody.classList.remove("classHideOverflowY");
-		varCounter = 0;
-	};
+//SHOW PROJECTS
+fetch('./js/JSONTableProjects.json')
+.then(response => response.json())
+.then(JSONData => {
+	ReadTable(JSONData);
+});
 
-	//SLIDE PROJECTS
-	fetch('./js/JSONTableProjects.json')
-	.then(response => response.json())
-	.then(JSONData => {
-		ReadTable(JSONData);
-	});
+function ReadTable(JSONData) {
 
-	function ReadTable(JSONData) {
+	for (var vJSONi = 0; vJSONi < JSONData.length; vJSONi++) {
 
-		for (var JSONi = 0; JSONi < JSONData.length; JSONi++) {
-			//CREATE SLIDE
-			varMakeShowHTML += `<div class="classMySlides">`;
-			varMakeShowHTML += `<h3 class="classTituloH3 classMySlidesTitle">${JSONData[JSONi].jsonTitle}</h3>`;
-			if (JSONData[JSONi].jsonTypeFileShow == "vid") {
-				varMakeShowHTML += `<video controls class="classFileShow classPlayVideo"> <source src="${letProjectsFolder}${JSONData[JSONi].jsonFileShow}" type="video/mp4"> </video>`;
-			}
-			if (JSONData[JSONi].jsonTypeFileShow == "img") {
-				varMakeShowHTML += `<img src="${letProjectsFolder}${JSONData[JSONi].jsonFileShow}" class="classFileShow">`;
-			}
-			varMakeShowHTML += `<p class="classMySlidesLangs">${JSONData[JSONi].jsonLangs}&nbsp;&nbsp;&nbsp;`;
-			if (JSONData[JSONi].jsonGitHub != "") {
-				varMakeShowHTML += `<a href="${letGitHubFolder}${JSONData[JSONi].jsonGitHub}" target="_blank" title="GitHub">
-				<svg>
-					<use href="./assets/icons.svg#GitHubCircle">
-				</svg>
-				&nbsp;&nbsp;GitHub</a>`;
-			}
-			varMakeShowHTML += `</p>`;
-			varMakeShowHTML += `<p class="classMySlidesDescrip">${JSONData[JSONi].jsonDescript}</p>`;
-			varMakeShowHTML += `</div>`;
-			varSlideshowContainer.innerHTML = varMakeShowHTML;
+	//Make Project Card HTML
+	vMakeCardHTML += `<div class="classProjectCard">`;
+	vMakeCardHTML +=	`<a href="javascript:clickCard(vNumCard = ${vJSONi})">`;
 
-			var varclassPlayVideo = document.querySelectorAll(".classPlayVideo");
-			var varMySlides = document.querySelectorAll(".classMySlides");
-			varMySlides[0].style.display = "flex"
+	vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONData[vJSONi].jsonTitle}</h3>`;
+
+	vMakeCardHTML +=    `<div class="classCardImage">`;
+	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONData[vJSONi].jsonImgScreen}" class="classFileCard">`;
+	vMakeCardHTML +=    `</div>`;
+
+	vMakeCardHTML +=    `<p class="classCardLang">${JSONData[vJSONi].jsonLangs}</p>`;
+
+	vMakeCardHTML +=	`</a>`;
+	vMakeCardHTML += `</div>`;
+	vShowCards.innerHTML = vMakeCardHTML;
+
+	//Make Project HTML
+	vMakeProjectHTML += `<div class="classShowProject">`;
+	vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONData[vJSONi].jsonTitle}</h3>`;
+
+	if (JSONData[vJSONi].jsonTypeFileShow == "vid") {
+		vMakeProjectHTML += `<video controls class="classShowFile classPlayVideo"> <source src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" type="video/mp4"> </video>`;
+	}
+	if (JSONData[vJSONi].jsonTypeFileShow == "img") {
+		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" >`;
+	}
+
+	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONData[vJSONi].jsonLangs} &nbsp;&nbsp;&nbsp;`;
+		if (JSONData[vJSONi].jsonGitHub != "") {
+			vMakeProjectHTML += `<a href="${letGitHubFolder}${JSONData[vJSONi].jsonGitHub}" target="_blank" title="GitHub">
+			<svg>
+				<use href="./assets/icons.svg#GitHubCircle">
+			</svg>
+			&nbsp;&nbsp;GitHub</a>`;
 		}
+	vMakeProjectHTML += 	`</p>`;
 
-		//Function Btn PREV
-		varBtnPrev.addEventListener("click", function() {
-			funcShowSlides(varSlideIndex -= 1);
-			funcPauseVideo();
-		});
+	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}</p>`;
+	vMakeProjectHTML += `</div>`;
 
-		//Function Btn NEXT
-		varBtnNext.addEventListener("click", function() {
-			funcShowSlides(varSlideIndex += 1);
-			funcPauseVideo();
-		});
-
-		//Function pause video
-		function funcPauseVideo(){
-			for (var varNumMov = 0; varNumMov < varclassPlayVideo.length; varNumMov++) {
-				varclassPlayVideo[varNumMov].pause();
-			}
-		}
-
-		//Function Btns PREV NEXT
-		function funcShowSlides(n) {
-
-			if (n > varMySlides.length) {varSlideIndex = 1}
-
-			if (n < 1) {varSlideIndex = varMySlides.length}
-
-			for (var i = 0; i < varMySlides.length; i++) {
-				varMySlides[i].style.display = "none";
-			}
-
-		varMySlides[varSlideIndex-1].style.display = "flex";
-		}
+	vShowProjectContainer.innerHTML = vMakeProjectHTML;
 
 	}
 
-	//CHECKMAIL
-	varFormMail.addEventListener ("submit", (event) => {
-		event.preventDefault();
-		if (varFormTxtName.value == "") {
-			alert("Falta el Nombre")
-		} else if (varValidMailAdd.test(varFormTxtMail.value) ? false : true) {
-			alert("E-mail no valido");
-		} else if (varFormTxtMsg.value == "") {
-			alert("Falta el mensaje")
-		} else {
-			funcSendMail()
-		}
-	})
+}
 
-	//SENDMAIL
-	async function funcSendMail() {
-		const varDataFormMail = new FormData(varFormMail);
-		
-		const response = await fetch(varFormMail.action, {
-			method: varFormMail.method,
-			body: varDataFormMail,
-			headers: {
-				'Accept' : 'application/json'
-			}
-		});
+function clickCard(vNumCard) {
+	// vShowProjects.style.display = "flex"
+	funcShowProject()
+	vBody.classList.add("classHideOverflowY");
+	vShowProjects.classList.add("classProjectsContainerShow");
+}
 
-		if (response.ok) {
-			varCheckMail.classList.remove("classCheckMailHide");
-			varCheckMail.classList.add("classCheckMailShow");
-			varFormMail.reset();
-			setTimeout(function() {
-				varCheckMail.classList.add("classCheckMailHide");
-			},3000);
-		}
+function funcShowProject() {
+	var vShowProject = document.querySelectorAll(".classShowProject");
+	for (var i = 0; i < vShowProject.length; i++) {
+		vShowProject[i].style.display = "none";
 	}
+	vShowProject[vNumCard].style.display = "flex"
+}
 
-// });
+vBtnHideProject.addEventListener("click", function() {
+	funcPauseVideo()
+	// vShowProjects.style.display = "none"
+	vBody.classList.remove("classHideOverflowY");
+	vShowProjects.classList.remove("classProjectsContainerShow");
+});
+
+//Function pause video
+function funcPauseVideo() {
+	var vClassPlayVideo = document.querySelectorAll(".classPlayVideo");
+	for (var vNumMov = 0; vNumMov < vClassPlayVideo.length; vNumMov++) {
+		vClassPlayVideo[vNumMov].pause();
+	}
+}

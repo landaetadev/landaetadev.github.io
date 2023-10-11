@@ -1,25 +1,28 @@
 [
     {
         "jsonTitle": "MuseumApp",
+        "jsonImgScreen" : "XCodeMuseumApp/screenShots/Screen001.webp",
         "jsonTypeFileShow" : "vid",
-        "jsonFileShow" : "iFab2020MuseumApp/videos/VideoDemoMuseumApp/MuseumApp.mp4",
-        "jsonLangs": "#Xcode &nbsp;&nbsp; #JSON &nbsp;&nbsp; #QR &nbsp;&nbsp;",
+        "jsonFileShow" : "XCodeMuseumApp/videos/VideoDemoMuseumApp/MuseumApp.mp4",
+        "jsonLangs": "XCode &nbsp; JSON &nbsp; QR &nbsp;",
         "jsonGitHub": "XCode-iFab2020-MuseumApp",
         "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar."
     },
     {
         "jsonTitle": "Flappy Flying",
+        "jsonImgScreen" : "XCodeFlappyFlyingApp/screenShots/Screen001.webp",
         "jsonTypeFileShow" : "vid",
         "jsonFileShow" : "FlappyFlyingApp/videos/FlappyFlyingApp.mp4",
-        "jsonLangs": "#Xcode &nbsp;&nbsp;",
+        "jsonLangs": "XCode &nbsp;",
         "jsonGitHub": "XCode-FlappyFlying",
         "jsonDescript": "Flappy Flying, la idea del antiguo juego Flappy Bird aprediendo un poco de programación de viedojuegos para iOS."
     },
     {
         "jsonTitle": "Ajedrez 3D",
+        "jsonImgScreen" : "Maya3DChess/screenShots/Screen001.webp",
         "jsonTypeFileShow" : "vid",
         "jsonFileShow" : "iFab2020Maya3DChess/Chess3D.mp4",
-        "jsonLangs": "#Maya3D",
+        "jsonLangs": "Maya3D &nbsp;",
         "jsonGitHub": "",
         "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D."
     }

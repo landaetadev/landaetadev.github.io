@@ -24,6 +24,8 @@
 }
 
 :root {
+    --varUrlBackgrounImage: url("../assets/images/backgrounds/001.webp");
+
     --varAardvarkCafe: 'AardvarkCafe';
     --varFrutiger: 'Frutiger';
     --varRubikRegular: 'RubikRegular';
@@ -43,6 +45,8 @@
     --varIcoColorGitHub: #7DBBE6;
     --varIcoColorLinkedIn: #3B65BE;
     --varIcoColorPDF: #DF2F21;
+
+    --varIcoColorCardOver: #202D59;
 
     --varHabColorHR1 : #873E2F;
     --varHabColorHR2 : #EABE6A;
@@ -69,8 +73,9 @@ body {
     min-height: 600px;
 }
 
-.classTotalContainer {
-    background: url("../assets/images/backgrounds/001.webp");
+.classTotalContainer,
+.classProjectsContainer {
+    background: var(--varUrlBackgrounImage);
 }
 
 .classCover,
@@ -126,6 +131,10 @@ body {
 .classAncle {
     height: var(--varTopBarHeight);
     bottom: -1px;
+}
+
+.classHideOverflowY {
+    overflow-y: hidden;
 }
 
 /*---------CONTENEDOR TOTAL---------*/

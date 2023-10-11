@@ -1,125 +1,232 @@
 /*---------PROJECTS---------*/
-.classSlideshowContainer {
+.classShowCardsContainer {
     border-radius: .5rem;
     padding: .5rem;
     width: 100%;
-    max-width: 650px;
+    max-width: 1000px;
     height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
 }
 
-.classMySlides {
-    display: none;
-    width: 100%;
+.classProjectCard {
+    width: 15rem;
+    height: 25rem;
+    margin: .5rem 1rem;
+    border: 2px solid var(--varBtnsCan2);
+    background-color: var(--varTopBarBackColor);
+    box-shadow: var(--varBtnsCan1) 0px 0px 2px 2px;
+    border-radius: 2rem;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    animation-name: fade;
-    animation-duration: 1.5s;
+    transition: all 0.5s ease;
 }
 
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+.classProjectCard:hover{
+    background-color: var(--varIcoColorCardOver);
+    transform: scale(1.05, 1.05);
 }
 
-.classMySlidesTitle {
+.classCardTitle {
+    height: 2rem;
+    font-family: var(--varRubikRegular);
     color: var(--varFontColor);
-    font-family: var(--varRubikSemiBold);
-    padding: 0 0 1rem 0;
-    font-size: 22px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classCardImage {
+    width: 15rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.classCardImage img {
+    max-width: 90%;
+    max-height: 95%;
+}
+
+.classCardLang {
+    height: 2rem;
+    font-family: var(--varRubikRegular);
+    color: var(--varFontColor);
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+
+.classProjectsContainer {
     width: 100%;
+    height: 100vh;
+    z-index: 995;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    transition:all 500ms ease-in-out;
+}
+
+.classProjectsContainerShow {
+    right: 0%;
+}
+
+.classBtnHideProject {
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classBtnHideProject svg {
+    fill: var(--varBtnsCan1);
+}
+
+.classShowProjectContainer {
+    width: 100%;
+    max-width:800px;
+    height: fit-content;
+}
+.classShowProject {
+    
+    height: fit-content;
+    display: block;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.classShowProjectTitle,
+.classShowFile,
+.classShowProjectLang,
+.classShowProjectDescript {
+    margin-top: 10px;
+    width: 100%;
+    color: var(--varFontColor);
+}
+
+.classShowProjectTitle {
+    font-family: var(--varRubikSemiBold);
+    font-size: 24px;
     text-align: center;
 }
 
-.classFileShow {
+.classShowFile {
     background-color: black;
-    width: 100%;
-    border-radius: .3rem;
+    padding: 1rem 0;
 }
 
-.classMySlidesLangs {
-    color: var(--varFontColor);
-    font-family: var(--varRubikSemiBold);
-    font-size: 16px;
-    width: 100%;
-    height: 3.5rem;
-    margin: 0 .5rem;
+.classShowProjectLang {
+    padding: .5rem;
+    font-family: var(--varRubikRegular);
+    font-size: 18px;
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
-
-.classMySlidesLangs a {
+.classShowProjectLang a {
     background-color: var(--varTopBarBackColor);
-    color: #fff;
-    font-size: 18px;
+    color: var(--varFontColor);
     font-family: var(--varRubikRegular);
+    box-shadow: 0 3px 0 #0059b3;
+    /* font-size: 18px; */
     width: 7rem;
     height: 2rem;
-    border-radius: .75rem;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 3px 0 #0059b3;
 }
 
-.classMySlidesLangs svg {
+.classShowProjectLang svg {
     fill: white;
     width: 20px;
+    height: 20px;
 }
 
-.classMySlidesDescrip {
-    color: var(--varFontColor);
+.classShowProjectDescript {
     font-family: var(--varRubikRegular);
-    width: 100%;
-    min-height: 6rem;
-    margin: 1rem 0 .5rem 0;
-}
-
-.classBtnsPrevNext {
-    text-align: center;
-    margin: 1rem 0 0 0;
-}
-
-.classBtnPrev, .classBtnNext {
-    border: 3px solid var(--varBtnsCan1);
-    background-color: var(--varBtnsCan2);
-    fill: var(--varBtnsCan1);
-    border-radius: 100%;
-    font-size: 2rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-}
-
-.classBtnPrev:hover,
-.classBtnNext:hover {
-    background-color: var(--varBtnsCanHover);
-}
-
-.classBtnPrev {
-padding: 0 2px 0 0;
-margin-right: .5rem;
-}
-.classBtnNext {
-padding: 0 0 0 2px;
-margin-left: .5rem;
+    font-size: 18px;
+    padding: 0 .5rem 0 .5rem;
+    line-height: 1.5;
 }
 
 /*---------RESPONSIVE---------*/
-@media (max-width:320px) {
+@media (max-width:900px) {
+    .classShowProjectTitle {
+        font-size: 24px;
+    }
+    .classShowProjectLang,
+    .classShowProjectDescript {
+        font-size: 20px;
+    }
+} 
 
-    .classMySlidesTitle {
-        font-size: 16px;
+@media (max-width:600px) {
+    .classProjectCard {
+        width: 15rem;
+        height: 20rem;
+    }
+    .classCardImage {
+        width: 15rem;
+        height: 15rem;
+    }
+    .classShowProjectTitle {
+        font-size: 24px;
+    }
+    .classShowProjectLang,
+    .classShowProjectDescript {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:414px) {
+
+    .classBtnHideProject {
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
     }
     
-    .classMySlidesLangs {
-        font-size: 12px;
+    .classBtnHideProject svg {
+        width: 3rem;
     }
 
-    .classMySlidesDescrip {
-        font-size: 14px;
+    .classProjectCard {
+        width: 15rem;
+        height: 20rem;
     }
-
+    .classCardImage {
+        width: 15rem;
+        height: 15rem;
+    }
+    .classShowProjectTitle {
+        font-size: 22px;
+    }
+    .classShowProjectLang,
+    .classShowProjectDescript {
+        background-color: aliceblue;
+        font-size: 16px;
+    }
 }
+
 /*---------RESPONSIVE---------*/
 

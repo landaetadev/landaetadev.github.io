@@ -64,7 +64,7 @@
 
 
 .classProjectsContainer {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: 995;
     position: fixed;
@@ -81,21 +81,24 @@
 }
 
 .classBtnHideProject {
-    width: 4rem;
-    height: 4rem;
+    width: 100vw;
+    max-width: 1200px;
+    position: absolute;
+    top: 0;
+}
+
+.classBtnHideProject button {
     background-color: white;
     border: 3px solid red;
     border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 4rem;
+    height: 4rem;
     margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.classBtnHideProject svg {
+.classBtnHideProject button svg {
+    width: 3rem;
+    height: 3rem;
     fill: var(--varBtnsCan1);
 }
 
@@ -105,7 +108,6 @@
     height: fit-content;
 }
 .classShowProject {
-    
     height: fit-content;
     display: block;
     flex-direction: column;
@@ -223,7 +225,6 @@
     }
     .classShowProjectLang,
     .classShowProjectDescript {
-        background-color: aliceblue;
         font-size: 16px;
     }
 }

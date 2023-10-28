@@ -15,7 +15,16 @@
         "jsonFileShow" : "FlappyFlyingApp/videos/FlappyFlyingApp.mp4",
         "jsonLangs": "XCode &nbsp;",
         "jsonGitHub": "XCode-FlappyFlying",
-        "jsonDescript": "Flappy Flying, la idea del antiguo juego Flappy Bird aprediendo un poco de programación de viedojuegos para iOS."
+        "jsonDescript": "Flappy Flying, la idea del juego Flappy Bird aprediendo un poco de programación de viedojuegos para iOS."
+    },
+    {
+        "jsonTitle": "Breakout",
+        "jsonImgScreen" : "UnityBreakout/screenShots/Screen001.webp",
+        "jsonTypeFileShow" : "vid",
+        "jsonFileShow" : "UnityBreakout/videos/Breakout.mp4",
+        "jsonLangs": "Unity &nbsp;",
+        "jsonGitHub": "Unity-Breakout.2021.3.14f1",
+        "jsonDescript": "Breakout, antiguo videojuego de Atari, diseñado en Unity para disfrutarlo en PC."
     },
     {
         "jsonTitle": "Ajedrez 3D",

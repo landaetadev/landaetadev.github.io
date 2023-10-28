@@ -27,23 +27,23 @@ window.onload = (function() {
 			vHeader.classList.remove("classShowHeader");
 		}
 	};
-});
 
-//SHOW-HIDE VERTICAL MENU
-vBtnMenu.addEventListener ("click", () => {
-	if (vCounter == 0) {
-		funcJsShowMenuNav();
-	} else {
-		funcJsHideMenuNav();
-	}
-});
-
-//HIDE MENU WHEN CLICK
-for (let i = 0; i < vBtnMenuOpt.length; i++) {
-	vBtnMenuOpt[i].addEventListener("click", function() {
-		funcJsHideMenuNav();
+	//SHOW-HIDE VERTICAL MENU
+	vBtnMenu.addEventListener ("click", () => {
+		if (vCounter == 0) {
+			funcJsShowMenuNav();
+		} else {
+			funcJsHideMenuNav();
+		}
 	});
-};
+
+	//HIDE MENU WHEN CLICK
+	for (let i = 0; i < vBtnMenuOpt.length; i++) {
+		vBtnMenuOpt[i].addEventListener("click", function() {
+			funcJsHideMenuNav();
+		});
+	};
+});
 
 //SHOW-HIDE SLIDER
 function funcJsShowMenuNav() {
@@ -75,7 +75,7 @@ function ReadTable(JSONData) {
 	vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONData[vJSONi].jsonTitle}</h3>`;
 
 	vMakeCardHTML +=    `<div class="classCardImage">`;
-	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONData[vJSONi].jsonImgScreen}" class="classFileCard">`;
+	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONData[vJSONi].jsonImgScreen}" alt="Imagen App Video" class="classFileCard">`;
 	vMakeCardHTML +=    `</div>`;
 
 	vMakeCardHTML +=    `<p class="classCardLang">${JSONData[vJSONi].jsonLangs}</p>`;

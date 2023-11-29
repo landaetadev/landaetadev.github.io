@@ -89,10 +89,12 @@ function ReadTable(JSONData) {
 	vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONData[vJSONi].jsonTitle}</h3>`;
 
 	if (JSONData[vJSONi].jsonTypeFileShow == "vid") {
-		vMakeProjectHTML += `<video controls class="classShowFile classPlayVideo"> <source src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" type="video/mp4"> </video>`;
+		vMakeProjectHTML += `<video controls class="classShowFile classPlayVideo">`;
+		vMakeProjectHTML += `<source src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" type="video/mp4" loading="lazy" alt="Video Proyecto">`;
+		vMakeProjectHTML += `</video>`;
 	}
 	if (JSONData[vJSONi].jsonTypeFileShow == "img") {
-		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" >`;
+		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" alt="Imagen Proyecto">`;
 	}
 
 	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONData[vJSONi].jsonLangs} &nbsp;&nbsp;&nbsp;`;
@@ -105,7 +107,7 @@ function ReadTable(JSONData) {
 		}
 	vMakeProjectHTML += 	`</p>`;
 
-	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}</p>`;
+	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}></p>`;
 	vMakeProjectHTML += `</div>`;
 
 	vShowProjectContainer.innerHTML = vMakeProjectHTML;

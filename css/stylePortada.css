@@ -56,12 +56,27 @@
 }
 
 .classCoverIcons {
-    width: 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+}
+
+.classCoverIcons a {
+    margin: 0 1rem;
+    width: 8rem;
+    height: calc(var(--varTopBarHeight) * .75);
+    border: 3px solid var(--varBtnsCan1);
+    background-color: var(--varBtnsCan2);
+    color: var(--varBtnsCan1);
+    font-family: var(--varRubikRegular);
+    border-radius: 2rem;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .classCoverIcons a:hover {
+    background-color: var(--varBtnsCanHover);
     transition: transform .5s ease;
     transform: scale(1.25);
 }
@@ -70,23 +85,20 @@
 .btnLinkedIn svg,
 .btnDocCV svg,
 .classArrowDown svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-.btnGitHub svg {
-    fill: var(--varIcoColorGitHub);
-}
-.btnLinkedIn svg {
-    fill: var(--varIcoColorLinkedIn);
-}
-.btnDocCV svg{
-    fill: var(--varIcoColorPDF);
+.btnGitHub svg,
+.btnLinkedIn svg,
+.btnDocCV svg {
+    fill: var(--varBtnsCan1);
 }
 
 .classArrowDown {
     fill: red;
-    margin-top: 10rem;
+    position: absolute;
+    bottom: 4rem;
     animation: animArrow 2.5s ease-in-out infinite;
 }
 
@@ -114,6 +126,7 @@
 
 /*---------RESPONSIVE---------*/
 
+
 @media (max-width:900px) {
     .classCoverFoto{
         width: 10rem;
@@ -130,9 +143,25 @@
         height: 2rem;
     }
 
-    .classArrowDown {
-        margin-top: 8rem;
+    .classCoverIcons a {
+        margin: 0 1rem;
+        border-radius: 2rem;
+        font-size: 14px;
     }
+    .btnGitHub svg,
+    .btnLinkedIn svg,
+    .btnDocCV svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .classArrowDown svg {
+        width: 1.5rem;
+    }
+
+    /* .classArrowDown {
+        margin-top: 8rem;
+    } */
 } 
 
 @media (max-width:600px) {
@@ -150,13 +179,30 @@
         font-size: 14px;
     }
 
-    .classArrowDown {
-        margin-top: 8rem;
+    .classCoverIcons {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .classCoverIcons a {
+        margin: 5px 1rem;
+        border-radius: 2rem;
+        font-size: 14px;
+    }
+    .btnGitHub svg,
+    .btnLinkedIn svg,
+    .btnDocCV svg {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .classArrowDown svg {
         width: 1.5rem;
     }
+
+    /* .classArrowDown {
+        margin-top: 8rem;
+    } */
+
 }
 
 @media (max-width:414px) {
@@ -174,9 +220,25 @@
         font-size: 14px;
     }
 
-    .classArrowDown {
-        margin-top: 6rem;
+    .classCoverIcons {
+        flex-direction: column;
+        margin: 10px 0;
     }
+    .classCoverIcons a {
+        margin: 5px 1rem;
+        border-radius: 2rem;
+        font-size: 14px;
+    }
+    .btnGitHub svg,
+    .btnLinkedIn svg,
+    .btnDocCV svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* .classArrowDown {
+        margin-top: 6rem;
+    } */
 
 }
 
@@ -197,12 +259,34 @@
         width: 1.5rem;
         height: 1.5rem;
     }
-    
 
     .classArrowDown {
         margin-top: 4rem;
     }
 
+    .classCoverIcons {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .classCoverIcons a {
+        margin: 5px 1rem;
+        border-radius: 2rem;
+        font-size: 14px;
+    }
+
+    .btnGitHub svg,
+    .btnLinkedIn svg,
+    .btnDocCV svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+}
+
+@media (max-width:375) and (max-height:667px) {
+    .classFotoDatos {
+        margin-bottom: 0;
+    }
 }
 
 /*---------RESPONSIVE---------*/

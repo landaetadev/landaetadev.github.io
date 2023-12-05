@@ -15,7 +15,7 @@
 .classProjectCard {
     width: 13rem;
     height: 22rem;
-    margin: .5rem 1rem;
+    margin: 1rem 1rem;
     border: 2px solid var(--varBtnsCan2);
     background-color: var(--varTopBarBackColor);
     box-shadow: var(--varBtnsCan1) 0px 0px 2px 2px;
@@ -226,6 +226,10 @@
     .classShowProjectLang,
     .classShowProjectDescript {
         font-size: 16px;
+    }
+
+    .classBtnHideProject {
+        left: 0;
     }
 }
 

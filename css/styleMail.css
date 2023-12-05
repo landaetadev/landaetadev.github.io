@@ -100,7 +100,7 @@
     font-size: 14px;
     border-radius: 2rem;
     width: 120px;
-    height: calc(var(--varTopBarHeight) * 0.8);
+    height: calc(var(--varTopBarHeight) * 0.75);
     cursor: pointer;
 }
 .classBtnSendMail:hover{

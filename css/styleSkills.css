@@ -22,9 +22,10 @@
   color: var(--varHabColorHR1);
   box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
   border-radius: 2rem;
+  min-width: 210px;
   width: 230px;
   height: 260px;
-  margin: .5rem;
+  margin: 1rem;
 }
 
   

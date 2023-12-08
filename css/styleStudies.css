@@ -40,19 +40,28 @@
 
 .curso p {
     font-family: var(--varRubikRegular);
-    font-size: 18px;
+    font-size: 20px;
     margin-left: .5rem;
-    line-height : 1.5rem;
+    line-height : 2rem;
 }
 
 /*---------RESPONSIVE---------*/
+@media (max-width:700px) {
+    .curso p {
+        font-size: 16px;
+    }
+}
+
 @media (max-width:600px) {
     .curso p {
-        font-size: 17px;
+        font-size: 15px;
     }
 }
 
 @media (max-width:550px) {
+    .curso {
+        width: 90vw;
+    }
     .curso p {
         font-size: 15px;
     }
@@ -63,17 +72,23 @@
     .cursos hr {
         width: 6px;
     }
+
+
 }
 
 @media (max-width:500px) {
     .curso p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
+
 @media (max-width:414px) {
+    .curso {
+        width: 90vw;
+    }
     .curso p {
-        font-size: 14px;
+        font-size: 13px;
     }
     .point {
         width: 13px;
@@ -101,6 +116,9 @@
 }
 
 @media (max-width:320px) {
+    .curso {
+        width: 90vw;
+    }
     .curso p {
         font-size: 10px;
     }

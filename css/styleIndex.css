@@ -83,9 +83,8 @@ body {
 .classEstudios,
 .classHabilidades,
 .classProjects {
-    /* width: 100%; */
     position: relative;
-    padding: 1rem;
+    padding: 0 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,22 +98,18 @@ body {
     background: var(--varLineColor);
 }
 
-.classTituloH2,
-.classTituloH3 {
+.classTituloH2 {
     font-family: var(--varRubikSemiBold);
     color: var(--varFontColor);
-}
-
-.classTituloH2 {
-    font-size: 28px;
-    margin: 0 0 .5rem 0;
+    font-size: 30px;
+    margin: 0 0 2rem 0;
 }
 
 .classCoverHi,
 .classHabilidadesIntro,
 .classMySlidesDescrip {
-    font-size: 18px;
-    line-height : 1.5rem;
+    font-size: 20px;
+    line-height : 2rem;
 }
 
 /*---------CONTENEDOR TOTAL---------*/

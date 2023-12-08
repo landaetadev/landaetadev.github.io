@@ -71,7 +71,7 @@
 }
 
 .classBtnMenuOpt {
-    margin-left: .5rem;
+    margin-left: 1rem;
 }
 
 .classBtnMenu,
@@ -122,7 +122,7 @@
 }
 /*-------------------------*/
 
-@media (max-width:900px) {
+@media (max-width:1000px) {
 
     .classBtnMenu {
         visibility: visible;

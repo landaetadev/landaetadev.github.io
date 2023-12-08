@@ -18,7 +18,7 @@
 
 .classFotoDatos {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +30,7 @@
     border: 3px solid white;
     width: 13rem;
     height: auto;
-    margin: .5rem;
+    margin: -2rem 1rem 0 0;
     aspect-ratio: 1 / 1;
 }
 
@@ -83,11 +83,11 @@
 
 .btnGitHub svg,
 .btnLinkedIn svg,
-.btnDocCV svg,
-.classArrowDown svg {
+.btnDocCV svg {
     width: 1.5rem;
     height: 1.5rem;
 }
+
 
 .btnGitHub svg,
 .btnLinkedIn svg,
@@ -95,6 +95,10 @@
     fill: var(--varBtnsCan1);
 }
 
+.classArrowDown svg {
+    width: 2rem;
+    height: 2rem;
+}
 .classArrowDown {
     fill: red;
     position: absolute;

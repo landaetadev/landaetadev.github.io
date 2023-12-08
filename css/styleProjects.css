@@ -149,13 +149,17 @@
     color: var(--varFontColor);
     font-family: var(--varRubikRegular);
     box-shadow: 0 3px 0 #0059b3;
-    /* font-size: 18px; */
     width: 7rem;
     height: 2rem;
     border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.classShowProjectLang a:hover {
+    transition: transform .5s ease;
+    transform: scale(1.25);
 }
 
 .classShowProjectLang svg {

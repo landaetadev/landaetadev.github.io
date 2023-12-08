@@ -107,7 +107,7 @@ function ReadTable(JSONData) {
 		}
 	vMakeProjectHTML += 	`</p>`;
 
-	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}></p>`;
+	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}</p>`;
 	vMakeProjectHTML += `</div>`;
 
 	vShowProjectContainer.innerHTML = vMakeProjectHTML;

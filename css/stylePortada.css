@@ -159,9 +159,6 @@
         width: 1.5rem;
     }
 
-    /* .classArrowDown {
-        margin-top: 8rem;
-    } */
 } 
 
 @media (max-width:600px) {
@@ -199,10 +196,6 @@
         width: 1.5rem;
     }
 
-    /* .classArrowDown {
-        margin-top: 8rem;
-    } */
-
 }
 
 @media (max-width:414px) {
@@ -235,10 +228,6 @@
         width: 1.5rem;
         height: 1.5rem;
     }
-
-    /* .classArrowDown {
-        margin-top: 6rem;
-    } */
 
 }
 

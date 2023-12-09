@@ -201,6 +201,10 @@
 }
 
 @media (max-width:414px) {
+    .classHeader {
+        padding: 0 1rem;
+    }
+    
     .classBtnsMenuOptions ul li a{
         height: 3.5rem;
         font-size: 20px;
@@ -223,6 +227,7 @@
 }
 
 @media (max-width:320px) {
+
     .classLogoLink {
         height: 85%;
     }

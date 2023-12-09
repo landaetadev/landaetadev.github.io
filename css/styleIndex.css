@@ -84,7 +84,7 @@ body {
 .classHabilidades,
 .classProjects {
     position: relative;
-    padding: 0 5rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -10,7 +10,7 @@ var vBtnMenuOpt = document.querySelectorAll(".classBtnMenuOpt");
 //VARIABLES SLIDER
 var vShowCards = document.querySelector(".classShowCardsContainer");
 var vMakeCardHTML = ``;
-let letProjectsFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/FilesProjects/"
+let letProjectsFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/FilesProjects/"
 let letGitHubFolder = "https://github.com/landaetadev/"
 var vShowProjects = document.querySelector(".classProjectsContainer");
 var vBtnHideProject = document.querySelector(".classBtnHideProject");

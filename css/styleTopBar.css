@@ -62,16 +62,13 @@
     justify-content: center;
     height: 100%;
     padding: 0;
+    gap: 0 .5rem;
 }
 
 .classBtnsMenuOptions ul li {
     display: flex;
     align-items: center;
     height: 100%;
-}
-
-.classBtnMenuOpt {
-    margin-left: 1rem;
 }
 
 .classBtnMenu,

@@ -51,17 +51,17 @@
 
 .classCoverHi {
     font-family: var(--varRubikRegular);
-    padding: 1.5rem 0;
+    padding-bottom: 3rem;
     line-height: 1.5;
 }
 
 .classCoverIcons {
     display: flex;
     justify-content: left;
+    gap: 0 1rem;
 }
 
 .classCoverIcons a {
-    margin: 0 1rem;
     width: 8rem;
     height: calc(var(--varTopBarHeight) * .75);
     border: 3px solid var(--varBtnsCan1);

@@ -10,12 +10,12 @@
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
+    gap: 2rem;
 }
 
 .classProjectCard {
     width: 13rem;
     height: 22rem;
-    margin: 1rem 1rem;
     border: 2px solid var(--varBtnsCan2);
     background-color: var(--varTopBarBackColor);
     box-shadow: var(--varBtnsCan1) 0px 0px 2px 2px;

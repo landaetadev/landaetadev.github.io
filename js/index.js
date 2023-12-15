@@ -82,7 +82,6 @@ function ReadTable(JSONData) {
 
 	vMakeCardHTML +=	`</a>`;
 	vMakeCardHTML += `</div>`;
-	vShowCards.innerHTML = vMakeCardHTML;
 
 	//Make Project HTML
 	vMakeProjectHTML += `<div class="classShowProject">`;
@@ -110,9 +109,9 @@ function ReadTable(JSONData) {
 	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}</p>`;
 	vMakeProjectHTML += `</div>`;
 
-	vShowProjectContainer.innerHTML = vMakeProjectHTML;
-
 	}
+	vShowCards.innerHTML = vMakeCardHTML;
+	vShowProjectContainer.innerHTML = vMakeProjectHTML;
 
 }
 

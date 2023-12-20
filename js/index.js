@@ -96,13 +96,20 @@ function ReadTable(JSONData) {
 		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" alt="Imagen Proyecto">`;
 	}
 
-	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONData[vJSONi].jsonLangs} &nbsp;&nbsp;&nbsp;`;
+	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONData[vJSONi].jsonLangs}`;
 		if (JSONData[vJSONi].jsonGitHub != "") {
-			vMakeProjectHTML += `<a href="${letGitHubFolder}${JSONData[vJSONi].jsonGitHub}" target="_blank" title="GitHub">
+			vMakeProjectHTML += `<a href="${JSONData[vJSONi].jsonGitHub}" target="_blank" title="GitHub">
 			<svg>
-				<use href="./assets/icons.svg#GitHubCircle">
+				<use href="./assets/icons.svg#linkGitHub">
 			</svg>
-			&nbsp;&nbsp;GitHub</a>`;
+			GitHub</a>`;
+		}
+		if (JSONData[vJSONi].jsonWeb != "") {
+			vMakeProjectHTML += `<a href="${JSONData[vJSONi].jsonWeb}" target="_blank" title="WebAddress">
+			<svg>
+				<use href="./assets/icons.svg#linkWeb">
+			</svg>
+			Web</a>`;
 		}
 	vMakeProjectHTML += 	`</p>`;
 

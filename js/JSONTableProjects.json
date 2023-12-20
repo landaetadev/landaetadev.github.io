@@ -25,7 +25,7 @@
         "jsonTypeFileShow" : "vid",
         "jsonFileShow" : "UnityBreakout/videos/Breakout.webm",
         "jsonLangs": "Unity",
-        "jsonGitHub": "Unity-Breakout.2021.3.14f1",
+        "jsonGitHub": "Unity.2021.3.14f1-Breakout",
         "jsonWeb": "",
         "jsonDescript": "Breakout, antiguo videojuego de Atari, diseñado en Unity para disfrutarlo en PC."
     },

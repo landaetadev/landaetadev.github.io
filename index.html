@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./css/styleMail.css">
 
     <!--carga archivos JS-->
-    <script defer src="./js/JSONTableProjects.json" type="application/json"></script>
     <script defer src="./js/index.js" type="application/javascript"></script>
+    <script defer src="./js/showSkills.js" type="application/javascript"></script>
     <script defer src="./js/sendMail.js" type="application/javascript"></script>
     
     <title>LandaetaDev</title>
@@ -40,7 +40,7 @@
 
             <button class="classBtnMenu" id="idBtnMenu">
                 <svg>
-                    <use href="./assets/icons.svg#menu">
+                    <use href="./assets/icons.svg#icoMenu">
                 </svg> &nbsp; 
                 Menu
             </button>
@@ -49,7 +49,7 @@
                 <ul>
                     <li><a href="./index.html#idAncleHome" class="classBtnMenuOpt">
                         <svg>
-                            <use href="./assets/icons.svg#home">
+                            <use href="./assets/icons.svg#icoHome">
                         </svg> &nbsp; 
                         Inicio</a>
                     </li>
@@ -57,29 +57,29 @@
 
                     <li><a href="./index.html#idAncleProjects" class="classBtnMenuOpt">
                         <svg>
-                            <use href="./assets/icons.svg#proyectos">
+                            <use href="./assets/icons.svg#icoProyectos">
                         </svg> &nbsp; 
                         Proyectos</a></li>
                     <div class="classHR"></div>
 
                     <li><a href="./index.html#idAncleSkills" class="classBtnMenuOpt">
                         <svg>
-                            <use href="./assets/icons.svg#habilidades">
+                            <use href="./assets/icons.svg#icoHabilidades">
                         </svg> &nbsp; 
                         Habilidades</a></li>
                     <div class="classHR"></div>
 
                     <li><a href="./index.html#idAncleStudies" class="classBtnMenuOpt">
                         <svg>
-                            <use href="./assets/icons.svg#estudios">
+                            <use href="./assets/icons.svg#icoFormacion">
                         </svg> &nbsp; 
-                        Estudios</a>
+                        Formación</a>
                     </li>
                     <div class="classHR"></div>
 
                     <li><a href="./index.html#idAncleContact" class="classBtnMenuOpt">
                         <svg>
-                            <use href="./assets/icons.svg#contacto">
+                            <use href="./assets/icons.svg#icoContacto">
                         </svg> &nbsp; 
                         Contacto</a></li>
                     
@@ -111,21 +111,21 @@
                         <div class="classCoverIcons">
                             <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
                                 <svg>
-                                    <use href="./assets/icons.svg#GitHub">
+                                    <use href="./assets/icons.svg#icoGitHub">
                                 </svg>
                                 &nbsp GitHub
                             </a>
 
                             <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
                                 <svg>
-                                    <use href="./assets/icons.svg#LinkedIn">
+                                    <use href="./assets/icons.svg#icoLinkedIn">
                                 </svg>
                                 &nbsp LinkedIn
                             </a>
                             
                             <a href="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
                                 <svg>
-                                    <use href="./assets/icons.svg#CVIcon">
+                                    <use href="./assets/icons.svg#icoCV">
                                 </svg>
                                 &nbsp Curriculum
                             </a>
@@ -161,7 +161,7 @@
 
                 <div class="classBtnHideProject">
                     <button >
-                        <svg><use href="./assets/icons.svg#xClose"></svg>
+                        <svg><use href="./assets/icons.svg#icoBtnClose"></svg>
                     </button>
                 </div>
 
@@ -180,65 +180,6 @@
                 proyectos en el ámbito informático con habilidades en diferentes áreas.</p>
 
             <div class="classHabilidadesFlex">
-                <div class="classHabilidad">
-                    <div class="classHabiIcono">
-                        <svg>
-                            <use href="./assets/icons.svg#desktop">
-                        </svg>
-                    </div>
-                    <h3 class="classHabiNombre">Diseño Web</h3>
-                    <p class="classHabiDetalles">HTML - CSS - JS<br> Bootstrap - Wordpress<br> Prestashop</p>
-                </div>
-
-                <div class="classHabilidad">
-                    <div class="classHabiIcono">
-                        <svg>
-                            <use href="./assets/icons.svg#mobile">
-                        </svg>
-                    </div>
-                    <h3 class="classHabiNombre">Programación Movil</h3>
-                    <p class="classHabiDetalles">Xcode - Android Studio</p>
-                </div>
-
-                <div class="classHabilidad">
-                    <p class="classHabiIcono">
-                        <svg>
-                            <use href="./assets/icons.svg#laptopCode">
-                        </svg>
-                    </p>
-                    <h3 class="classHabiNombre">Programación</h3>
-                    <p class="classHabiDetalles">Swift - PHP - Python</p>
-                </div>
-
-                <div class="classHabilidad">
-                    <p class="classHabiIcono">
-                        <svg>
-                            <use href="./assets/icons.svg#data">
-                        </svg>
-                    </p>
-                    <h3 class="classHabiNombre">Manejo de datos</h3>
-                    <p class="classHabiDetalles">MySQL - JSON</p>
-                </div>
-
-                <div class="classHabilidad">
-                    <p class="classHabiIcono">
-                        <svg>
-                            <use href="./assets/icons.svg#network">
-                        </svg>
-                    </p>
-                    <h3 class="classHabiNombre">Servidores y Redes</h3>
-                    <p class="classHabiDetalles">Configuración - Administración<br> Unix - Windows Server</p>
-                </div>
-
-                <div class="classHabilidad">
-                    <p class="classHabiIcono">
-                        <svg>
-                            <use href="./assets/icons.svg#Unity">
-                        </svg>
-                    </p>
-                    <h3 class="classHabiNombre">Diseño 3D</h3>
-                    <p class="classHabiDetalles">Maya 3D - Unity - OnShape</p>
-                </div>
             </div>
 
         <a class="classAncle" id="idAncleStudies"></a>
@@ -334,14 +275,14 @@
                 <div class="classSendMail">
                     <div class="classCheckMail">
                         <svg>
-                            <use href="./assets/icons.svg#checkMail">
+                            <use href="./assets/icons.svg#icoCheckMail">
                         </svg>
                         <p>Gracias!!</p>
                     </div>
                     
                     <button type="submit" class="classBtnSendMail">
                         <svg>
-                            <use href="./assets/icons.svg#sentMail">
+                            <use href="./assets/icons.svg#icoSentMail">
                         </svg>
                         Enviar
                     </button>
@@ -349,7 +290,7 @@
 
                 <div class="classMailAddress">
                     <svg>
-                        <use href="./assets/icons.svg#contacto">
+                        <use href="./assets/icons.svg#icoContacto">
                     </svg>
                     &nbsp; <p>orlandolandaeta@gmail.com</p>
                 </div>

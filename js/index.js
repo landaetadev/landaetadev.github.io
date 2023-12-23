@@ -1,5 +1,6 @@
 var vCounter = 0;
 var vBody = document.querySelector("body");
+let letIconsFile = "./assets/icons.svg#"
 
 //VARIABLES TOPBAR
 var vHeader = document.querySelector(".classHeader");
@@ -8,14 +9,14 @@ var vBtnsMenuOptions = document.querySelector(".classBtnsMenuOptions");
 var vBtnMenuOpt = document.querySelectorAll(".classBtnMenuOpt");
 
 //VARIABLES SLIDER
-var vShowCards = document.querySelector(".classShowCardsContainer");
-var vMakeCardHTML = ``;
 let letProjectsFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/FilesProjects/"
 let letGitHubFolder = "https://github.com/landaetadev/"
 var vShowProjects = document.querySelector(".classProjectsContainer");
 var vBtnHideProject = document.querySelector(".classBtnHideProject");
 var vShowProjectContainer = document.querySelector(".classShowProjectContainer");
 var vMakeProjectHTML = ``;
+var vShowCards = document.querySelector(".classShowCardsContainer");
+var vMakeCardHTML = ``;
 
 //SHOW-HIDE TOPBAR
 window.onload = (function() {
@@ -60,52 +61,52 @@ function funcJsHideMenuNav() {
 //SHOW PROJECTS
 fetch('./js/JSONTableProjects.json')
 .then(response => response.json())
-.then(JSONData => {
-	ReadTable(JSONData);
+.then(JSONDataProjects => {
+	ReadTableProjects(JSONDataProjects);
 });
 
-function ReadTable(JSONData) {
+function ReadTableProjects(JSONDataProjects) {
 
-	for (var vJSONi = 0; vJSONi < JSONData.length; vJSONi++) {
+	for (var vJSONi = 0; vJSONi < JSONDataProjects.length; vJSONi++) {
 
 	//Make Project Card HTML
 	vMakeCardHTML += `<div class="classProjectCard">`;
 	vMakeCardHTML +=	`<a href="javascript:clickCard(vNumCard = ${vJSONi})">`;
 
-	vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONData[vJSONi].jsonTitle}</h3>`;
+	vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
 
 	vMakeCardHTML +=    `<div class="classCardImage">`;
-	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONData[vJSONi].jsonImgScreen}" alt="Imagen App Video" class="classFileCard">`;
+	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonImgScreen}" alt="Imagen App Video" class="classFileCard">`;
 	vMakeCardHTML +=    `</div>`;
 
-	vMakeCardHTML +=    `<p class="classCardLang">${JSONData[vJSONi].jsonLangs}</p>`;
+	vMakeCardHTML +=    `<p class="classCardLang">${JSONDataProjects[vJSONi].jsonLangs}</p>`;
 
 	vMakeCardHTML +=	`</a>`;
 	vMakeCardHTML += `</div>`;
 
 	//Make Project HTML
 	vMakeProjectHTML += `<div class="classShowProject">`;
-	vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONData[vJSONi].jsonTitle}</h3>`;
+	vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
 
-	if (JSONData[vJSONi].jsonTypeFileShow == "vid") {
+	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "vid") {
 		vMakeProjectHTML += `<video controls class="classShowFile classPlayVideo">`;
-		vMakeProjectHTML += `<source src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" type="video/mp4" loading="lazy" alt="Video Proyecto">`;
+		vMakeProjectHTML += `<source src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}" type="video/mp4" loading="lazy" alt="Video Proyecto">`;
 		vMakeProjectHTML += `</video>`;
 	}
-	if (JSONData[vJSONi].jsonTypeFileShow == "img") {
-		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONData[vJSONi].jsonFileShow}" alt="Imagen Proyecto">`;
+	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "img") {
+		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}" alt="Imagen Proyecto">`;
 	}
 
-	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONData[vJSONi].jsonLangs}`;
-		if (JSONData[vJSONi].jsonGitHub != "") {
-			vMakeProjectHTML += `<a href="${JSONData[vJSONi].jsonGitHub}" target="_blank" title="GitHub">
+	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONDataProjects[vJSONi].jsonLangs}`;
+		if (JSONDataProjects[vJSONi].jsonGitHub != "") {
+			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonGitHub}" target="_blank" title="GitHub">
 			<svg>
-				<use href="./assets/icons.svg#linkGitHub">
+				<use href="./assets/icons.svg#icoLinkWeb">
 			</svg>
 			GitHub</a>`;
 		}
-		if (JSONData[vJSONi].jsonWeb != "") {
-			vMakeProjectHTML += `<a href="${JSONData[vJSONi].jsonWeb}" target="_blank" title="WebAddress">
+		if (JSONDataProjects[vJSONi].jsonWeb != "") {
+			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonWeb}" target="_blank" title="WebAddress">
 			<svg>
 				<use href="./assets/icons.svg#linkWeb">
 			</svg>
@@ -113,7 +114,7 @@ function ReadTable(JSONData) {
 		}
 	vMakeProjectHTML += 	`</p>`;
 
-	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONData[vJSONi].jsonDescript}</p>`;
+	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONDataProjects[vJSONi].jsonDescript}</p>`;
 	vMakeProjectHTML += `</div>`;
 
 	}
@@ -123,7 +124,6 @@ function ReadTable(JSONData) {
 }
 
 function clickCard(vNumCard) {
-	// vShowProjects.style.display = "flex"
 	funcShowProject()
 	vBody.classList.add("classHideOverflowY");
 	vShowProjects.classList.add("classProjectsContainerShow");
@@ -139,7 +139,6 @@ function funcShowProject() {
 
 vBtnHideProject.addEventListener("click", function() {
 	funcPauseVideo()
-	// vShowProjects.style.display = "none"
 	vBody.classList.remove("classHideOverflowY");
 	vShowProjects.classList.remove("classProjectsContainerShow");
 });

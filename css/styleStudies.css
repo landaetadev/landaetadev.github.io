@@ -2,25 +2,17 @@
     position: relative;
     display: flex;
     flex-direction: column;
-}
 
-.cursos hr {
-    position:absolute;
-    margin: 3px 0 0 5px;
-    background-color: var(--varHabColorHR2);
-    border: 2px solid var(--varHabColorHR1);
-    border-radius: .5rem;
-    width: 6px;
-    height: 96%;
-    z-index: 1;
-}
-
-.curso {
-    display: flex;
-    flex-direction: row;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 20px;
+    & hr {
+        position:absolute;
+        margin: 3px 0 0 5px;
+        background-color: var(--varHabColorHR2);
+        border: 2px solid var(--varHabColorHR1);
+        border-radius: .5rem;
+        width: 6px;
+        height: 96%;
+        z-index: 1;
+    }
 }
 
 .point {
@@ -38,11 +30,19 @@
     z-index: 2;
 }
 
-.curso p {
-    font-family: var(--varRubikRegular);
+.curso {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 20px;
     font-size: 20px;
-    margin-left: .5rem;
-    line-height : 2rem;
+
+    & p {
+        font-family: var(--varRubikRegular);
+        font-size: 20px;
+        margin-left: .5rem;
+        line-height : 2rem;
+    }
 }
 
 /*---------RESPONSIVE---------*/

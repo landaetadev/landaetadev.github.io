@@ -99,21 +99,20 @@ function ReadTableProjects(JSONDataProjects) {
 
 	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONDataProjects[vJSONi].jsonLangs}`;
 		if (JSONDataProjects[vJSONi].jsonGitHub != "") {
-			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonGitHub}" target="_blank" title="GitHub">
-			<svg>
-				<use href="./assets/icons.svg#icoLinkWeb">
-			</svg>
-			GitHub</a>`;
+			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonGitHub}" target="_blank" title="GitHub">`
+			vMakeProjectHTML += 	`<svg>`
+			vMakeProjectHTML += 		`<use href="./assets/icons.svg#icoLinkGitHub">`
+			vMakeProjectHTML += 	`</svg>`
+			vMakeProjectHTML += `GitHub</a>`;
 		}
 		if (JSONDataProjects[vJSONi].jsonWeb != "") {
-			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonWeb}" target="_blank" title="WebAddress">
-			<svg>
-				<use href="./assets/icons.svg#linkWeb">
-			</svg>
-			Web</a>`;
+			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonWeb}" target="_blank" title="WebAddress">`
+			vMakeProjectHTML += 	`<svg>`
+			vMakeProjectHTML += 		`<use href="./assets/icons.svg#icoLinkWeb">`
+			vMakeProjectHTML += 	`</svg>`
+			vMakeProjectHTML += `Web</a>`;
 		}
 	vMakeProjectHTML += 	`</p>`;
-
 	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONDataProjects[vJSONi].jsonDescript}</p>`;
 	vMakeProjectHTML += `</div>`;
 

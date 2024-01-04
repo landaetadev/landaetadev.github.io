@@ -30,7 +30,6 @@
     border: 3px solid white;
     width: 13rem;
     height: auto;
-    margin: -2rem 1rem 0 0;
     aspect-ratio: 1 / 1;
 }
 
@@ -42,71 +41,85 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    & .classTituloH2 {
+        width: 100%;
+        text-align: left;
+    }
+
+    & .classCoverHi {
+        font-family: var(--varRubikRegular);
+        padding-bottom: 2rem;
+        line-height: 1.5;
+    }
+    
+    & .classCoverIcons {
+        display: flex;
+        justify-content: left;
+        gap: 0 1rem;
+
+        & a {
+            width: 8rem;
+            height: calc(var(--varTopBarHeight) * .75);
+            border: 3px solid var(--varBtnsCan1);
+            background-color: var(--varBtnsCan2);
+            color: var(--varBtnsCan1);
+            font-family: var(--varRubikRegular);
+            border-radius: 2rem;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & a:hover {
+            background-color: var(--varBtnsCanHover);
+            transition: transform .5s ease-in-out;
+            transform: scale(1.1);
+        }
+
+        & .btnGitHub svg,
+        .btnLinkedIn svg,
+        .btnDocCV svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: var(--varBtnsCan1);
+        }
+    }
 }
 
-.classCoverDatos .classTituloH2 {
-    width: 100%;
-    text-align: left;
-}
-
-.classCoverHi {
-    font-family: var(--varRubikRegular);
-    padding-bottom: 3rem;
-    line-height: 1.5;
-}
-
-.classCoverIcons {
-    display: flex;
-    justify-content: left;
-    gap: 0 1rem;
-}
-
-.classCoverIcons a {
-    width: 8rem;
-    height: calc(var(--varTopBarHeight) * .75);
-    border: 3px solid var(--varBtnsCan1);
-    background-color: var(--varBtnsCan2);
-    color: var(--varBtnsCan1);
-    font-family: var(--varRubikRegular);
-    border-radius: 2rem;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.classCoverIcons a:hover {
-    background-color: var(--varBtnsCanHover);
-    transition: transform .5s ease;
-    transform: scale(1.25);
-}
-
-.btnGitHub svg,
-.btnLinkedIn svg,
-.btnDocCV svg {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-
-.btnGitHub svg,
-.btnLinkedIn svg,
-.btnDocCV svg {
-    fill: var(--varBtnsCan1);
-}
-
-.classArrowDown svg {
-    width: 2rem;
-    height: 2rem;
-}
 .classArrowDown {
     fill: red;
     position: absolute;
     bottom: 4rem;
     animation: animArrow 2.5s ease-in-out infinite;
+
+    & svg {
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
-
+@-webkit-keyframes animArrow {
+    0% {
+        transform: translateY(0);
+        fill: var(--varBtnsCan1);
+    }
+    25% {
+        fill: var(--varBtnsCan2);
+    }
+    50% {
+        transform: translateY(2rem);
+        fill: var(--varBtnsCan1);
+    }
+    75% {
+        fill: var(--varBtnsCan2);
+    }
+    100% {
+        transform: translateY(0);
+        fill: var(--varBtnsCan1);
+    }
+}
 @keyframes animArrow {
     0% {
         transform: translateY(0);
@@ -129,7 +142,6 @@
 }
 
 /*---------RESPONSIVE---------*/
-
 
 @media (max-width:900px) {
     .classCoverFoto{

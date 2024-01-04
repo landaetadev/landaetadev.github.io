@@ -23,11 +23,11 @@
     flex-direction: column;
     justify-content: center;
     transition: all 0.5s ease;
-}
 
-.classProjectCard:hover{
-    background-color: var(--varIcoColorCardOver);
-    transform: scale(1.05, 1.05);
+    &:hover {
+        background-color: var(--varIcoColorCardOver);
+        transform: scale(1.05, 1.05);
+    }
 }
 
 .classCardTitle {
@@ -45,10 +45,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.classCardImage img {
-    max-width: 90%;
-    max-height: 95%;
+
+    & img {
+        max-width: 90%;
+        max-height: 95%;
+    }
 }
 
 .classCardLang {
@@ -84,25 +85,27 @@
     max-width: 1200px;
     position: absolute;
     top: 0;
+
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 3px solid red;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        margin: 1rem;
+    
+        & svg {
+            width: 2rem;
+            height: 2rem;
+            fill: var(--varBtnsCan1);
+        }
+    
+    }
 }
 
-.classBtnHideProject button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: 3px solid red;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    margin: 1rem;
-}
-
-.classBtnHideProject button svg {
-    width: 2rem;
-    height: 2rem;
-    fill: var(--varBtnsCan1);
-}
 
 .classShowProjectContainer {
     width: 100%;
@@ -147,31 +150,32 @@
     align-items: center;
     vertical-align: middle;
     padding-right: 5rem;
-}
-.classShowProjectLang a {
-    background-color: var(--varTopBarBackColor);
-    color: var(--varFontColor);
-    font-family: var(--varRubikRegular);
-    box-shadow: 0 3px 0 #0059b3;
-    width: 7rem;
-    height: 2rem;
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1.5rem;
-}
 
-.classShowProjectLang a:hover {
-    transition: transform .5s ease-in-out;
-    transform: scale(1.15);
-}
+    & a {
+        background-color: var(--varTopBarBackColor);
+        color: var(--varFontColor);
+        font-family: var(--varRubikRegular);
+        box-shadow: 0 3px 0 #0059b3;
+        width: 7rem;
+        height: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.5rem;
+    }
+    
+    & a:hover {
+        transition: transform .5s ease-in-out;
+        transform: scale(1.1);
+    }
 
-.classShowProjectLang svg {
-    fill: white;
-    width: 20px;
-    height: 20px;
-    margin-right: .5rem;
+    & svg {
+        fill: white;
+        width: 20px;
+        height: 20px;
+        margin-right: .5rem;
+    }
 }
 
 .classShowProjectDescript {

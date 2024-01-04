@@ -79,10 +79,10 @@ body {
 }
 
 .classCover,
-.classMail,
-.classEstudios,
+.classProjects,
 .classHabilidades,
-.classProjects {
+.classEstudios,
+.classMail {
     position: relative;
     padding: 3rem 1rem;
     display: flex;

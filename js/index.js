@@ -76,7 +76,7 @@ function ReadTableProjects(JSONDataProjects) {
 	vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
 
 	vMakeCardHTML +=    `<div class="classCardImage">`;
-	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonImgScreen}" alt="Imagen App Video" class="classFileCard">`;
+	vMakeCardHTML +=        `<img src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonImgScreen}" alt="Imagen App Video ${JSONDataProjects[vJSONi].jsonTitle}" class="classFileCard">`;
 	vMakeCardHTML +=    `</div>`;
 
 	vMakeCardHTML +=    `<p class="classCardLang">${JSONDataProjects[vJSONi].jsonLangs}</p>`;

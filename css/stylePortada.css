@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 900px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 0 1rem;
 }
@@ -35,7 +35,7 @@
 
 .classCoverDatos {
     color: var(--varFontColor);
-    padding: 0 .5rem;
+    padding: 0 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
 
     & .classCoverHi {
         font-family: var(--varRubikRegular);
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         line-height: 1.5;
     }
     
@@ -152,145 +152,100 @@
     .classCoverHi {
         font-size: 16px;
     }
-    .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-        width: 2rem;
-        height: 2rem;
-    }
 
     .classCoverIcons a {
         margin: 0 1rem;
         border-radius: 2rem;
         font-size: 14px;
     }
-    .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
 
     .classArrowDown svg {
         width: 1.5rem;
     }
 
-} 
+}
+
+@media (max-width:750px) {
+    .classFotoDatos {
+        max-width: 95%;
+
+        & .classTituloH2 {
+            font-size: 24px;
+        }
+
+        & .classCoverIcons {
+            flex-direction: column;
+    
+            & a {
+                margin: 5px 1rem;
+                border-radius: 2rem;
+                font-size: 14px;
+            }
+        }
+    }
+    
+}
 
 @media (max-width:600px) {
     .classFotoDatos {
         flex-direction: column;
         margin-bottom: 2rem;
-    }
 
-    .classCoverFoto{
-        width: 8rem;
-        height: auto;
-    }
+        & img {
+            margin-bottom: 1rem;
+        }
 
-    .classCoverHi {
-        font-size: 14px;
-    }
+        & .classCoverFoto {
+            width: 8rem;
+            height: auto;
+        }
 
-    .classCoverIcons {
-        flex-direction: column;
-        margin: 10px 0;
+        & .classCoverHi {
+            font-size: 14px;
+        }
+        & .classCoverIcons {
+            flex-direction: column;
+            margin: 10px 0;
+        }
+        & .classCoverIcons a {
+            margin: 5px 1rem;
+            border-radius: 2rem;
+            font-size: 14px;
+        }
+        
     }
-    .classCoverIcons a {
-        margin: 5px 1rem;
-        border-radius: 2rem;
-        font-size: 14px;
-    }
-    .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    .classArrowDown svg {
-        width: 1.5rem;
-    }
-
 }
 
 @media (max-width:414px) {
-    .classFotoDatos{
-        margin-bottom: 4rem;
+    .classCoverDatos .classTituloH2 {
+        font-size: 20px;
     }
-    .classCoverFoto{
-        width: 8rem;
-        height: auto;
-    }
-    .classTituloH2 {
-        font-size: 18px;
-    }
-    .classCoverHi {
-        font-size: 14px;
-    }
-
-    .classCoverIcons {
-        flex-direction: column;
-        margin: 10px 0;
-    }
-    .classCoverIcons a {
-        margin: 5px 1rem;
-        border-radius: 2rem;
-        font-size: 14px;
-    }
-    .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
 }
 
-@media (max-width:350px) {
-    .classFotoDatos{
-        margin-bottom: 1rem;
+@media (max-width:390px) {
+    .classCoverDatos .classTituloH2 {
+        font-size: 20px;
     }
-    .classCoverFoto{
-        width: 8rem;
-        height: auto;
-    }
-    .classCoverHi {
-        font-size: small;
-    }
-    .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-        width: 1.5rem;
-        height: 1.5rem;
+}
+
+@media (max-width:375px) {
+    .classCoverDatos .classTituloH2 {
+        font-size: 20px;
     }
 
     .classArrowDown {
-        margin-top: 4rem;
+        bottom: 2rem;
+    
+        & svg {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
-
-    .classCoverIcons {
-        flex-direction: column;
-        margin: 10px 0;
-    }
-    .classCoverIcons a {
-        margin: 5px 1rem;
-        border-radius: 2rem;
-        font-size: 14px;
-    }
-
-    .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
 }
 
-@media (max-width:375) and (max-height:667px) {
-    .classFotoDatos {
-        margin-bottom: 0;
+@media (max-width:360px) {
+    .classCoverDatos .classTituloH2 {
+        font-size: 18px;
     }
 }
 

@@ -3,7 +3,7 @@
   font-family: var(--varRubikRegular);
   color: var(--varFontColor);
   max-width: 800px;
-  text-align: justify;
+  text-align: left;
   padding: 0 0 2rem 0;
 }
 

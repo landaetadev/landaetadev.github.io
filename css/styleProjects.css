@@ -13,7 +13,7 @@
 }
 
 .classProjectCard {
-    width: 15rem;
+    width: 16rem;
     height: 23rem;
     border: 2px solid var(--varBtnsCan2);
     background-color: var(--varTopBarBackColor);
@@ -31,7 +31,7 @@
 }
 
 .classCardTitle {
-    height: 2rem;
+    height: 2.5rem;
     font-family: var(--varRubikRegular);
     color: var(--varFontColor);
     font-size: 20px;
@@ -47,13 +47,13 @@
     align-items: center;
 
     & img {
-        max-width: 90%;
-        max-height: 95%;
+        max-width: 85%;
+        max-height: 90%;
     }
 }
 
 .classCardLang {
-    height: 2rem;
+    height: 2.5rem;
     font-family: var(--varRubikRegular);
     color: var(--varFontColor);
     font-size: 16px;

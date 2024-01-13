@@ -5,7 +5,7 @@
     height: var(--varTopBarHeight);
     padding: 0 1.5rem;
     position: fixed;
-	top: -3rem;
+    top: calc(var(--varTopBarHeight) * (-1));
     display: flex;
 	justify-content: center;
     z-index: 995;
@@ -29,18 +29,18 @@
     height: 100%;
     display: flex;
     align-items: center;
-}
 
-.classLogoImg {
-    height: 75%;
-    margin: 0 .5rem 0 0;
-}
-
-.classTituloH1 {
-    font-family: var(--varAardvarkCafe);
-    color: var(--varFontColor);
-    text-shadow: 2px 2px var(--varBtnsCan1);
-    font-size: xx-large;
+    & .classLogoImg {
+        height: 75%;
+        margin: 0 .5rem 0 0;
+    }
+    
+    & .classTituloH1 {
+        font-family: var(--varAardvarkCafe);
+        color: var(--varFontColor);
+        text-shadow: 2px 2px var(--varBtnsCan1);
+        font-size: xx-large;
+    }
 }
 
 .classBtnMenu {
@@ -49,26 +49,25 @@
     right: 0;
 }
 
-
 .classBtnsMenuOptions {
     position: absolute;
     right: 0;
     height: 100%;
-}
 
-.classBtnsMenuOptions ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    padding: 0;
-    gap: 0 .5rem;
-}
+    & ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+        gap: 0 .5rem;
+    }
 
-.classBtnsMenuOptions ul li {
-    display: flex;
-    align-items: center;
-    height: 100%;
+    & ul li {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
 }
 
 .classBtnMenu,
@@ -78,29 +77,28 @@
     color: var(--varBtnsCan1);
     font-family: var(--varRubikRegular);
     border-radius: 2rem;
-    width: 120px;
-    height: 75%;
-	font-size: 14px;
+    width: 140px;
+    height: 60%;
+	font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
 
-.classBtnsMenuOptions ul li svg,
-.classBtnMenu svg {
-    width: 1rem;
-    fill: var(--varBtnsCan1);
-}
+    & ul li svg,
+    & svg {
+        width: 1.2rem;
+        fill: var(--varBtnsCan1);
+    }
 
-.classBtnMenu:hover,
-.classBtnMenuOpt:hover{
-    background-color: var(--varBtnsCanHover);
-}
-
-.classBtnMenu:link, a:visited, a:hover, a:active,
-.classBtnMenuOpt a:link, a:visited, a:hover, a:active {
-    color: var(--varBtnsCan1);
+    &:hover {
+        background-color: var(--varBtnsCanHover);
+    }
+    &:link, a:visited, a:hover, a:active,
+    & a:link, a:visited, a:hover, a:active {
+        color: var(--varBtnsCan1);
+    }
+    
 }
 
 .classHR {
@@ -110,13 +108,6 @@
     background-image: linear-gradient(to right, red 0%, white 33.3%, white 66.6%, red 100%);
 }
 
-.classAncla {
-    background-color: aqua;
-    position: absolute;
-    display: flex;
-    top: 0;
-    left: 0;
-}
 /*---------RESPONSIVE---------*/
 
 @media (max-width:1000px) {
@@ -199,6 +190,24 @@
 }
 
 @media (max-width:414px) {
+    .classLogoLink{
+        & .classLogoImg {
+            height: 60%;
+        }
+        
+        & .classTituloH1 {
+            font-size: 28px;
+        }
+    }
+    
+    .classBtnMenu {
+        width: 120px;
+        height: 60%;
+        font-size: 14px;
+    }
+    .classBtnMenu svg {
+        width: 1rem;
+    }
     .classHeader {
         padding: 0 1rem;
     }
@@ -210,9 +219,6 @@
 }
 
 @media (max-width:350px) {
-    .classLogoLink {
-        height: 90%;
-    }
     .classBtnMenu {
         width: 6rem;
         font-size: small;
@@ -228,9 +234,10 @@
 
     .classLogoLink {
         height: 85%;
-    }
-    .classTituloH1 {
-        font-size: 18px;
+
+        & .classTituloH1 {
+            font-size: 18px;
+        }
     }
 
     .classBtnMenu {

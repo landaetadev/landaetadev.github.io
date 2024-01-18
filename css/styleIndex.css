@@ -90,19 +90,34 @@ body {
     justify-content: center;
     align-items: center;
     min-height: var(--varMinHeightClassScreen);
+
+    
+    
+    & .classSubTitulo {
+        padding-bottom: 2.5rem;
+        font-family: var(--varRubikSemiBold);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        color: var(--varFontColor);
+        font-size: 32px;
+
+        & svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: .5rem;
+            fill: var(--varFontColor);
+            stroke: var(--varFontColor);
+            stroke-width: 2;
+        }
+    }
+
 }
 
 .LineColor {
     height: 1px;
     border: none;
     background: var(--varLineColor);
-}
-
-.classTituloH2 {
-    font-family: var(--varRubikSemiBold);
-    color: var(--varFontColor);
-    font-size: 30px;
-    margin: 0 0 2rem 0;
 }
 
 .classCoverHi,

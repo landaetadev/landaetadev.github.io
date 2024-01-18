@@ -1,3 +1,5 @@
+
+
 .cursos {
     position: relative;
     display: flex;
@@ -59,20 +61,22 @@
 }
 
 @media (max-width:550px) {
-    .curso {
-        width: 90vw;
-    }
-    .curso p {
-        font-size: 15px;
-    }
-    .point {
-        width: 15px;
-        height: 15px;
-    }
     .cursos hr {
         width: 6px;
     }
 
+    .point {
+        width: 15px;
+        height: 15px;
+    }
+
+    .curso {
+        width: 90vw;
+
+        & p {
+            font-size: 15px;
+        }
+    }
 
 }
 
@@ -86,10 +90,12 @@
 @media (max-width:414px) {
     .curso {
         width: 90vw;
+
+        & p {
+            font-size: 13px;
+        }
     }
-    .curso p {
-        font-size: 13px;
-    }
+
     .point {
         width: 13px;
         height: 13px;
@@ -118,9 +124,10 @@
 @media (max-width:320px) {
     .curso {
         width: 90vw;
-    }
-    .curso p {
-        font-size: 10px;
+
+        & p {
+            font-size: 10px;
+        }
     }
 
 }

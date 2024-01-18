@@ -6,7 +6,7 @@
 }
 
 .classMashTrans {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -44,12 +44,16 @@
 
     & .classTituloH2 {
         width: 100%;
+        margin: 0 0 2rem 0;
+        font-family: var(--varRubikSemiBold);
         text-align: left;
+        color: var(--varFontColor);
+        font-size: 30px;
     }
 
     & .classCoverHi {
         font-family: var(--varRubikRegular);
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         line-height: 1.5;
     }
     
@@ -59,6 +63,9 @@
         gap: 0 1rem;
 
         & a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 9rem;
             height: calc(var(--varTopBarHeight) * .6);
             border: 3px solid var(--varBtnsCan1);
@@ -66,10 +73,7 @@
             color: var(--varBtnsCan1);
             font-family: var(--varRubikRegular);
             border-radius: 2rem;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 16px;
         }
 
         & a:hover {
@@ -81,63 +85,65 @@
         & .btnGitHub svg,
         .btnLinkedIn svg,
         .btnDocCV svg {
-            width: 1.5rem;
-            height: 1.5rem;
-            fill: var(--varBtnsCan1);
+            width: 2rem;
+            stroke: var(--varBtnsCan1);
+            stroke-width: 2.5;
+            margin-right: 5px;
         }
     }
 }
 
 .classArrowDown {
-    fill: red;
     position: absolute;
     bottom: 4rem;
     animation: animArrow 2.5s ease-in-out infinite;
 
     & svg {
-        width: 2rem;
-        height: 2rem;
+        fill: var(--varBtnsCan1);
+        stroke-width: 2.5;
+        width: 3rem;
     }
 }
 
 @-webkit-keyframes animArrow {
     0% {
         transform: translateY(0);
-        fill: var(--varBtnsCan1);
+        stroke: var(--varBtnsCan1);
     }
     25% {
-        fill: var(--varBtnsCan2);
+        stroke: var(--varBtnsCan2);
     }
     50% {
         transform: translateY(2rem);
-        fill: var(--varBtnsCan1);
+        stroke: var(--varBtnsCan1);
     }
     75% {
-        fill: var(--varBtnsCan2);
+
+        stroke: var(--varBtnsCan2);
     }
     100% {
         transform: translateY(0);
-        fill: var(--varBtnsCan1);
+        stroke: var(--varBtnsCan1);
     }
 }
 @keyframes animArrow {
     0% {
         transform: translateY(0);
-        fill: var(--varBtnsCan1);
+        stroke: var(--varBtnsCan1);
     }
     25% {
-        fill: var(--varBtnsCan2);
+        stroke: var(--varBtnsCan2);
     }
     50% {
         transform: translateY(2rem);
-        fill: var(--varBtnsCan1);
+        stroke: var(--varBtnsCan1);
     }
     75% {
-        fill: var(--varBtnsCan2);
+        stroke: var(--varBtnsCan2);
     }
     100% {
         transform: translateY(0);
-        fill: var(--varBtnsCan1);
+        stroke: var(--varBtnsCan1);
     }
 }
 
@@ -160,7 +166,7 @@
     }
 
     .classArrowDown svg {
-        width: 1.5rem;
+        width: 2rem;
     }
 
 }
@@ -206,12 +212,14 @@
         & .classCoverIcons {
             flex-direction: column;
             margin: 10px 0;
+
+            & a {
+                margin: 5px 1rem;
+                border-radius: 2rem;
+                font-size: 14px;
+            }
         }
-        & .classCoverIcons a {
-            margin: 5px 1rem;
-            border-radius: 2rem;
-            font-size: 14px;
-        }
+        
         
     }
 }

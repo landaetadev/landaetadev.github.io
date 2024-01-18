@@ -85,16 +85,17 @@
     align-items: center;
     cursor: pointer;
 
-    & ul li svg,
     & svg {
-        width: 1.2rem;
-        fill: var(--varBtnsCan1);
+        width: 30px;
+        stroke: var(--varBtnsCan1);
+        padding-right: 5px;
+        stroke-width: 2.5;
     }
 
     &:hover {
         background-color: var(--varBtnsCanHover);
     }
-    &:link, a:visited, a:hover, a:active,
+    
     & a:link, a:visited, a:hover, a:active {
         color: var(--varBtnsCan1);
     }
@@ -139,7 +140,7 @@
                     font-size: 20px;
 
                     & svg {
-                        width: 1.5rem;
+                        width: 2.5rem;
                     }
                 }
             }
@@ -203,10 +204,10 @@
     .classBtnMenu {
         width: 120px;
         height: 60%;
-        font-size: 14px;
+        font-size: 16px;
     }
     .classBtnMenu svg {
-        width: 1rem;
+        width: 2rem;
     }
     .classHeader {
         padding: 0 1rem;

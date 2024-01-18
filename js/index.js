@@ -19,16 +19,16 @@ var vShowCards = document.querySelector(".classShowCardsContainer");
 var vMakeCardHTML = ``;
 
 //SHOW-HIDE TOPBAR
-window.onload = (function() {
-	window.onscroll = function () {
-		const letScrollYPosition = 300;
-		if (window.scrollY >= letScrollYPosition) {
-			vHeader.classList.add("classShowHeader");
-		} else {
-			vHeader.classList.remove("classShowHeader");
-		}
-	};
+window.onscroll = function () {
+	const letScrollYPosition = 300;
+	if (window.scrollY >= letScrollYPosition) {
+		vHeader.classList.add("classShowHeader");
+	} else {
+		vHeader.classList.remove("classShowHeader");
+	}
+};
 
+// window.onload = (function() {
 	//SHOW-HIDE VERTICAL MENU
 	vBtnMenu.addEventListener ("click", () => {
 		if (vCounter == 0) {
@@ -44,7 +44,7 @@ window.onload = (function() {
 			funcJsHideMenuNav();
 		});
 	};
-});
+// });
 
 //SHOW-HIDE SLIDER
 function funcJsShowMenuNav() {

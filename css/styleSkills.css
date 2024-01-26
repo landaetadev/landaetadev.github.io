@@ -1,7 +1,7 @@
 /*---------SKILLS---------*/
 .classHabilidadesIntro {
   font-family: var(--varRubikRegular);
-  color: var(--varFontColor);
+  color: var(--varFontColor2);
   max-width: 800px;
   text-align: left;
   padding: 0 0 2rem 0;
@@ -9,12 +9,12 @@
 
 .classHabilidadesFlex {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .classHabilidad {
@@ -24,14 +24,13 @@
   box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
   border-radius: 2rem;
   min-width: 210px;
-  width: 14rem;
-  height: 17rem;
+  width: 17rem;
+  height: 19rem;
 }
 
   
 .classHabiIcono, .classHabiNombre, .classHabiDetalles {
   font-family: var(--varRubikRegular);
-  font-size: large;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -44,8 +43,8 @@
 
   & svg {
     margin-top: 1rem;
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     fill: var(--varHabColorHR1);
     stroke: var(--varHabColorHR1);
     stroke-width: 2.5;
@@ -56,7 +55,7 @@
   height: 40%;
   font-family: var(--varAardvarkCafe);
   font-weight: 500;
-  font-size: 26px;
+  font-size: 32px;
   text-shadow: 1px 1px #FFFFFF;
   align-items: center;
 }
@@ -64,7 +63,7 @@
 .classHabiDetalles {
     height: 35%;
     font-family: var(--varFrutiger);
-    font-size: 16px;
+    font-size: 18px;
     align-items: flex-start;
     line-height: 1.3rem;
   }

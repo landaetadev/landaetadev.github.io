@@ -31,6 +31,7 @@
     --varRubikRegular: 'RubikRegular';
     --varRubikSemiBold: 'RubikSemiBold';
     --varFontColor: #E6E6E6;
+    --varFontColor2: #F0F0F0;
     --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 60%);
 
     --varTopBarBackColor: #204B89;
@@ -62,15 +63,15 @@
 }
 html {
     scroll-behavior: smooth;
-}
 
-a:link, a:visited, a:hover, a:active {
-	text-decoration: none;
-}
+    & body {
+        min-width: 320px;
+        min-height: 600px;
 
-body {
-    min-width: 320px;
-    min-height: 600px;
+        & a:link, a:visited, a:hover, a:active {
+            text-decoration: none;
+        }
+    }
 }
 
 .classTotalContainer,
@@ -81,6 +82,7 @@ body {
 .classCover,
 .classProjects,
 .classHabilidades,
+.classExperiencia,
 .classEstudios,
 .classMail {
     position: relative;
@@ -91,23 +93,20 @@ body {
     align-items: center;
     min-height: var(--varMinHeightClassScreen);
 
-    
-    
     & .classSubTitulo {
-        padding-bottom: 2.5rem;
+        padding-bottom: 3rem;
         font-family: var(--varRubikSemiBold);
         text-align: center;
         display: flex;
         align-items: center;
-        color: var(--varFontColor);
-        font-size: 32px;
+        color: var(--varFontColor2);
+        font-size: 40px;
 
         & svg {
             width: 2.5rem;
             height: 2.5rem;
             margin-right: .5rem;
-            fill: var(--varFontColor);
-            stroke: var(--varFontColor);
+            stroke: var(--varFontColor2);
             stroke-width: 2;
         }
     }
@@ -118,13 +117,6 @@ body {
     height: 1px;
     border: none;
     background: var(--varLineColor);
-}
-
-.classCoverHi,
-.classHabilidadesIntro,
-.classMySlidesDescrip {
-    font-size: 20px;
-    line-height : 2rem;
 }
 
 /*---------CONTENEDOR TOTAL---------*/

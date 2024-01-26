@@ -6,7 +6,7 @@
 }
 
 .classMashTrans {
-    background-color: rgba(0, 0, 0, 0.7);
+    background: rgb(0, 0, 0, .7);
     width: 100%;
     min-height: 100vh;
     height: auto;
@@ -18,23 +18,23 @@
 
 .classFotoDatos {
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 0 1rem;
 }
 
-.classCoverFoto{
+.classCoverFoto {
     border-radius: 100%;
     border: 3px solid white;
-    width: 13rem;
+    width: 12rem;
     height: auto;
     aspect-ratio: 1 / 1;
 }
 
 .classCoverDatos {
-    color: var(--varFontColor);
+    color: var(--varFontColor2);
     padding: 0 1rem;
     width: 100%;
     display: flex;
@@ -47,14 +47,15 @@
         margin: 0 0 2rem 0;
         font-family: var(--varRubikSemiBold);
         text-align: left;
-        color: var(--varFontColor);
-        font-size: 30px;
+        color: var(--varFontColor2);
+        font-size: 40px;
     }
 
     & .classCoverHi {
         font-family: var(--varRubikRegular);
-        padding-bottom: 2rem;
-        line-height: 1.5;
+        margin-bottom: 2rem;
+        font-size: 22px;
+        line-height : 2rem;
     }
     
     & .classCoverIcons {

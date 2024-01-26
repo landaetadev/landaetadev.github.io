@@ -1,7 +1,8 @@
-.cursos {
+.experiencias {
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 750px;
 
     & hr {
         position:absolute;
@@ -13,9 +14,10 @@
         height: 96%;
         z-index: 1;
     }
+
 }
 
-.curso {
+.experiencia {
     display: flex;
     flex-direction: row;
     color: var(--varFontColor2);
@@ -24,7 +26,7 @@
     & .barra {
         margin-right: 15px;
     }
-
+    
     & .point {
         position: relative;
         display: flex;
@@ -50,19 +52,19 @@
 
 /*---------RESPONSIVE---------*/
 @media (max-width:700px) {
-    .curso p {
+    .experiencia p {
         font-size: 16px;
     }
 }
 
 @media (max-width:600px) {
-    .curso p {
+    .experiencia p {
         font-size: 15px;
     }
 }
 
 @media (max-width:550px) {
-    .cursos hr {
+    .experiencias hr {
         width: 6px;
     }
 
@@ -71,7 +73,7 @@
         height: 15px;
     }
 
-    .curso {
+    .experiencia {
         width: 90vw;
 
         & p {
@@ -82,14 +84,14 @@
 }
 
 @media (max-width:500px) {
-    .curso p {
+    .experiencia p {
         font-size: 14px;
     }
 }
 
 
 @media (max-width:414px) {
-    .curso {
+    .experiencia {
         width: 90vw;
 
         & p {
@@ -102,7 +104,7 @@
         height: 13px;
         border: 2px solid var(--varHabColorHR1);
     }
-    .cursos hr {
+    .experiencias hr {
         margin: 3px 0 0 4px;
         width: 5px;
         border: 2px solid var(--varHabColorHR1);
@@ -110,20 +112,20 @@
 }
 
 @media (max-width:375px) {
-    .curso p {
+    .experiencia p {
         font-size: 12px;
     }
 }
 
 @media (max-width:350px) {
-    .curso p {
+    .experiencia p {
         font-size: 11px;
     }
 
 }
 
 @media (max-width:320px) {
-    .curso {
+    .experiencia {
         width: 90vw;
 
         & p {

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/styleIndex.css">
     <link rel="stylesheet" href="./css/styleTopBar.css">
     <link rel="stylesheet" href="./css/stylePortada.css">
+    <link rel="stylesheet" href="./css/styleExperience.css">
     <link rel="stylesheet" href="./css/styleStudies.css">
     <link rel="stylesheet" href="./css/styleSkills.css">
     <link rel="stylesheet" href="./css/styleProjects.css">
@@ -21,6 +22,7 @@
 
     <!--carga archivos JS-->
     <script defer src="./js/index.js" type="application/javascript"></script>
+    <script defer src="./js/showProjects.js" type="application/javascript"></script>
     <script defer src="./js/showSkills.js" type="application/javascript"></script>
     <script defer src="./js/sendMail.js" type="application/javascript"></script>
     
@@ -68,6 +70,13 @@
                             <use href="./assets/icons.svg#icoHabilidades">
                         </svg>
                         Habilidades</a></li>
+                    <div class="classHR"></div>
+
+                    <li><a href="./index.html#idAncleExperience" class="classBtnMenuOpt">
+                        <svg>
+                            <use href="./assets/icons.svg#icoExperiencia">
+                        </svg>
+                        Experiencia</a></li>
                     <div class="classHR"></div>
 
                     <li><a href="./index.html#idAncleStudies" class="classBtnMenuOpt">
@@ -185,16 +194,67 @@
                 </svg>
                 HABILIDADES
             </h2>
-            
-            <p class="classHabilidadesIntro">Mis principales competencias son la gestión y desarrollo de 
-                proyectos en el ámbito informático con habilidades en diferentes áreas.</p>
 
             <div class="classHabilidadesFlex">
             </div>
 
-        <a class="classAncle" id="idAncleStudies"></a>
+        <a class="classAncle" id="idAncleExperience"></a>
         </div>
         <hr class="LineColor">
+<!-- ----------------------------- -->
+
+<div class="classExperiencia">
+            
+    <h2 class="classSubTitulo">
+        <svg>
+            <use href="./assets/icons.svg#icoExperiencia">
+        </svg>
+        Experiencia Laboral
+    </h2>
+
+    <div class="experiencias">
+        <hr>
+
+        <div class="experiencia">
+            <div class="barra">
+                <div class="point"></div>
+            </div>
+            <p>
+                2011 -2014 Ambulancias Metromed C.A. - Caracas<br>
+                Asistente de sistemas<br>
+                Soporte técnico, administración y soporte de redes, reparación e instalación de hardware<br>
+            </p>
+        </div>
+
+        <div class="experiencia">
+            <div class="barra">
+                <div class="point"></div>
+            </div>
+            <p>
+                2005 – 2007 Clínica Felix Boada - Caracas<br>
+                Asistente de sistemas<br>
+                Soporte técnico, administración y soporte de redes, programación en Visual Basic 6.<br>
+            </p>
+        </div>
+
+        <div class="experiencia">
+            <div class="barra">
+                <div class="point"></div>
+            </div>
+            <p>
+                2002 – Seguros La Previsora - Caracas<br>
+                Prácticas Laborales<br>
+                Programador en Visual Basic 6 para el desarrollo de sistema de control de productores de seguros para el departamento de mercadeo de la empresa.<br>
+            </p>
+        </div>
+
+    </div>
+    
+    <a class="classAncle" id="idAncleStudies"></a>
+</div>
+<hr class="LineColor">
+
+<!-- <a class="classAncle" id="idAncleStudies"></a> -->
 
         <div class="classEstudios">
             
@@ -274,9 +334,12 @@
                 </div>
             </div>
             
-        <a class="classAncle" id="idAncleContact"></a>
+            <a class="classAncle" id="idAncleContact"></a>
         </div>
         <hr class="LineColor">
+
+
+
 
         <div class="classMail">
             <h2 class="classSubTitulo">
@@ -325,3 +388,4 @@
     </section>
     
 </body>
+</html>

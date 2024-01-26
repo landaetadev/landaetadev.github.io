@@ -39,7 +39,7 @@
         font-family: var(--varAardvarkCafe);
         color: var(--varFontColor);
         text-shadow: 2px 2px var(--varBtnsCan1);
-        font-size: xx-large;
+        font-size: 40px;
     }
 }
 
@@ -111,7 +111,7 @@
 
 /*---------RESPONSIVE---------*/
 
-@media (max-width:1000px) {
+@media (max-width:1300px) {
 
     .classBtnMenu {
         visibility: visible;

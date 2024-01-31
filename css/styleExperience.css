@@ -51,19 +51,19 @@
 }
 
 /*---------RESPONSIVE---------*/
-@media (max-width:700px) {
+@media (width < 700px) {
     .experiencia p {
         font-size: 16px;
     }
 }
 
-@media (max-width:600px) {
+@media (width < 600px) {
     .experiencia p {
         font-size: 15px;
     }
 }
 
-@media (max-width:550px) {
+@media (width < 550px) {
     .experiencias hr {
         width: 6px;
     }
@@ -78,19 +78,20 @@
 
         & p {
             font-size: 15px;
+            
         }
     }
 
 }
 
-@media (max-width:500px) {
+@media (width < 500px) {
     .experiencia p {
         font-size: 14px;
     }
 }
 
 
-@media (max-width:414px) {
+@media (width < 414px) {
     .experiencia {
         width: 90vw;
 
@@ -109,9 +110,12 @@
         width: 5px;
         border: 2px solid var(--varHabColorHR1);
     }
+    .experiencia p {
+        font-size: 12px;
+    }
 }
 
-@media (max-width:375px) {
+@media (width < 375px) {
     .experiencia p {
         font-size: 12px;
     }

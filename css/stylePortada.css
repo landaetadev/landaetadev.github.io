@@ -73,7 +73,7 @@
             background-color: var(--varBtnsCan2);
             color: var(--varBtnsCan1);
             font-family: var(--varRubikRegular);
-            border-radius: 2rem;
+            border-radius: .75rem;
             font-size: 16px;
         }
 
@@ -90,6 +90,7 @@
             stroke: var(--varBtnsCan1);
             stroke-width: 2.5;
             margin-right: 5px;
+
         }
     }
 }

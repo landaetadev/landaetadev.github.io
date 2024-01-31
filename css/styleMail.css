@@ -101,7 +101,7 @@
     color: var(--varBtnsCan1);
     font-family: var(--varRubikRegular);
     font-size: 16px;
-    border-radius: 2rem;
+    border-radius: .75rem;
     width: 120px;
     height: calc(var(--varTopBarHeight) * 0.6);
     cursor: pointer;

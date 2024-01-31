@@ -1,4 +1,4 @@
-var vCounter = 0;
+var vCounter = false;
 var vBody = document.querySelector("body");
 let letIconsFile = "./assets/icons.svg#"
 
@@ -9,7 +9,16 @@ var vBtnsMenuOptions = document.querySelector(".classBtnsMenuOptions");
 var vBtnMenuOpt = document.querySelectorAll(".classBtnMenuOpt");
 
 //SHOW-HIDE TOPBAR
-window.onscroll = function () {
+// window.onscroll = function () {
+// 	const letScrollYPosition = 300;
+// 	if (window.scrollY >= letScrollYPosition) {
+// 		vHeader.classList.add("classShowHeader");
+// 	} else {
+// 		vHeader.classList.remove("classShowHeader");
+// 	}
+// };
+
+vBody.onscroll = function () {
 	const letScrollYPosition = 300;
 	if (window.scrollY >= letScrollYPosition) {
 		vHeader.classList.add("classShowHeader");
@@ -20,7 +29,7 @@ window.onscroll = function () {
 
 	//SHOW-HIDE VERTICAL MENU
 	vBtnMenu.addEventListener ("click", () => {
-		if (vCounter == 0) {
+		if (vCounter == false) {
 			funcJsShowMenuNav();
 		} else {
 			funcJsHideMenuNav();
@@ -38,10 +47,10 @@ window.onscroll = function () {
 function funcJsShowMenuNav() {
 	vBtnsMenuOptions.classList.add("classBtnsMenuOptionsShow");
 	vBody.classList.add("classHideOverflowY");
-	vCounter = 1;
+	vCounter = true;
 };
 function funcJsHideMenuNav() {
 	vBtnsMenuOptions.classList.remove("classBtnsMenuOptionsShow");
 	vBody.classList.remove("classHideOverflowY");
-	vCounter = 0;
+	vCounter = false;
 };

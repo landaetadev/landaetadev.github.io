@@ -76,7 +76,7 @@
     background-color: var(--varBtnsCan2);
     color: var(--varBtnsCan1);
     font-family: var(--varRubikRegular);
-    border-radius: 2rem;
+    border-radius: .75rem;
     width: 140px;
     height: 60%;
 	font-size: 16px;

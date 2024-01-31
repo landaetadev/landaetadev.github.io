@@ -182,7 +182,7 @@
 }
 
 /*---------RESPONSIVE---------*/
-@media (max-width:900px) {
+@media (width <900px) {
     .classShowProjectTitle {
         font-size: 24px;
     }

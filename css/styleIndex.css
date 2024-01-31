@@ -140,3 +140,54 @@ html {
 }
 
 /*---------CONTENEDOR TOTAL---------*/
+
+@media (width < 600px) {
+    .classCover, .classProjects, .classHabilidades,
+    .classExperiencia, .classEstudios, .classMail {
+
+        & .classSubTitulo {
+            font-size: 40px;
+
+            & svg {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+
+    }
+}
+
+@media (width < 500px) {
+    .classCover, .classProjects, .classHabilidades,
+    .classExperiencia, .classEstudios, .classMail {
+
+        & .classSubTitulo {
+            font-size: 30px;
+
+
+            & svg {
+                width: 2rem;
+                height: 2rem;
+
+            }
+        }
+
+    }
+}
+
+@media (width < 400px) {
+    .classCover, .classProjects, .classHabilidades,
+    .classExperiencia, .classEstudios, .classMail {
+
+        & .classSubTitulo {
+            font-size: 25px;
+
+            & svg {
+                width: 2rem;
+                height: 2rem;
+
+            }
+        }
+
+    }
+}

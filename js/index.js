@@ -9,15 +9,6 @@ var vBtnsMenuOptions = document.querySelector(".classBtnsMenuOptions");
 var vBtnMenuOpt = document.querySelectorAll(".classBtnMenuOpt");
 
 //SHOW-HIDE TOPBAR
-// window.onscroll = function () {
-// 	const letScrollYPosition = 300;
-// 	if (window.scrollY >= letScrollYPosition) {
-// 		vHeader.classList.add("classShowHeader");
-// 	} else {
-// 		vHeader.classList.remove("classShowHeader");
-// 	}
-// };
-
 vBody.onscroll = function () {
 	const letScrollYPosition = 300;
 	if (window.scrollY >= letScrollYPosition) {

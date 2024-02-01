@@ -144,7 +144,7 @@
     flex-direction: row;
     align-items: center;
     vertical-align: middle;
-    padding-right: 5rem;
+    /* padding-right: 5rem; */
 
     & a {
         background-color: var(--varTopBarBackColor);
@@ -182,7 +182,7 @@
 }
 
 /*---------RESPONSIVE---------*/
-@media (width <900px) {
+@media (width < 900px) {
     .classShowProjectTitle {
         font-size: 24px;
     }
@@ -192,7 +192,7 @@
     }
 } 
 
-@media (max-width:600px) {
+@media (width <= 600px) {
 
     .classShowProjectTitle {
         font-size: 24px;
@@ -203,12 +203,22 @@
     }
 }
 
-@media (max-width:414px) {
+@media (width <= 414px) {
 
     .classBtnHideProject {
-        width: 4rem;
-        height: 4rem;
-        font-size: 3rem;
+        left: 0;
+    
+        & button {
+            width: 3rem;
+            height: 3rem;
+        
+            & svg {
+                width: 2rem;
+                height: 2rem;
+                fill: var(--varBtnsCan1);
+            }
+        
+        }
     }
     
     .classBtnHideProject svg {
@@ -216,12 +226,33 @@
     }
 
     .classShowProjectTitle {
-        font-size: 2px;
+        font-size: 20px;
     }
-    .classShowProjectLang,
+
+    .classShowProjectLang {
+        font-size: 12px;
+
+        & a {
+            font-size: 12px;
+            width: 5rem;
+            height: 2rem;
+            margin-left: 1rem;
+        }
+        & svg {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+
     .classShowProjectDescript {
         font-size: 16px;
     }
+
+    
+}
+
+@media (width <= 390px) {
 
     .classBtnHideProject {
         left: 0;
@@ -237,28 +268,35 @@
             }
         
         }
-    }
-}
-
-@media (max-width:375px) {
-
-    .classBtnHideProject {
-        width: 2rem;
-        height: 2rem;
-        font-size: 3rem;
-    }
-    
-    .classBtnHideProject svg {
-        width: 1rem;
     }
 
     .classShowProjectTitle {
-        font-size: 2px;
+        font-size: 20px;
     }
-    .classShowProjectLang,
+
+    .classShowProjectLang {
+        font-size: 16px;
+
+        & a {
+            font-size: 14px;
+            width: 5rem;
+            height: 2rem;
+            margin-left: 1rem;
+        }
+        & svg {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+
     .classShowProjectDescript {
         font-size: 16px;
     }
+
+}
+
+@media (width <= 375px) {
 
     .classBtnHideProject {
         left: 0;
@@ -275,6 +313,31 @@
         
         }
     }
+
+    .classShowProjectTitle {
+        font-size: 20px;
+    }
+
+    .classShowProjectLang {
+        font-size: 16px;
+
+        & a {
+            font-size: 14px;
+            width: 5rem;
+            height: 2rem;
+            margin-left: 1rem;
+        }
+        & svg {
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+        }
+    }
+
+    .classShowProjectDescript {
+        font-size: 16px;
+    }
+
 }
 
 /*---------RESPONSIVE---------*/

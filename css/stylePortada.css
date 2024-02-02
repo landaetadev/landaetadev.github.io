@@ -20,22 +20,25 @@
     width: 100%;
     max-width: 1000px;
     display: flex;
-    justify-content: left;
     align-items: center;
     padding: 0 1rem;
-}
 
-.classCoverFoto {
-    border-radius: 100%;
-    border: 3px solid white;
-    width: 12rem;
-    height: auto;
-    aspect-ratio: 1 / 1;
+    & .classCoverFoto {
+        width: 18rem;
+    
+        & img {
+        border-radius: 100%;
+        border: 5px solid var(--varBtnsCan2);
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        }
+    }
 }
 
 .classCoverDatos {
     color: var(--varFontColor2);
-    padding: 0 1rem;
+    padding-left: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -46,9 +49,14 @@
         width: 100%;
         margin: 0 0 2rem 0;
         font-family: var(--varRubikSemiBold);
-        text-align: left;
         color: var(--varFontColor2);
-        font-size: 40px;
+        text-align: left;
+        font-size: 36px;
+
+        & span {
+            color: var(--varHabColorHR2);
+            font-size: 40px;
+        }
     }
 
     & .classCoverHi {
@@ -151,11 +159,14 @@
 
 /*---------RESPONSIVE---------*/
 
-@media (max-width:900px) {
-    .classCoverFoto{
-        width: 10rem;
-        height: auto;
+@media (width <= 900px) {
+    .classFotoDatos {
+
+        & .classCoverFoto {
+            margin-bottom: 2rem;
+        }
     }
+
     
     .classCoverHi {
         font-size: 16px;
@@ -163,7 +174,6 @@
 
     .classCoverIcons a {
         margin: 0 1rem;
-        border-radius: 2rem;
         font-size: 14px;
     }
 
@@ -173,9 +183,15 @@
 
 }
 
-@media (max-width:750px) {
+@media (width <= 750px) {
     .classFotoDatos {
         max-width: 95%;
+        flex-direction: column;
+
+        .classCoverFoto{
+            width: 12rem;
+            height: auto;
+        }
 
         & .classTituloH2 {
             font-size: 24px;
@@ -186,7 +202,6 @@
     
             & a {
                 margin: 5px 1rem;
-                border-radius: 2rem;
                 font-size: 14px;
             }
         }
@@ -194,10 +209,9 @@
     
 }
 
-@media (max-width:600px) {
+@media (width <= 600px) {
     .classFotoDatos {
         flex-direction: column;
-        margin-bottom: 2rem;
 
         & img {
             margin-bottom: 1rem;
@@ -217,7 +231,6 @@
 
             & a {
                 margin: 5px 1rem;
-                border-radius: 2rem;
                 font-size: 14px;
             }
         }
@@ -226,19 +239,20 @@
     }
 }
 
-@media (max-width:414px) {
+@media (width <= 414px) {
+    .classCoverDatos .classTituloH2 {
+        font-size: 20px;
+        
+    }
+}
+
+@media (width <= 390px) {
     .classCoverDatos .classTituloH2 {
         font-size: 20px;
     }
 }
 
-@media (max-width:390px) {
-    .classCoverDatos .classTituloH2 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width:375px) {
+@media (width <= 375px) {
     .classCoverDatos .classTituloH2 {
         font-size: 20px;
     }
@@ -253,9 +267,10 @@
     }
 }
 
-@media (max-width:360px) {
+@media (width <= 360px) {
     .classCoverDatos .classTituloH2 {
         font-size: 18px;
+        
     }
 }
 

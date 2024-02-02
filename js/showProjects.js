@@ -40,7 +40,7 @@ function ReadTableProjects(JSONDataProjects) {
 
 	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "vid") {
 		vMakeProjectHTML += `<video controls class="classShowFile classPlayVideo">`;
-		vMakeProjectHTML += `<source src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonFileShow}" type="video/mp4" loading="lazy" alt="Video Proyecto">`;
+		vMakeProjectHTML += `<source src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonFileShow}" type="video/webm" loading="lazy" alt="Video Proyecto">`;
 		vMakeProjectHTML += `</video>`;
 	}
 	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "img") {

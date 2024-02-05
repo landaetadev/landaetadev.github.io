@@ -22,7 +22,7 @@
 .curso {
     display: flex;
     flex-direction: row;
-    color: var(--varFontColor2);
+    color: var(--varFontColor);
     margin-bottom: 2.5rem;
 
     & .barra {

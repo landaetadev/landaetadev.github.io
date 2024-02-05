@@ -36,6 +36,7 @@ async function funcSendMail() {
 		varCheckMail.classList.remove("classCheckMailHide");
 		varCheckMail.classList.add("classCheckMailShow");
 		varFormMail.reset();
+		console.log("Enviado");
 		setTimeout(function() {
 			varCheckMail.classList.add("classCheckMailHide");
 		},3000);

@@ -1,23 +1,27 @@
 @font-face {
     font-family: "AardvarkCafe";
+    src: url(../assets/fonts/AardvarkCafe.woff2) format("woff2");
     src: url(../assets/fonts/AardvarkCafe.woff) format("woff");
     src: url(../assets/fonts/AardvarkCafe.ttf) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "Frutiger";
+    src: url(../assets/fonts/Frutiger.woff2) format("woff2");
     src: url(../assets/fonts/Frutiger.woff) format("woff");
     src: url(../assets/fonts/Frutiger.ttf) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "RubikRegular";
+    src: url(../assets/fonts/Rubik-Regular.woff2) format("woff2");
     src: url(../assets/fonts/Rubik-Regular.woff) format("woff");
     src: url(../assets/fonts/Rubik-Regular.ttf) format("truetype");
     font-display: swap;
 }
 @font-face {
     font-family: "RubikSemiBold";
+    src: url(../assets/fonts/Rubik-SemiBold.woff2) format("woff2");
     src: url(../assets/fonts/Rubik-SemiBold.woff) format("woff");
     src: url(../assets/fonts/Rubik-SemiBold.ttf) format("truetype");
     font-display: swap;
@@ -30,28 +34,23 @@
     --varFrutiger: 'Frutiger';
     --varRubikRegular: 'RubikRegular';
     --varRubikSemiBold: 'RubikSemiBold';
-    --varFontColor: #E6E6E6;
-    --varFontColor2: #F0F0F0;
+    --varFontColor: #F0F0F0;
     --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 60%);
 
     --varTopBarBackColor: #204B89;
     --varTopBarHeight: 4rem;
 
-    --varBtnsCan1: red;
-    --varBtnsCan2: white;
+    --varBtnsCan1: #E9291C;
+    --varBtnsCan2: #FEFFFE;
     --varBtnsCanHover: #F0F0F0;
 
     --varMinHeightClassScreen:calc(100vh - var(--varTopBarHeight));
-
-    --varIcoColorGitHub: #7DBBE6;
-    --varIcoColorLinkedIn: #3B65BE;
-    --varIcoColorPDF: #DF2F21;
 
     --varIcoColorCardOver: #202D59;
 
     --varHabColorHR1 : #873E2F;
     --varHabColorHR2 : #EABE6A;
-    --varHabColorHR3 : white;
+    --varHabColorHR3 : #FEFFFE;
 
     --varMailFormBackColor: #DCDCDC;
     --varMailFontColor: #494545;
@@ -99,14 +98,14 @@ html {
         text-align: center;
         display: flex;
         align-items: center;
-        color: var(--varFontColor2);
+        color: var(--varFontColor);
         font-size: 40px;
 
         & svg {
             width: 2.5rem;
             height: 2.5rem;
             margin-right: .5rem;
-            stroke: var(--varFontColor2);
+            stroke: var(--varFontColor);
             stroke-width: 2;
         }
     }
@@ -168,10 +167,8 @@ html {
             & svg {
                 width: 2rem;
                 height: 2rem;
-
             }
         }
-
     }
 }
 
@@ -184,10 +181,7 @@ html {
 
             & svg {
                 width: 2rem;
-                height: 2rem;
-
             }
         }
-
     }
 }

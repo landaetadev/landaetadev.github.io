@@ -7,7 +7,6 @@
     <meta name="author" content="Orlando Landaeta">
     <meta name=”title” content=”LandaetaDev”>
     <meta name="description" content="Mi nombre es Orlando Landaeta, licenciado en Computación con habilidades en diferentes ambitos.">
-    <meta name=”keywords” content="Portfolio, Habilidades, Proyectos">
     <meta name="robots" content="index, nofollow">
 
     <!--CSS-->
@@ -350,20 +349,31 @@
                 </svg>
                 CONTACTO
             </h2>
-    
-            <form class="classFormMail" id="idFormMail" action="https://formspree.io/f/mrgrrawp" method="POST">
-                
-                <input type="text" name="Nombre" class="classFormInput" id="idFormTxtName" placeholder="Nombre">
-                <input type="email" name="E-Mail" class="classFormInput" id="idFormTxtMail" placeholder="E-Mail">
-                <textarea type="text" name="Mensaje" class="classFormInput" id="idFormTxtMsg" rows="6" placeholder="Mensaje"></textarea>
 
+
+
+            <form class="classFormMail" id="idFormMail" action="https://formspree.io/f/mrgrrawp" method="POST">
+                <ul>
+                    <li>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="Nombre" class="classFormInput" id="idFormTxtName" placeholder="Neo">
+                    </li>
+                    <li>
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" name="E-Mail" class="classFormInput" id="idFormTxtMail" placeholder="neo@correo.com">
+                    </li>
+                    <li>
+                        <label for="msg">Mensaje</label>
+                        <textarea type="text" name="Mensaje" class="classFormInput" id="idFormTxtMsg" rows="6" placeholder="Escribe aquí"></textarea>
+                    </li>
+                </ul>
 
                 <div class="classSendMail">
                     <div class="classCheckMail">
                         <svg>
                             <use href="./assets/icons.svg#icoCheckMail">
                         </svg>
-                        <p>Gracias!!</p>
+                        <p>Enviado</p>
                     </div>
                     
                     <button type="submit" class="classBtnSendMail">
@@ -382,8 +392,6 @@
                 </div>
 
             </form>
-
-            
     
         </div>
 

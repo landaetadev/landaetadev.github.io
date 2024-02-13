@@ -14,59 +14,60 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-}
+  gap: 2rem;
 
-.classHabilidad {
-  border: 5px solid  var(--varHabColorHR1);
-  background-color: var(--varHabColorHR2);
-  color: var(--varHabColorHR1);
-  box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
-  border-radius: 2rem;
-  min-width: 210px;
-  width: 17rem;
-  height: 19rem;
-}
+  & .classHabiIcono, & .classHabiNombre, & .classHabiDetalles {
+    font-family: var(--varRubikRegular);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
+  & .classHabilidad {
+    border: 5px solid  var(--varHabColorHR1);
+    background-color: var(--varHabColorHR2);
+    color: var(--varHabColorHR1);
+    box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
+    border-radius: 2rem;
+    min-width: 210px;
+    width: 18rem;
+    height: 16rem;
+  }
   
-.classHabiIcono, .classHabiNombre, .classHabiDetalles {
-  font-family: var(--varRubikRegular);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.classHabiIcono {
-  height: 25%;
-
-  & svg {
-    margin-top: 1rem;
-    width: 4rem;
-    height: 4rem;
-    fill: var(--varHabColorHR1);
-    stroke: var(--varHabColorHR1);
-    stroke-width: 2.5;
+  & .classHabiIcono {
+    height: 25%;
+  
+    & svg {
+      margin-top: 1rem;
+      width: 4rem;
+      height: 4rem;
+      fill: var(--varHabColorHR1);
+      stroke: var(--varHabColorHR1);
+      stroke-width: 2.5;
+    }
   }
-}
-
-.classHabiNombre {
-  height: 40%;
-  font-family: var(--varAardvarkCafe);
-  font-weight: 500;
-  font-size: 32px;
-  text-shadow: 1px 1px #FFFFFF;
-  align-items: center;
-}
-
-.classHabiDetalles {
-    height: 35%;
-    font-family: var(--varFrutiger);
-    font-size: 18px;
-    align-items: flex-start;
-    line-height: 1.3rem;
+  
+  & .classHabiNombre {
+    height: 40%;
+    font-family: var(--varAardvarkCafe);
+    font-weight: 500;
+    font-size: 32px;
+    text-shadow: 1px 1px #FFFFFF;
+    align-items: center;
   }
+  
+  & .classHabiDetalles {
+      height: 35%;
+      font-family: var(--varFrutiger);
+      font-size: 18px;
+      align-items: flex-start;
+      line-height: 1.3rem;
+    }
+}
+
+
 
 /*---------RESPONSIVE---------*/
 @media (max-width:414px) {

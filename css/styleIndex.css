@@ -37,7 +37,7 @@
     --varFontColor: #F0F0F0;
     --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 60%);
 
-    --varTopBarBackColor: #204B89;
+    --varTopBarBackColor: 43, 74, 133;
     --varTopBarHeight: 4rem;
 
     --varBtnsCan1: #E9291C;

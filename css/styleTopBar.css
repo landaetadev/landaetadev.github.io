@@ -1,20 +1,20 @@
 /*------------------------------------------------*/
 .classHeader {
-	background-color: var(--varTopBarBackColor);
+    background-color: rgba(var(--varTopBarBackColor), .95);
     width: 100vw;
     height: var(--varTopBarHeight);
     padding: 0 1.5rem;
     position: fixed;
-    top: calc(var(--varTopBarHeight) * (-1));
+    /* top: calc(var(--varTopBarHeight) * (-1)); */
     display: flex;
 	justify-content: center;
     z-index: 995;
     transition:all 500ms ease;
 }
 
-.classShowHeader {
+/* .classShowHeader {
 	top: 0;
-}
+} */
 
 .class800 {
     width: 100%;

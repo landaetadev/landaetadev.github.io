@@ -144,10 +144,9 @@
     flex-direction: row;
     align-items: center;
     vertical-align: middle;
-    /* padding-right: 5rem; */
 
     & a {
-        background-color: rgba(var(--varTopBarBackColor), 1);
+        background-color: rgb(var(--varTopBarBackColor));
         color: var(--varFontColor);
         font-family: var(--varRubikRegular);
         font-size: 20px;

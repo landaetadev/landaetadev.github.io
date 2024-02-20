@@ -5,16 +5,11 @@
     height: var(--varTopBarHeight);
     padding: 0 1.5rem;
     position: fixed;
-    /* top: calc(var(--varTopBarHeight) * (-1)); */
     display: flex;
 	justify-content: center;
     z-index: 995;
     transition:all 500ms ease;
 }
-
-/* .classShowHeader {
-	top: 0;
-} */
 
 .class800 {
     width: 100%;

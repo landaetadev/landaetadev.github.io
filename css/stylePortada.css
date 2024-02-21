@@ -112,7 +112,7 @@
         fill: var(--varBtnsCan1);
         stroke-width: 2.5;
         width: 3rem;
-        height: 2rem;
+        height: 3rem;
     }
 }
 
@@ -282,38 +282,27 @@
     .classCoverDatos {
     
         & .classTituloH2 {
-            font-size: 20px;
+            font-size: 18px;
     
             & span {
-                font-size: 20px;
+                font-size: 18px;
             }
         }
     
         & .classCoverHi {
             margin-bottom: 1rem;
-            font-size: 16px;
+            font-size: 15px;
             line-height : 1rem;
         }
         
         & .classCoverIcons {
-            display: flex;
-            justify-content: left;
             gap: 0 .5rem;
     
             & a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 6rem;
+                width: 7rem;
                 height: 2rem;
                 border-radius: .75rem;
                 font-size: 12px;
-            }
-    
-            & a:hover {
-                background-color: var(--varBtnsCanHover);
-                transition: transform .5s ease-in-out;
-                transform: scale(1.1);
             }
     
             & .btnGitHub svg,
@@ -328,7 +317,7 @@
     }
 
     .classArrowDown {
-        bottom: 2rem;
+        bottom: 3rem;
     
         & svg {
             stroke-width: 2.5;
@@ -337,36 +326,28 @@
     }
 }
 
-@media (width <= 390px) {
-    .classCoverDatos {
-        & .classTituloH2 {
-            font-size: 20px;
-        }
-    }
-}
 
 @media (width <= 375px) {
     .classFotoDatos {
 
         & .classCoverFoto{
-            width: 6rem;
+            width: 8rem;
             height: auto;
         }
 
         & .classTituloH2 {
-            font-size: 18px;
+            font-size: 16px;
         }
         & .classCoverHi {
-            font-size: 14px;
+            font-size: 12px;
         }
 
         & .classCoverIcons {
-            display: flex;
-            justify-content: left;
             gap: 0 1rem;
+            
     
             & a {
-                width: 6rem;
+                width: 5.5rem;
                 height: 1.5rem;
                 border-radius: .5rem;
                 font-size: 10px;
@@ -384,7 +365,6 @@
     }
 
     .classArrowDown {
-        bottom: 2rem;
     
         & svg {
             width: 1rem;

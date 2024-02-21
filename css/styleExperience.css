@@ -11,134 +11,176 @@
         background-color: var(--varHabColorHR2);
         border: 2px solid var(--varHabColorHR1);
         border-radius: .5rem;
-        width: 6px;
+        width: 8px;
         height: 96%;
         z-index: 1;
     }
 
-}
-
-.experiencia,
-.curso {
-    display: flex;
-    flex-direction: row;
-    color: var(--varFontColor);
-    margin-bottom: 2.5rem;
-
-    & .barra {
-        margin-right: 15px;
-    }
-    
-    & .point {
-        position: relative;
+    .experiencia,
+    .curso {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 17px;
-        height: 15px;
-        margin-top: 3px;
-        background-color: var(--varHabColorHR2);
-        border: 3px solid var(--varHabColorHR1);
-        box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
-        border-radius: 50%;
-        z-index: 2;
+        flex-direction: row;
+        color: var(--varFontColor);
+        margin-bottom: 2rem;
+
+        & .barra {
+            display: flex;
+            justify-items: center;
+
+            & .point {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 17px;
+                height: 17px;
+                margin-top: 3px;
+                background-color: var(--varHabColorHR2);
+                border: 3px solid var(--varHabColorHR1);
+                box-shadow: var(--varHabColorHR3, 1) 0px 0px 1px 1px;
+                border-radius: 50%;
+                z-index: 2;
+            }
+        }
+
+        & p {
+            font-family: var(--varRubikRegular);
+            font-size: 22px;
+            margin-left: .5rem;
+            line-height : 2.5rem;
+        }
     }
 
-    & p {
-        font-family: var(--varRubikRegular);
-        font-size: 22px;
-        margin-left: .5rem;
-        line-height : 2.2rem;
-    }
 }
+
+
 
 /*---------RESPONSIVE---------*/
-@media (width < 700px) {
-    .experiencia p {
-        font-size: 16px;
+@media (width <= 700px) {
+    .experiencias {
+        & .experiencia {
+            & p {
+                font-size: 16px;
+            }
+        }
     }
 }
 
-@media (width < 600px) {
-    .experiencia p {
-        font-size: 15px;
+@media (width <= 600px) {
+    .experiencias {
+        & .experiencia {
+            & p {
+                font-size: 15px;
+            }
+        }
     }
 }
 
-@media (width < 550px) {
-    .experiencias hr {
-        width: 6px;
+@media (width <= 550px) {
+    .experiencias {
+        & hr {
+            width: 6px;
+        }
+        & .experiencia {
+            & .barra {
+                & .point {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+    
+            & p {
+                font-size: 15px;
+                
+            }
+        }
     }
+    
+}
 
-    .point {
-        width: 15px;
-        height: 15px;
-    }
-
+@media (width <= 500px) {
     .experiencia {
-        width: 90vw;
-
         & p {
-            font-size: 15px;
-            
+            font-size: 14px;
+        }
+    }
+}
+
+@media (width <= 414px) {
+    .experiencias {
+        & .experiencia {
+            & p {
+                font-size: 13px;
+            }
         }
     }
 
-}
-
-@media (width < 500px) {
-    .experiencia p {
-        font-size: 14px;
+    .cursos {
+        & .curso {
+            & p {
+                font-size: 13px;
+            }
+        }
     }
 }
 
-
-@media (width < 414px) {
-    .experiencia {
-        width: 90vw;
-
-        & p {
-            font-size: 13px;
+@media (width <= 400px) {
+    .experiencias {
+        & .experiencia {
+            & p {
+                font-size: 14px;
+            }
         }
     }
 
-    .point {
-        width: 13px;
-        height: 13px;
-        border: 2px solid var(--varHabColorHR1);
-    }
-    .experiencias hr {
-        margin: 3px 0 0 4px;
-        width: 5px;
-        border: 2px solid var(--varHabColorHR1);
-    }
-    .experiencia p {
-        font-size: 12px;
+    .cursos {
+        & .curso {
+            & p {
+                font-size: 12px;
+                line-height: 1.5rem;
+            }
+        }
     }
 }
 
-@media (width < 375px) {
-    .experiencia p {
-        font-size: 12px;
-    }
-}
-
-@media (max-width:350px) {
-    .experiencia p {
-        font-size: 11px;
-    }
-
-}
-
-@media (max-width:320px) {
-    .experiencia {
-        width: 90vw;
-
-        & p {
-            font-size: 10px;
+@media (width <= 375px) {
+    .experiencias {
+        & .experiencia {
+            & p {
+                font-size: 13px;
+            }
         }
     }
 
+    .cursos {
+        & .curso {
+            & p {
+                font-size: 11px;
+                line-height : 1.5rem;
+            }
+        }
+    }
+
+    
+}
+
+@media (width <= 360px) {
+    .experiencias {
+        & .experiencia {
+            & p {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .cursos{
+        & .curso {
+            & p {
+                font-size: 11px;
+                line-height : 1.5rem;
+            }
+        }
+    } 
 }
 
 /*---------RESPONSIVE---------*/

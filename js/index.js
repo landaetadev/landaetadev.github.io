@@ -1,6 +1,5 @@
 var vShowVerticalMenu = false;
 var vBody = document.querySelector("body");
-let letIconsFile = "./assets/icons.svg#"
 
 //VARIABLES TOPBAR
 var vBtnMenu = document.querySelector("#idBtnMenu");

@@ -1,200 +1,200 @@
 /*---------MAIL---------*/
 .classFormMail {
-    border: 3px solid var(--varBtnsCan1);
-    box-shadow: var(--varBtnsCan2, 1) 0px 0px 2px 1px;
-    background-color: var(--varMailFormBackColor);
-    font-family: var(--varRubikRegular);
+  border: 3px solid var(--varBtnsCan1);
+  box-shadow: var(--varBtnsCan2, 1) 0px 0px 2px 1px;
+  background-color: var(--varMailFormBackColor);
+  font-family: var(--varRubikRegular);
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & ul {
+    padding: 0;
     width: 100%;
-    max-width: 500px;
-    padding: 2rem 1rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    & ul {
-        padding:0;
-        width: 100%;
+    & li {
+      list-style: none;
+      margin: 0 0 1rem 0;
 
-        & li {
-            list-style: none;
-            margin: 0 0 1rem 0;
-            
-            & label {
-                color:black;
-                font-size: 20px;
-                color: var(--varMailFontColor);
-            }
+      & label {
+        color: black;
+        font-size: 20px;
+        color: var(--varMailFontColor);
+      }
 
-            & .classFormInput {
-                background-color: var(--varMailFormBackColor);
-                color: var(--varMailFontColor);
-                font-family: var(--varRubikRegular);
-                width: 100%;
-                font-size: 18px;
-                padding: .5rem;
-                margin-top:.5rem;
-                display: flex;
-                border: 1px solid black;
-                border-radius: .5rem;
-                resize: none;
-            
-                &:focus{ 
-                    outline: none;
-                }
-            }
-        }
-    }
-
-    & .classBtnSendMail {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 3px solid var(--varBtnsCan1);
-        background-color: var(--varBtnsCan2);
-        color: var(--varBtnsCan1);
+      & .classFormInput {
+        background-color: var(--varMailFormBackColor);
+        color: var(--varMailFontColor);
         font-family: var(--varRubikRegular);
-        font-size: 16px;
-        border-radius: .75rem;
-        width: 120px;
-        height: calc(var(--varTopBarHeight) * 0.6);
-        cursor: pointer;
-    
-        &:hover{
-            background-color: var(--varBtnsCanHover);
-        }
-    
-        & svg {
-            width: 1.5rem;
-            stroke: var(--varBtnsCan1);
-            stroke-width: 2;
-            margin-right: .5rem;
-        }
-    }
-
-    & .classMailAddress {
         width: 100%;
         font-size: 18px;
-        font-family: var(--varRubikRegular);
-        margin-top: 1rem;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
         display: flex;
-        justify-content: center;
-    
-        & svg {
-            width: 2rem;
-            height: 2rem;
-            stroke: var(--varBtnsCan1);
-            stroke-width: 2;
-            margin-right: .5rem;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        resize: none;
+
+        &:focus {
+          outline: none;
         }
-        & p {
-            display: flex;
-            align-items: center;
-        }
+      }
     }
+  }
+
+  & .classBtnSendMail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--varBtnsCan1);
+    background-color: var(--varBtnsCan2);
+    color: var(--varBtnsCan1);
+    font-family: var(--varRubikRegular);
+    font-size: 16px;
+    border-radius: 0.75rem;
+    width: 120px;
+    height: calc(var(--varTopBarHeight) * 0.6);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--varBtnsCanHover);
+    }
+
+    & svg {
+      width: 1.5rem;
+      stroke: var(--varBtnsCan1);
+      stroke-width: 2;
+      margin-right: 0.5rem;
+    }
+  }
+
+  & .classMailAddress {
+    width: 100%;
+    font-size: 18px;
+    font-family: var(--varRubikRegular);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    & svg {
+      width: 2rem;
+      height: 2rem;
+      stroke: var(--varBtnsCan1);
+      stroke-width: 2;
+      margin-right: 0.5rem;
+    }
+    & p {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .classSendMail {
-    width: 100%;
-    padding: .5rem 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    color: green;
-    font-size: 1.3rem;
+  width: 100%;
+  padding: 0.5rem 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: green;
+  font-size: 1.3rem;
 }
 
 .classCheckMail {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: var(--varRubikRegular);
-    font-size: 25px;
-    visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: var(--varRubikRegular);
+  font-size: 25px;
+  visibility: hidden;
 
-    & svg {
-        width: 2rem;
-        height: 2rem;
-        stroke: green;
-        stroke-width: 4;
-        margin-right: 5px;
-    }
+  & svg {
+    width: 2rem;
+    height: 2rem;
+    stroke: green;
+    stroke-width: 4;
+    margin-right: 5px;
+  }
 }
 
 .classCheckMailShow {
-    visibility: visible;
-    animation: scale-up-center .5s ease-in both;
+  visibility: visible;
+  animation: scale-up-center 0.5s ease-in both;
 }
 
 @-webkit-keyframes scale-up-center {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes scale-up-center {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .classCheckMailHide {
-    animation: scale-down-center 0.5s ease-out both;
+  animation: scale-down-center 0.5s ease-out both;
 }
 @-webkit-keyframes scale-down-center {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 @keyframes scale-down-center {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 /*---------RESPONSIVE---------*/
 
 @media (width < 350px) {
-    .classCheckMail {
-        font-size: 1rem;
-    }
-    .classBtnSendMail {
-        width: 120px;
-        font-size: small;
-    }
+  .classCheckMail {
+    font-size: 1rem;
+  }
+  .classBtnSendMail {
+    width: 120px;
+    font-size: small;
+  }
 }
 
 @media (width < 320px) {
-    .classFormMail {
-        width: 100%;
-    }
-    .classFormInput {
-        font-size: 16px;
-    }
-    .classBtnSendMail {
-        width: 100px;
-        font-size: small;
-    }
-    .classMailAddress {
-        font-size: .8rem;
-    }
+  .classFormMail {
+    width: 100%;
+  }
+  .classFormInput {
+    font-size: 16px;
+  }
+  .classBtnSendMail {
+    width: 100px;
+    font-size: small;
+  }
+  .classMailAddress {
+    font-size: 0.8rem;
+  }
 
-    .classCheckMail {
-        font-size: 1rem;
-    }
-    .classCheckMail svg {
-        width: 1rem;
-    }
+  .classCheckMail {
+    font-size: 1rem;
+  }
+  .classCheckMail svg {
+    width: 1rem;
+  }
 }

@@ -1,81 +1,84 @@
 @font-face {
-    font-family: "AardvarkCafe";
-    src: url(../assets/fonts/AardvarkCafe.woff2) format("woff2");
-    src: url(../assets/fonts/AardvarkCafe.woff) format("woff");
-    src: url(../assets/fonts/AardvarkCafe.ttf) format("truetype");
-    font-display: swap;
+  font-family: "AardvarkCafe";
+  src: url(../assets/fonts/AardvarkCafe.woff2) format("woff2");
+  src: url(../assets/fonts/AardvarkCafe.woff) format("woff");
+  src: url(../assets/fonts/AardvarkCafe.ttf) format("truetype");
+  font-display: swap;
 }
 @font-face {
-    font-family: "Frutiger";
-    src: url(../assets/fonts/Frutiger.woff2) format("woff2");
-    src: url(../assets/fonts/Frutiger.woff) format("woff");
-    src: url(../assets/fonts/Frutiger.ttf) format("truetype");
-    font-display: swap;
+  font-family: "Frutiger";
+  src: url(../assets/fonts/Frutiger.woff2) format("woff2");
+  src: url(../assets/fonts/Frutiger.woff) format("woff");
+  src: url(../assets/fonts/Frutiger.ttf) format("truetype");
+  font-display: swap;
 }
 @font-face {
-    font-family: "RubikRegular";
-    src: url(../assets/fonts/Rubik-Regular.woff2) format("woff2");
-    src: url(../assets/fonts/Rubik-Regular.woff) format("woff");
-    src: url(../assets/fonts/Rubik-Regular.ttf) format("truetype");
-    font-display: swap;
+  font-family: "RubikRegular";
+  src: url(../assets/fonts/Rubik-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/Rubik-Regular.woff) format("woff");
+  src: url(../assets/fonts/Rubik-Regular.ttf) format("truetype");
+  font-display: swap;
 }
 @font-face {
-    font-family: "RubikSemiBold";
-    src: url(../assets/fonts/Rubik-SemiBold.woff2) format("woff2");
-    src: url(../assets/fonts/Rubik-SemiBold.woff) format("woff");
-    src: url(../assets/fonts/Rubik-SemiBold.ttf) format("truetype");
-    font-display: swap;
+  font-family: "RubikSemiBold";
+  src: url(../assets/fonts/Rubik-SemiBold.woff2) format("woff2");
+  src: url(../assets/fonts/Rubik-SemiBold.woff) format("woff");
+  src: url(../assets/fonts/Rubik-SemiBold.ttf) format("truetype");
+  font-display: swap;
 }
 
 :root {
-    --varUrlBackgroundImage: url("../assets/images/backgrounds/001.webp");
+  --varUrlBackgroundImage: url("../assets/images/backgrounds/001.webp");
 
-    --varAardvarkCafe: 'AardvarkCafe';
-    --varFrutiger: 'Frutiger';
-    --varRubikRegular: 'RubikRegular';
-    --varRubikSemiBold: 'RubikSemiBold';
-    --varFontColor: #F0F0F0;
-    --varLineColor: linear-gradient(to right, #873E2F 40%, #EABE6A 60%);
+  --varAardvarkCafe: "AardvarkCafe";
+  --varFrutiger: "Frutiger";
+  --varRubikRegular: "RubikRegular";
+  --varRubikSemiBold: "RubikSemiBold";
+  --varFontColor: #f0f0f0;
+  --varLineColor: linear-gradient(to right, #873e2f 40%, #eabe6a 60%);
 
-    --varTopBarBackColor: 43, 74, 133;
-    --varTopBarHeight: 4rem;
+  --varTopBarBackColor: 224, 42%, 34%;
+  --varTopBarHeight: 4rem;
 
-    --varBtnsCan1: #E9291C;
-    --varBtnsCan2: #FEFFFE;
-    --varBtnsCanHover: #F0F0F0;
+  --varBtnsCan1: #e9291c;
+  --varBtnsCan2: #fefffe;
+  --varBtnsCanHover: #f0f0f0;
 
-    --varMinHeightClassScreen:calc(100vh - var(--varTopBarHeight));
+  --varMinHeightClassScreen: calc(100vh - var(--varTopBarHeight));
 
-    --varIcoColorCardOver: #202D59;
+  --varIcoColorCardOver: #202d59;
 
-    --varHabColorHR1 : #873E2F;
-    --varHabColorHR2 : #EABE6A;
-    --varHabColorHR3 : #FEFFFE;
+  --varHabColorHR1: #873e2f;
+  --varHabColorHR2: #eabe6a;
+  --varHabColorHR3: #fefffe;
 
-    --varMailFormBackColor: #DCDCDC;
-    --varMailFontColor: #494545;
+  --varMailFormBackColor: #dcdcdc;
+  --varMailFontColor: #494545;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 
-    & body {
-        min-width: 320px;
-        min-height: 600px;
+  & body {
+    min-width: 320px;
+    min-height: 600px;
 
-        & a:link, a:visited, a:hover, a:active {
-            text-decoration: none;
-        }
+    & a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      text-decoration: none;
     }
+  }
 }
 
 .classTotalContainer,
 .classProjectsContainer {
-    background: var(--varUrlBackgroundImage);
+  background: var(--varUrlBackgroundImage);
 }
 
 .classCover,
@@ -84,104 +87,111 @@ html {
 .classExperiencia,
 .classEstudios,
 .classMail {
-    position: relative;
-    padding: 3rem 1rem;
+  position: relative;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--varMinHeightClassScreen);
+
+  & .classSubTitulo {
+    padding-bottom: 3rem;
+    font-family: var(--varRubikSemiBold);
+    text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    min-height: var(--varMinHeightClassScreen);
+    color: var(--varFontColor);
+    font-size: 40px;
 
-    & .classSubTitulo {
-        padding-bottom: 3rem;
-        font-family: var(--varRubikSemiBold);
-        text-align: center;
-        display: flex;
-        align-items: center;
-        color: var(--varFontColor);
-        font-size: 40px;
-
-        & svg {
-            width: 2.5rem;
-            height: 2.5rem;
-            margin-right: .5rem;
-            stroke: var(--varFontColor);
-            stroke-width: 2;
-        }
+    & svg {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 0.5rem;
+      stroke: var(--varFontColor);
+      stroke-width: 2;
     }
-
+  }
 }
 
 .LineColor {
-    height: 1px;
-    border: none;
-    background: var(--varLineColor);
+  height: 1px;
+  border: none;
+  background: var(--varLineColor);
 }
 
 /*---------CONTENEDOR TOTAL---------*/
 
-.classAncleCover, .classAncle {
-    position: absolute;
-    visibility: hidden;
-    left: 0;
+.classAncleCover,
+.classAncle {
+  position: absolute;
+  visibility: hidden;
+  left: 0;
 }
 
 .classAncleCover {
-    top: 0;
+  top: 0;
 }
 .classAncle {
-    height: var(--varTopBarHeight);
-    bottom: -1px;
+  height: var(--varTopBarHeight);
+  bottom: -1px;
 }
 
 .classHideOverflowY {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 /*---------CONTENEDOR TOTAL---------*/
 
 @media (width < 600px) {
-    .classCover, .classProjects, .classHabilidades,
-    .classExperiencia, .classEstudios, .classMail {
+  .classCover,
+  .classProjects,
+  .classHabilidades,
+  .classExperiencia,
+  .classEstudios,
+  .classMail {
+    & .classSubTitulo {
+      font-size: 40px;
 
-        & .classSubTitulo {
-            font-size: 40px;
-
-            & svg {
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-        }
-
+      & svg {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
     }
+  }
 }
 
 @media (width < 500px) {
-    .classCover, .classProjects, .classHabilidades,
-    .classExperiencia, .classEstudios, .classMail {
+  .classCover,
+  .classProjects,
+  .classHabilidades,
+  .classExperiencia,
+  .classEstudios,
+  .classMail {
+    & .classSubTitulo {
+      font-size: 30px;
 
-        & .classSubTitulo {
-            font-size: 30px;
-
-
-            & svg {
-                width: 2rem;
-                height: 2rem;
-            }
-        }
+      & svg {
+        width: 2rem;
+        height: 2rem;
+      }
     }
+  }
 }
 
 @media (width < 400px) {
-    .classCover, .classProjects, .classHabilidades,
-    .classExperiencia, .classEstudios, .classMail {
+  .classCover,
+  .classProjects,
+  .classHabilidades,
+  .classExperiencia,
+  .classEstudios,
+  .classMail {
+    & .classSubTitulo {
+      font-size: 25px;
 
-        & .classSubTitulo {
-            font-size: 25px;
-
-            & svg {
-                width: 2rem;
-            }
-        }
+      & svg {
+        width: 2rem;
+      }
     }
+  }
 }

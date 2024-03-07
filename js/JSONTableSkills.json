@@ -1,37 +1,37 @@
 [
-    {
-        "jsonIcono": "icoDesktop",
-        "jsonArea" : "Diseño Web",
-        "jsonSoftwares" : "HTML - CSS - JS<br> Bootstrap - Wordpress<br> Prestashop"
-    },
-    {
-        "jsonIcono": "icoMobile",
-        "jsonArea" : "Programación Movil",
-        "jsonSoftwares" : "Xcode - Android Studio"
-    },
-    {
-        "jsonIcono": "icoLaptopCode",
-        "jsonArea" : "Programación",
-        "jsonSoftwares" : "Swift - PHP - Python"
-    },
-    {
-        "jsonIcono": "icoData",
-        "jsonArea" : "Manejo de datos",
-        "jsonSoftwares" : "MySQL - JSON"
-    },
-    {
-        "jsonIcono": "icoNetwork",
-        "jsonArea" : "Servidores y Redes",
-        "jsonSoftwares" : "Configuración<br> Administración<br> Unix - Windows Server"
-    },
-    {
-        "jsonIcono": "icoUnity",
-        "jsonArea" : "Diseño 3D",
-        "jsonSoftwares" : "Maya 3D - Unity<br> OnShape"
-    },
-    {
-        "jsonIcono": "icoTools",
-        "jsonArea" : "Herramientas",
-        "jsonSoftwares" : "Visual Studio Code<br> GitHub"
-    }
+  {
+    "jsonIcono": "icoDesktop",
+    "jsonArea": "Diseño Web",
+    "jsonSoftwares": "HTML - CSS - JS<br> Bootstrap - Wordpress<br> Prestashop"
+  },
+  {
+    "jsonIcono": "icoMobile",
+    "jsonArea": "Programación Movil",
+    "jsonSoftwares": "Xcode - Android Studio"
+  },
+  {
+    "jsonIcono": "icoLaptopCode",
+    "jsonArea": "Programación",
+    "jsonSoftwares": "Swift - PHP - Python"
+  },
+  {
+    "jsonIcono": "icoData",
+    "jsonArea": "Manejo de datos",
+    "jsonSoftwares": "MySQL - JSON"
+  },
+  {
+    "jsonIcono": "icoNetwork",
+    "jsonArea": "Servidores y Redes",
+    "jsonSoftwares": "Configuración<br> Administración<br> Unix - Windows Server"
+  },
+  {
+    "jsonIcono": "icoUnity",
+    "jsonArea": "Diseño 3D",
+    "jsonSoftwares": "Maya 3D - Unity<br> OnShape"
+  },
+  {
+    "jsonIcono": "icoTools",
+    "jsonArea": "Herramientas",
+    "jsonSoftwares": "Visual Studio Code<br> GitHub"
+  }
 ]

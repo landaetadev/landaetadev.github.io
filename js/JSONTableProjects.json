@@ -1,52 +1,52 @@
 [
-    {
-        "jsonTitle": "MuseumApp",
-        "jsonImgScreen" : "MuseumApp/XCodeMuseumApp.webp",
-        "jsonTypeFileShow" : "vid",
-        "jsonFileShow" : "MuseumApp/MuseumApp.webm",
-        "jsonLangs": "XCode &nbsp; JSON &nbsp; QR",
-        "jsonGitHub": "XCode-iFab2020-MuseumApp",
-        "jsonWeb": "",
-        "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar."
-    },
-    {
-        "jsonTitle": "Flappy Flying",
-        "jsonImgScreen" : "FlappyFlyingApp/XCodeFlappyFlyingApp.webp",
-        "jsonTypeFileShow" : "vid",
-        "jsonFileShow" : "FlappyFlyingApp/FlappyFlyingApp.webm",
-        "jsonLangs": "XCode",
-        "jsonGitHub": "XCode-FlappyFlying",
-        "jsonWeb": "",
-        "jsonDescript": "Flappy Flying, la idea del juego Flappy Bird aprediendo un poco de programación de videojuegos en Xcode para iOS."
-    },
-    {
-        "jsonTitle": "Breakout",
-        "jsonImgScreen" : "UnityBreakout/UnityBreakout.webp",
-        "jsonTypeFileShow" : "vid",
-        "jsonFileShow" : "UnityBreakout/Breakout.webm",
-        "jsonLangs": "Unity",
-        "jsonGitHub": "Unity.2021.3.14f1-Breakout",
-        "jsonWeb": "",
-        "jsonDescript": "Breakout, antiguo videojuego de Atari, diseñado en Unity para PC."
-    },
-    {
-        "jsonTitle": "Ajedrez 3D",
-        "jsonImgScreen" : "Maya3DChess/Maya3DChess.webp",
-        "jsonTypeFileShow" : "vid",
-        "jsonFileShow" : "Maya3DChess/Chess3D.webm",
-        "jsonLangs": "Maya3D",
-        "jsonGitHub": "",
-        "jsonWeb": "",
-        "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D."
-    },
-    {
-        "jsonTitle": "MacFreeware",
-        "jsonImgScreen" : "WebMacFreeware/WebMacFreeware.webp",
-        "jsonTypeFileShow" : "vid",
-        "jsonFileShow" : "WebMacFreeware/MacFreeware.webm",
-        "jsonLangs": "HTML &nbsp; CSS &nbsp; JS &nbsp; JSON",
-        "jsonGitHub": "https://github.com/landaetadev/MacFreewares",
-        "jsonWeb": "https://www.landaetadev.com/MacFreewares/",
-        "jsonDescript": "Web Site mostrando un listado de aplcaciones de libre uso para sistema operativo Mac."
-    }
+  {
+    "jsonTitle": "MuseumApp",
+    "jsonImgScreen": "MuseumApp/XCodeMuseumApp.webp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "MuseumApp/MuseumApp.webm",
+    "jsonLangs": "XCode &nbsp; JSON &nbsp; QR",
+    "jsonGitHub": "XCode-iFab2020-MuseumApp",
+    "jsonWeb": "",
+    "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar."
+  },
+  {
+    "jsonTitle": "Flappy Flying",
+    "jsonImgScreen": "FlappyFlyingApp/XCodeFlappyFlyingApp.webp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "FlappyFlyingApp/FlappyFlyingApp.webm",
+    "jsonLangs": "XCode",
+    "jsonGitHub": "XCode-FlappyFlying",
+    "jsonWeb": "",
+    "jsonDescript": "Flappy Flying, la idea del juego Flappy Bird aprediendo un poco de programación de videojuegos en Xcode para iOS."
+  },
+  {
+    "jsonTitle": "Breakout",
+    "jsonImgScreen": "UnityBreakout/UnityBreakout.webp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "UnityBreakout/Breakout.webm",
+    "jsonLangs": "Unity",
+    "jsonGitHub": "Unity.2021.3.14f1-Breakout",
+    "jsonWeb": "",
+    "jsonDescript": "Breakout, antiguo videojuego de Atari, diseñado en Unity para PC."
+  },
+  {
+    "jsonTitle": "Ajedrez 3D",
+    "jsonImgScreen": "Maya3DChess/Maya3DChess.webp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "Maya3DChess/Chess3D.webm",
+    "jsonLangs": "Maya3D",
+    "jsonGitHub": "",
+    "jsonWeb": "",
+    "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D."
+  },
+  {
+    "jsonTitle": "MacFreeware",
+    "jsonImgScreen": "WebMacFreeware/WebMacFreeware.webp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "WebMacFreeware/MacFreeware.webm",
+    "jsonLangs": "HTML &nbsp; CSS &nbsp; JS &nbsp; JSON",
+    "jsonGitHub": "https://github.com/landaetadev/MacFreewares",
+    "jsonWeb": "https://www.landaetadev.com/MacFreewares/",
+    "jsonDescript": "Web Site mostrando un listado de aplcaciones de libre uso para sistema operativo Mac."
+  }
 ]

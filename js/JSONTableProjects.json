@@ -38,5 +38,15 @@
     "jsonGitHub": "",
     "jsonWeb": "",
     "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D."
+  },
+  {
+    "jsonTitle": "MacFreeware",
+    "jsonImgScreen": "WebMacFreeware/WebMacFreeware.webp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "WebMacFreeware/MacFreeware.webm",
+    "jsonLangs": "HTML &nbsp; CSS &nbsp; JS &nbsp; JSON",
+    "jsonGitHub": "https://github.com/landaetadev/MacFreewares",
+    "jsonWeb": "https://www.landaetadev.com/MacFreewares/",
+    "jsonDescript": "Web Site mostrando un listado de aplcaciones de libre uso para sistema operativo Mac."
   }
 ]

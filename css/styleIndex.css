@@ -90,7 +90,6 @@ html {
   position: relative;
   padding: 3rem 1rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: var(--varMinHeightClassScreen);

@@ -1,6 +1,13 @@
 /*---------PORTADA---------*/
 .classCover {
-  background: url("../assets/images/backgrounds/002.webp") no-repeat center top;
+  background-image: image-set(
+    url("../assets/images/backgrounds/002.avif") type("image/avif"),
+    url("../assets/images/backgrounds/002.webp") type("image/webp"),
+    url("../assets/images/backgrounds/002.jpg") type("image/jpeg") 
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
   background-size: cover;
   padding: 0;
 }

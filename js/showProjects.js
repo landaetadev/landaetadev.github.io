@@ -39,8 +39,8 @@ function ReadTableProjects(JSONDataProjects) {
 	vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
 
 	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "vid") {
-		vMakeProjectHTML += `<video controls class="classShowFile classPlayVideo">`;
-		vMakeProjectHTML += `<source src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonFileShow}" type="video/webm" loading="lazy" alt="Video Proyecto">`;
+		vMakeProjectHTML += `<video controls preload="none" class="classShowFile classPlayVideo">`;
+		vMakeProjectHTML += 	`<source src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonFileShow}" type="video/webm" alt="Video Proyecto">`;
 		vMakeProjectHTML += `</video>`;
 	}
 	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "img") {

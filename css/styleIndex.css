@@ -60,6 +60,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 
@@ -115,7 +116,7 @@ html {
 }
 
 .LineColor {
-  height: 1px;
+  height: 3px;
   border: none;
   background: var(--varLineColor);
 }

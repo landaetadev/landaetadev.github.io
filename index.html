@@ -16,13 +16,12 @@
   <link rel="stylesheet" href="./css/styleExperience.css">
   <link rel="stylesheet" href="./css/styleSkills.css">
   <link rel="stylesheet" href="./css/styleProjects.css">
-  <link rel="stylesheet" href="./css/styleMail.css">
+  <link rel="stylesheet" href="./css/styleFootBar.css">
 
   <!--carga archivos JS-->
   <script defer src="./js/index.js" type="application/javascript"></script>
   <script defer src="./js/showProjects.js" type="application/javascript"></script>
   <script defer src="./js/showSkills.js" type="application/javascript"></script>
-  <script defer src="./js/sendMail.js" type="application/javascript"></script>
   
   <title>LandaetaDev</title>
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico">
@@ -86,13 +85,13 @@
           </li>
           <div class="classHR"></div>
 
-          <li><a href="./index.html#idAncleContact" class="classBtnMenuOpt">
+          <!-- <li><a href="./index.html#idAncleContact" class="classBtnMenuOpt">
             <svg>
               <use href="./assets/icons.svg#icoContacto">
             </svg>
             Contacto</a>
           </li>
-          <div class="classHR"></div>
+          <div class="classHR"></div> -->
             
         </ul>
       </nav>
@@ -116,41 +115,40 @@
             <img src="./assets/images/MyPic.jpg" alt="Mi Foto">
           </picture>
             
-            
-            <div class="classCoverDatos">
-              <h2 class="classTituloH2"><span>Orlando Landaeta</span>  <br> Licenciado en Computación</h2>
+          <div class="classCoverDatos">
+            <h2 class="classTituloH2"><span>Orlando Landaeta</span>  <br> Licenciado en Computación</h2>
 
-              <p class="classCoverHi">Hola &#128075;, me llamo Orlando, soy de Caracas, actualmente viviendo en Valencia, España, 
-                en mis tiempos libres me gusta pasarlos entre los videojuegos y el aeromodelismo.
-              </p>
-              <p class="classCoverHi">Aquí podrás explorar un poco de mi 
-                trayectoria, conocimientos, y habilidades en el área de informática.
-              </p>
+            <p class="classCoverHi">Hola &#128075;, me llamo Orlando, soy de Caracas, actualmente viviendo en Valencia, España, 
+              en mis tiempos libres me gusta pasarlos entre los videojuegos y el aeromodelismo.
+            </p>
+            <p class="classCoverHi">Aquí podrás explorar un poco de mi 
+              trayectoria, conocimientos, y habilidades en el área de informática.
+            </p>
 
-                <div class="classCoverIcons">
-                  <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
-                    <svg>
-                      <use href="./assets/icons.svg#icoGitHub">
-                    </svg>
-                    GitHub
-                  </a>
+            <div class="classCoverIcons">
+              <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
+                <svg>
+                  <use href="./assets/icons.svg#icoGitHub">
+                </svg>
+                GitHub
+              </a>
 
-                    <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
-                      <svg>
-                        <use href="./assets/icons.svg#icoLinkedIn">
-                      </svg>
-                      LinkedIn
-                    </a>
-                    
-                    <a href="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
-                      <svg>
-                        <use href="./assets/icons.svg#icoCV">
-                      </svg>
-                      Curriculum
-                    </a>
-                </div>
-
+                <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
+                  <svg>
+                    <use href="./assets/icons.svg#icoLinkedIn">
+                  </svg>
+                  LinkedIn
+                </a>
+                
+                <a href="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
+                  <svg>
+                    <use href="./assets/icons.svg#icoCV">
+                  </svg>
+                  Curriculum
+                </a>
             </div>
+
+          </div>
 
         </div>
         
@@ -279,7 +277,7 @@
           <p>
             Master en Tecnologías Interactivas y Fabricación Digital<br>
             Universidad Politécnica de Valencia<br>
-            2022 - En curso
+            TFM en proceso.
           </p>
         </div>
 
@@ -327,61 +325,34 @@
           </p>
         </div>
       </div>
+
+      <div class="classFootBar">
+        <div class="classiconsFootBar">
+          <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
+            <svg>
+              <use href="./assets/icons.svg#icoGitHub">
+            </svg>
+          </a>
+  
+          <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
+            <svg>
+              <use href="./assets/icons.svg#icoLinkedIn">
+            </svg>
+          </a>
+
+          <a href="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
+            <svg>
+              <use href="./assets/icons.svg#icoCV">
+            </svg>
+          </a>
+
+        </div>
+        orlandolandaeta@gmail.com
+      </div>
       
       <a class="classAncle" id="idAncleContact"></a>
     </div>
-    <hr class="LineColor">
-
-    <div class="classMail">
-      <h2 class="classSubTitulo">
-        <svg>
-          <use href="./assets/icons.svg#icoContacto">
-        </svg>
-        CONTACTO
-      </h2>
-
-      <form class="classFormMail" id="idFormMail" action="https://formspree.io/f/mrgrrawp" method="POST">
-        <ul>
-          <li>
-            <label for="name">Nombre</label>
-            <input type="text" name="Nombre" class="classFormInput" id="idFormTxtName" placeholder="Neo">
-          </li>
-          <li>
-            <label for="mail">Correo electrónico</label>
-            <input type="email" name="E-Mail" class="classFormInput" id="idFormTxtMail" placeholder="neo@correo.com">
-          </li>
-          <li>
-            <label for="msg">Mensaje</label>
-            <textarea type="text" name="Mensaje" class="classFormInput" id="idFormTxtMsg" rows="6" placeholder="Escribe aquí"></textarea>
-          </li>
-        </ul>
-
-        <div class="classSendMail">
-            <div class="classCheckMail">
-              <svg>
-                <use href="./assets/icons.svg#icoCheckMail">
-              </svg>
-              <p>Enviado</p>
-            </div>
-            
-            <button type="submit" class="classBtnSendMail">
-              <svg>
-                <use href="./assets/icons.svg#icoSentMail">
-              </svg>
-              Enviar
-            </button>
-        </div>
-
-        <div class="classMailAddress">
-          <svg>
-            <use href="./assets/icons.svg#icoContacto">
-          </svg>
-          <p>orlandolandaeta@gmail.com</p>
-        </div>
-
-      </form>
-
-    </div>
+    
 
   </section>
     

@@ -143,21 +143,21 @@ width: 0%;
   }
 
   .classBtnsMenuOptionsShow {
-  right: 0%;
-}
+    right: 0%;
+  }
 
   .classBtnMenuOpt {
-      background-color: var(--varBtnsCan2);
-      width: 100%;
-      height: 4rem;
-      margin-left: 0;
-      border-radius: 0;
+    background-color: var(--varBtnsCan2);
+    width: 100%;
+    height: 4rem;
+    margin-left: 0;
+    border-radius: 0;
   }
 
   .classHR {
-  visibility: visible;
-  width: 100%;
-  height: 1.5px;
+    visibility: visible;
+    width: 100%;
+    height: 1.5px;
 }
 
   .classBtnMenuOpt,

@@ -91,6 +91,13 @@
       border-radius: 0.75rem;
       font-size: 18px;
       font-weight: 900;
+
+      & .icoSVG {
+        width: 2rem;
+        stroke: var(--varBtnsCan1);
+        stroke-width: 2.5;
+        margin-right: 5px;
+      }
     }
 
     & a:hover {
@@ -99,14 +106,6 @@
       transform: scale(1.1);
     }
 
-    & .btnGitHub svg,
-    .btnLinkedIn svg,
-    .btnDocCV svg {
-      width: 2rem;
-      stroke: var(--varBtnsCan1);
-      stroke-width: 2.5;
-      margin-right: 5px;
-    }
   }
 }
 
@@ -115,8 +114,8 @@
   bottom: 6rem;
   animation: animArrow 2.5s ease-in-out infinite;
 
-  & svg {
-    fill: var(--varBtnsCan1);
+  & .icoSVG {
+    stroke: var(--varBtnsCan1);
     stroke-width: 2.5;
     width: 3rem;
     height: 3rem;

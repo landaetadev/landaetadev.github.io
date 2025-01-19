@@ -86,7 +86,7 @@
   cursor: pointer;
 
   & svg {
-      width: 30px;
+      width: 35px;
       stroke: var(--varBtnsCan1);
       padding-right: 5px;
       stroke-width: 2.5;

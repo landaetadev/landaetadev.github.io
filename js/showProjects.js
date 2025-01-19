@@ -52,7 +52,7 @@ function ReadTableProjects(JSONDataProjects) {
 		if (JSONDataProjects[vJSONi].jsonWeb != "") {
 			vMakeCardHTML += `<a href="${JSONDataProjects[vJSONi].jsonWeb}" target="_blank" title="WebAddress">`
 			vMakeCardHTML += 	`<svg>`
-			vMakeCardHTML += 		`<use href="./assets/icons.svg#icoLinkWeb2">`
+			vMakeCardHTML += 		`<use href="./assets/icons.svg#icoLinkWeb">`
 			vMakeCardHTML += 	`</svg>`
 			vMakeCardHTML += `</a>`;
 		}

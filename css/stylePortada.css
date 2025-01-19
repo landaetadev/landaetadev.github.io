@@ -184,10 +184,8 @@
   .classArrowDown {
     position: absolute;
     bottom: 6rem;
-    animation: animArrow 2.5s ease-in-out infinite;
 
     & svg {
-      fill: var(--varBtnsCan1);
       stroke-width: 2.5;
       width: 3rem;
       height: 2rem;

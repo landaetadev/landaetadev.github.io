@@ -28,7 +28,12 @@
 }
 
 :root {
-  --varUrlBackgroundImage: url("../assets/images/backgrounds/001.webp");
+
+  --varUrlBackgroundImage: image-set(
+    url("../assets/images/backgrounds/001.avif") type("image/avif"),
+    url("../assets/images/backgrounds/001.webp") type("image/webp"),
+    url("../assets/images/backgrounds/001.jpg") type("image/jpeg") 
+  );
 
   --varAardvarkCafe: "AardvarkCafe";
   --varFrutiger: "Frutiger";
@@ -86,10 +91,9 @@ html {
 .classProjects,
 .classHabilidades,
 .classExperiencia,
-.classEstudios,
-.classMail {
+.classEstudios {
   position: relative;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,7 +101,7 @@ html {
   min-height: var(--varMinHeightClassScreen);
 
   & .classSubTitulo {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     font-family: var(--varRubikSemiBold);
     text-align: center;
     display: flex;
@@ -106,9 +110,9 @@ html {
     font-size: 40px;
 
     & svg {
-      width: 2.5rem;
-      height: 2.5rem;
-      margin-right: 0.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 1rem;
       stroke: var(--varFontColor);
       stroke-width: 2;
     }
@@ -116,7 +120,7 @@ html {
 }
 
 .LineColor {
-  height: 3px;
+  height: 2px;
   border: none;
   background: var(--varLineColor);
 }
@@ -149,8 +153,7 @@ html {
   .classProjects,
   .classHabilidades,
   .classExperiencia,
-  .classEstudios,
-  .classMail {
+  .classEstudios {
     & .classSubTitulo {
       font-size: 40px;
 
@@ -167,8 +170,7 @@ html {
   .classProjects,
   .classHabilidades,
   .classExperiencia,
-  .classEstudios,
-  .classMail {
+  .classEstudios {
     & .classSubTitulo {
       font-size: 30px;
 
@@ -185,8 +187,7 @@ html {
   .classProjects,
   .classHabilidades,
   .classExperiencia,
-  .classEstudios,
-  .classMail {
+  .classEstudios {
     & .classSubTitulo {
       font-size: 25px;
 

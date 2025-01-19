@@ -28,6 +28,7 @@ function funcJsShowMenuNav() {
 	vBody.classList.add("classHideOverflowY");
 	vShowVerticalMenu = true;
 };
+
 function funcJsHideMenuNav() {
 	vBtnsMenuOptions.classList.remove("classBtnsMenuOptionsShow");
 	vBody.classList.remove("classHideOverflowY");

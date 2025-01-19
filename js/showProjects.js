@@ -1,5 +1,6 @@
 //VARIABLES SLIDER
-let letProjectsFiles = "./assets/projectsFiles/"
+let letProjectsFolder = "./assets/projectsFiles/"
+let letGitHubFolder = "https://github.com/landaetadev/"
 var vShowProjects = document.querySelector(".classProjectsContainer");
 var vBtnHideProject = document.querySelector(".classBtnHideProject");
 var vShowProjectContainer = document.querySelector(".classShowProjectContainer");
@@ -18,53 +19,64 @@ function ReadTableProjects(JSONDataProjects) {
 
 	for (var vJSONi = 0; vJSONi < JSONDataProjects.length; vJSONi++) {
 
-	//Make Project Card HTML
-	//./assets/images/projectsScreens/Maya3DChess.webp
-	vMakeCardHTML += `<div class="classProjectCard">`;
-	vMakeCardHTML +=	`<a href="javascript:clickCard(vNumCard = ${vJSONi})">`;
+		//Make Project Card HTML
 
-	vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
+		vMakeCardHTML += `<div class="classProjectCard">`;
+		
 
-	vMakeCardHTML +=    `<div class="classCardImage">`;
-	vMakeCardHTML +=        `<img src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonImgScreen}" alt="Imagen App Video ${JSONDataProjects[vJSONi].jsonTitle}" class="classFileCard">`;
-	vMakeCardHTML +=    `</div>`;
+		vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
 
-	vMakeCardHTML +=    `<p class="classCardLang">${JSONDataProjects[vJSONi].jsonLangs}</p>`;
+		vMakeCardHTML +=    `<div class="classCardImage">`;
+		vMakeCardHTML +=			`<picture class="classCardImage">`
+		vMakeCardHTML +=				`<source srcset="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonImgScreen}.avif">`
+		vMakeCardHTML +=				`</source><img src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonImgScreen}.webp" alt="ImagenAppVideo ${JSONDataProjects[vJSONi].jsonTitle}" class="classFileCard">`
+		vMakeCardHTML +=			`</picture>`
+		vMakeCardHTML +=    `</div>`;
 
-	vMakeCardHTML +=	`</a>`;
-	vMakeCardHTML += `</div>`;
+		vMakeCardHTML +=    `<p class="classCardLang">${JSONDataProjects[vJSONi].jsonLangs}</p>`;
 
-	//Make Project HTML
-	vMakeProjectHTML += `<div class="classShowProject">`;
-	vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
+		vMakeCardHTML +=		`<div class=classCardLinks>`;
+			vMakeCardHTML += 		`<a href="javascript:clickCard(vNumCard = ${vJSONi})" title="Demo Video">`
+			vMakeCardHTML += 			`<svg>`
+			vMakeCardHTML += 				`<use href="./assets/icons.svg#icoLinkVideo">`
+			vMakeCardHTML += 			`</svg>`
+			vMakeCardHTML += 		`</a>`;
 
-	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "vid") {
-		vMakeProjectHTML += `<video controls preload="none" class="classShowFile classPlayVideo">`;
-		vMakeProjectHTML += 	`<source src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonFileShow}" type="video/webm" alt="Video Proyecto">`;
-		vMakeProjectHTML += `</video>`;
-	}
-	if (JSONDataProjects[vJSONi].jsonTypeFileShow == "img") {
-		vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFiles}${JSONDataProjects[vJSONi].jsonFileShow}" alt="Imagen Proyecto">`;
-	}
-
-	vMakeProjectHTML += 	`<p class="classShowProjectLang">${JSONDataProjects[vJSONi].jsonLangs}`;
 		if (JSONDataProjects[vJSONi].jsonGitHub != "") {
-			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonGitHub}" target="_blank" title="GitHub">`
-			vMakeProjectHTML += 	`<svg>`
-			vMakeProjectHTML += 		`<use href="./assets/icons.svg#icoLinkGitHub">`
-			vMakeProjectHTML += 	`</svg>`
-			vMakeProjectHTML += `GitHub</a>`;
+			vMakeCardHTML += 		`<a href="${letGitHubFolder}${JSONDataProjects[vJSONi].jsonGitHub}" target="_blank" title="GitHub">`
+			vMakeCardHTML += 			`<svg>`
+			vMakeCardHTML += 				`<use href="./assets/icons.svg#icoGitHub">`
+			vMakeCardHTML += 			`</svg>`
+			vMakeCardHTML += 		`</a>`;
 		}
 		if (JSONDataProjects[vJSONi].jsonWeb != "") {
-			vMakeProjectHTML += `<a href="${JSONDataProjects[vJSONi].jsonWeb}" target="_blank" title="WebAddress">`
-			vMakeProjectHTML += 	`<svg>`
-			vMakeProjectHTML += 		`<use href="./assets/icons.svg#icoLinkWeb">`
-			vMakeProjectHTML += 	`</svg>`
-			vMakeProjectHTML += `Web</a>`;
+			vMakeCardHTML += `<a href="${JSONDataProjects[vJSONi].jsonWeb}" target="_blank" title="WebAddress">`
+			vMakeCardHTML += 	`<svg>`
+			vMakeCardHTML += 		`<use href="./assets/icons.svg#icoLinkWeb2">`
+			vMakeCardHTML += 	`</svg>`
+			vMakeCardHTML += `</a>`;
 		}
-	vMakeProjectHTML += 	`</p>`;
-	vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONDataProjects[vJSONi].jsonDescript}</p>`;
-	vMakeProjectHTML += `</div>`;
+		vMakeCardHTML +=		`</div>`;
+
+		
+		vMakeCardHTML += `</div>`;
+
+		//Make Project HTML
+		vMakeProjectHTML += `<div class="classShowProject">`;
+		vMakeProjectHTML += 	`<h3 class="classShowProjectTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
+
+		if (JSONDataProjects[vJSONi].jsonTypeFileShow == "vid") {
+			vMakeProjectHTML += `<video controls preload="none" class="classShowFile classPlayVideo">`;
+			//vMakeProjectHTML += 	`<source src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}.webm" type="video/webm" alt="Video Proyecto">`;
+			vMakeProjectHTML += 	`<source src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}.mp4" type="video/mp4" alt="Video Proyecto">`;
+			vMakeProjectHTML += `</video>`;
+		}
+		if (JSONDataProjects[vJSONi].jsonTypeFileShow == "img") {
+			vMakeProjectHTML += `<img class="classShowFile" src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}" alt="Imagen Proyecto">`;
+		}
+
+		vMakeProjectHTML += 	`<p class="classShowProjectDescript">${JSONDataProjects[vJSONi].jsonDescript}</p>`;
+		vMakeProjectHTML += `</div>`;
 
 	}
 	vShowCards.innerHTML = vMakeCardHTML;

@@ -34,7 +34,11 @@
     <div class="class800" id="class800">
 
       <a href="https://landaetadev.github.io" class="classLogoLink">
-        <img class="classLogoImg" src="./assets/images/WebLogo.webp" alt="LogoWeb">
+        <picture class="classLogoImg">
+          <source srcset="./assets/images/WebLogo.avif">
+          <source srcset="./assets/images/WebLogo.webp">
+          <img src="./assets/images/WebLogo.jpg" alt="LogoWeb">
+        </picture>
 
         <h1 class="classTituloH1">LandaetaDev</h1>
       </a>
@@ -96,9 +100,12 @@
         </ul>
       </nav>
 
+    
     </div>
+    <hr class="LineColorTB">
 
   </header>
+  
 
   <section class="classTotalContainer">
 
@@ -327,6 +334,8 @@
       </div>
 
       <div class="classFootBar">
+        <hr class="LineColorFB">
+        
         <div class="classiconsFootBar">
           <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
             <svg>

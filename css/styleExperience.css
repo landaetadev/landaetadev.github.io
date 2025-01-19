@@ -3,6 +3,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 90%;
   max-width: 600px;
 
   & hr {
@@ -61,11 +62,25 @@
       }
     }
   }
+  .cursos {
+    & .curso {
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @media (width <= 600px) {
   .experiencias {
     & .experiencia {
+      & p {
+        font-size: 15px;
+      }
+    }
+  }
+  .cursos {
+    & .curso {
       & p {
         font-size: 15px;
       }
@@ -166,14 +181,6 @@
     }
   }
 
-  .cursos {
-    & .curso {
-      & p {
-        font-size: 11px;
-        line-height: 1.5rem;
-      }
-    }
-  }
 }
 
 /*---------RESPONSIVE---------*/

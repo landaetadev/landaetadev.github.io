@@ -9,12 +9,12 @@
 
 .classHabilidadesFlex {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 
   & .classHabiIcono, & .classHabiNombre, & .classHabiDetalles {
     font-family: var(--varRubikRegular);
@@ -33,7 +33,7 @@
     border-radius: 2rem;
     min-width: 210px;
     width: 18rem;
-    height: 16rem;
+    height: 22rem;
   }
   
   & .classHabiIcono {
@@ -59,12 +59,13 @@
   }
   
   & .classHabiDetalles {
-      height: 35%;
-      font-family: var(--varFrutiger);
-      font-size: 18px;
-      align-items: flex-start;
-      line-height: 1.3rem;
-    }
+    height: 35%;
+    font-family: var(--varFrutiger);
+    font-size: 20px;
+    font-weight: bold;
+    align-items: flex-start;
+    line-height: 1.7rem;
+  }
 }
 
 

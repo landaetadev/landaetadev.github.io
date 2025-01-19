@@ -82,14 +82,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 9rem;
-      height: calc(var(--varTopBarHeight) * 0.6);
+      width: 10rem;
+      height: calc(var(--varTopBarHeight) * 0.7);
       border: 3px solid var(--varBtnsCan1);
       background-color: var(--varBtnsCan2);
       color: var(--varBtnsCan1);
       font-family: var(--varRubikRegular);
       border-radius: 0.75rem;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: 900;
     }
 
     & a:hover {

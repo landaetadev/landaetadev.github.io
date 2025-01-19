@@ -1,39 +1,49 @@
 [
   {
-    "jsonTitle": "MuseumApp",
-    "jsonImgScreen": "MuseumApp/XCodeMuseumApp.webp",
+    "jsonTitle": "Oak Island <BR> ScapeRoom VR",
+    "jsonImgScreen": "UnityVRScapeRoom/ScapeRoomVR",
     "jsonTypeFileShow": "vid",
-    "jsonFileShow": "MuseumApp/MuseumApp.webm",
+    "jsonFileShow": "UnityVRScapeRoom/ScapeRoomVR",
+    "jsonLangs": "Maya3D &nbsp; Unity &nbsp; C# &nbsp; VR",
+    "jsonGitHub": "Unity.2021.3.14f1-OakIslandScapeRoomVR",
+    "jsonWeb": "",
+    "jsonDescript": "Proyecto de trabajo final para el Master en Tecnologías Interactivas en la U.P.V., el proyecto consiste en el desarrollo de un escape room inmersivo en realidad virtual, los elementos del escenario y los objetos interactivos fueron modelados en Maya 3D, mientras que la integración, funcionalidad y entorno del juego se realizaron en Unity. Una experiencia interactiva fluida, creando un entorno inmersivo donde los jugadores pueden explorar, interactuar y resolver acertijos en un espacio tridimensional."
+  },
+  {
+    "jsonTitle": "MuseumApp",
+    "jsonImgScreen": "XCodeMuseumApp/MuseumApp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "XCodeMuseumApp/MuseumApp",
     "jsonLangs": "XCode &nbsp; JSON &nbsp; QR",
-    "jsonGitHub": "https://github.com/landaetadev/XCode-iFab2020-MuseumApp",
+    "jsonGitHub": "XCode-iFab2020-MuseumApp",
     "jsonWeb": "",
     "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar."
   },
   {
     "jsonTitle": "Flappy Flying",
-    "jsonImgScreen": "FlappyFlyingApp/XCodeFlappyFlyingApp.webp",
+    "jsonImgScreen": "XCodeFlappyFlyingApp/FlappyFlyingApp",
     "jsonTypeFileShow": "vid",
-    "jsonFileShow": "FlappyFlyingApp/FlappyFlyingApp.webm",
+    "jsonFileShow": "XCodeFlappyFlyingApp/FlappyFlyingApp",
     "jsonLangs": "XCode",
-    "jsonGitHub": "https://github.com/landaetadev/XCode-FlappyFlying",
+    "jsonGitHub": "XCode-FlappyFlying",
     "jsonWeb": "",
     "jsonDescript": "Flappy Flying, la idea del juego Flappy Bird aprediendo un poco de programación de videojuegos en Xcode para iOS."
   },
   {
     "jsonTitle": "Breakout",
-    "jsonImgScreen": "UnityBreakout/UnityBreakout.webp",
+    "jsonImgScreen": "UnityBreakout/Breakout",
     "jsonTypeFileShow": "vid",
-    "jsonFileShow": "UnityBreakout/Breakout.webm",
+    "jsonFileShow": "UnityBreakout/Breakout",
     "jsonLangs": "Unity",
-    "jsonGitHub": "https://github.com/landaetadev/Unity.2021.3.14f1-Breakout",
+    "jsonGitHub": "Unity.2021.3.14f1-Breakout",
     "jsonWeb": "",
     "jsonDescript": "Breakout, antiguo videojuego de Atari, diseñado en Unity para PC."
   },
   {
     "jsonTitle": "Ajedrez 3D",
-    "jsonImgScreen": "Maya3DChess/Maya3DChess.webp",
+    "jsonImgScreen": "Maya3DChess/3DChess",
     "jsonTypeFileShow": "vid",
-    "jsonFileShow": "Maya3DChess/Chess3D.webm",
+    "jsonFileShow": "Maya3DChess/3DChess",
     "jsonLangs": "Maya3D",
     "jsonGitHub": "",
     "jsonWeb": "",
@@ -41,11 +51,11 @@
   },
   {
     "jsonTitle": "MacFreeware",
-    "jsonImgScreen": "WebMacFreeware/WebMacFreeware.webp",
+    "jsonImgScreen": "WebMacFreeware/MacFreeware",
     "jsonTypeFileShow": "vid",
-    "jsonFileShow": "WebMacFreeware/MacFreeware.webm",
+    "jsonFileShow": "WebMacFreeware/MacFreeware",
     "jsonLangs": "HTML &nbsp; CSS &nbsp; JS &nbsp; JSON",
-    "jsonGitHub": "https://github.com/landaetadev/MacFreewares",
+    "jsonGitHub": "MacFreewares",
     "jsonWeb": "https://www.landaetadev.com/MacFreewares/",
     "jsonDescript": "Web Site mostrando un listado de aplcaciones de libre uso para sistema operativo Mac."
   }

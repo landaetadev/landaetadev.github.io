@@ -1,6 +1,6 @@
   /*------------------------------------------------*/
 .classHeader {
-  background-color: hsla(var(--varTopBarBackColor), .95);
+  background-color: hsla(var(--varTopBarBackColor), .97);
   width: 100vw;
   height: var(--varTopBarHeight);
   padding: 0 1.5rem;
@@ -28,6 +28,10 @@
   & .classLogoImg {
       height: 75%;
       margin: 0 .5rem 0 0;
+
+      & img {
+          height: 100%;
+      }
   }
   
   & .classTituloH1 {
@@ -71,10 +75,11 @@
   background-color: var(--varBtnsCan2);
   color: var(--varBtnsCan1);
   font-family: var(--varRubikRegular);
-  border-radius: .75rem;
-  width: 140px;
-  height: 60%;
-  font-size: 16px;
+  border-radius: 0.75rem;
+  width: 10rem;
+  height: calc(var(--varTopBarHeight) * 0.7);
+  font-size: 18px;
+  font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +107,15 @@ visibility: hidden;
 width: 0%;
   height: 1000px;
   background-image: linear-gradient(to right, red 0%, white 33.3%, white 66.6%, red 100%);
+}
+
+.LineColorTB {
+  position: absolute;
+  border: none;
+  bottom: 0%;
+  background: var(--varLineColor);
+  height: 2px;
+  width: 100%;
 }
 
 /*---------RESPONSIVE---------*/

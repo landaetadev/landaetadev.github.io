@@ -1,6 +1,6 @@
 .classFootBar {
   position: absolute;
-  padding: 1rem 0;
+  padding: .5rem 0;
   bottom: 0;
   background-color: hsla(var(--varTopBarBackColor));
   color: var(--varFontColor);
@@ -12,6 +12,15 @@
   justify-content: center;
   align-items: center;
 
+  & .LineColorFB {
+    position: absolute;
+    border: none;
+    top: 0%;
+    background: var(--varLineColor);
+    height: 2px;
+    width: 100%;
+  }
+
   & .classiconsFootBar {
     display: flex;
     margin: 0px 0;
@@ -22,7 +31,7 @@
       margin-right: 1rem;
       
       & svg {
-        stroke-width: 2;
+        stroke-width: 1.5;
         width: 2.2rem;
         height: 2.2rem;
       }

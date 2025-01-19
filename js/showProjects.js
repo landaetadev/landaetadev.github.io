@@ -1,5 +1,6 @@
 //VARIABLES SLIDER
-let letProjectsFolder = "./assets/projectsFiles/"
+let letProjectsFolder = "./assets/images/projectsFiles/"
+let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/FilesProjects/"
 let letGitHubFolder = "https://github.com/landaetadev/"
 var vShowProjects = document.querySelector(".classProjectsContainer");
 var vBtnHideProject = document.querySelector(".classBtnHideProject");
@@ -22,7 +23,6 @@ function ReadTableProjects(JSONDataProjects) {
 		//Make Project Card HTML
 
 		vMakeCardHTML += `<div class="classProjectCard">`;
-		
 
 		vMakeCardHTML +=    `<h3 class="classCardTitle">${JSONDataProjects[vJSONi].jsonTitle}</h3>`;
 
@@ -67,8 +67,7 @@ function ReadTableProjects(JSONDataProjects) {
 
 		if (JSONDataProjects[vJSONi].jsonTypeFileShow == "vid") {
 			vMakeProjectHTML += `<video controls preload="none" class="classShowFile classPlayVideo">`;
-			//vMakeProjectHTML += 	`<source src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}.webm" type="video/webm" alt="Video Proyecto">`;
-			vMakeProjectHTML += 	`<source src="${letProjectsFolder}${JSONDataProjects[vJSONi].jsonFileShow}.mp4" type="video/mp4" alt="Video Proyecto">`;
+			vMakeProjectHTML += 	`<source src="${letVideoFolder}${JSONDataProjects[vJSONi].jsonFileShow}.mp4" type="video/mp4" alt="Video Proyecto">`;
 			vMakeProjectHTML += `</video>`;
 		}
 		if (JSONDataProjects[vJSONi].jsonTypeFileShow == "img") {

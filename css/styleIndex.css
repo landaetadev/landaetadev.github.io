@@ -73,10 +73,7 @@ html {
     min-width: 320px;
     min-height: 600px;
 
-    & a:link,
-    a:visited,
-    a:hover,
-    a:active {
+    & a:link, a:visited, a:hover, a:active {
       text-decoration: none;
     }
   }

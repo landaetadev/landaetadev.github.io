@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   z-index: 995;
-  transition:all 500ms ease;
 }
 
 .class800 {
@@ -26,19 +25,19 @@
   align-items: center;
 
   & .classLogoImg {
-      height: 75%;
-      margin: 0 .5rem 0 0;
+    height: 75%;
+    margin: 0 .5rem 0 0;
 
-      & img {
-          height: 100%;
-      }
+    & img {
+      height: 100%;
+    }
   }
   
   & .classTituloH1 {
-      font-family: var(--varAardvarkCafe);
-      color: var(--varFontColor);
-      text-shadow: 2px 2px var(--varBtnsCan1);
-      font-size: 40px;
+    font-family: var(--varAardvarkCafe);
+    color: var(--varFontColor);
+    text-shadow: 2px 2px var(--varBtnsCan1);
+    font-size: 40px;
   }
 }
 
@@ -54,18 +53,18 @@
   height: 100%;
 
   & ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      height: 100%;
-      padding: 0;
-      gap: 0 .5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    gap: 0 .5rem;
   }
 
   & ul li {
-      display: flex;
-      align-items: center;
-      height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
 
@@ -86,18 +85,18 @@
   cursor: pointer;
 
   & svg {
-      width: 35px;
-      stroke: var(--varBtnsCan1);
-      padding-right: 5px;
-      stroke-width: 2.5;
+    width: 35px;
+    stroke: var(--varBtnsCan1);
+    padding-right: 5px;
+    stroke-width: 2.5;
   }
 
   &:hover {
-      background-color: var(--varBtnsCanHover);
+    background-color: var(--varBtnsCanHover);
   }
   
   & a:link, a:visited, a:hover, a:active {
-      color: var(--varBtnsCan1);
+    color: var(--varBtnsCan1);
   }
   
 }
@@ -123,37 +122,37 @@ width: 0%;
 @media (max-width:1300px) {
 
   .classBtnMenu {
-      visibility: visible;
+    visibility: visible;
   }
 
   .classBtnsMenuOptions {
-      backdrop-filter: blur(6px);
-      background-color: hsla(0, 0%, 0%, .9);
-      position: fixed;
+    backdrop-filter: blur(6px);
+    background-color: hsla(0, 0%, 0%, .9);
+    position: fixed;
+    width: 100%;
+    right: -100%;
+    top: var(--varTopBarHeight);
+    transition: all 500ms ease-in-out;
+
+    & ul {
       width: 100%;
-      right: -100%;
-      top: var(--varTopBarHeight);
-      transition:all 500ms ease-in-out;
+      flex-direction: column;
+      display: flex;
+      justify-content: flex-start;
 
-      & ul {
-          width: 100%;
-          flex-direction: column;
-          display: flex;
-          justify-content: flex-start;
-  
-          & li {
-              width: 100%;
-              height: 4rem;
-      
-              & a {
-                  font-size: 20px;
+      & li {
+        width: 100%;
+        height: 4rem;
 
-                  & svg {
-                      width: 2.5rem;
-                  }
-              }
+        & a {
+          font-size: 20px;
+
+          & svg {
+            width: 2.5rem;
           }
+        }
       }
+    }
   }
 
   .classBtnsMenuOptionsShow {
@@ -184,80 +183,80 @@ width: 0%;
 @media (max-width:900px) {
 
   .classBtnsMenuOptions ul li {
-      height: auto;
+    height: auto;
   }
   .classBtnsMenuOptions ul li a{
-      height: 4rem;
-      font-size: 22px;
+    height: 4rem;
+    font-size: 22px;
   }
 }
 
 @media (max-width:540px) {
   .classBtnsMenuOptions ul li a{
-      height: 4rem;
-      font-size: 22px;
+    height: 4rem;
+    font-size: 22px;
   }
 }
 
 @media (max-width:414px) {
   .classLogoLink{
-      & .classLogoImg {
-          height: 60%;
-      }
-      
-      & .classTituloH1 {
-          font-size: 28px;
-      }
+    & .classLogoImg {
+      height: 60%;
+    }
+    
+    & .classTituloH1 {
+      font-size: 28px;
+    }
   }
   
   .classBtnMenu {
-      width: 120px;
-      height: 60%;
-      font-size: 16px;
+    width: 120px;
+    height: 60%;
+    font-size: 16px;
   }
   .classBtnMenu svg {
-      width: 2rem;
+    width: 2rem;
   }
   .classHeader {
-      padding: 0 1rem;
+    padding: 0 1rem;
   }
   
   .classBtnsMenuOptions ul li a{
-      height: 3.5rem;
-      font-size: 20px;
+    height: 3.5rem;
+    font-size: 20px;
   }
 }
 
 @media (max-width:350px) {
   .classBtnMenu {
-      width: 6rem;
-      font-size: small;
+    width: 6rem;
+    font-size: small;
   }
 
   .classBtnsMenuOptions ul li a {
-      height: 3rem;
-      font-size: 16px;
+    height: 3rem;
+    font-size: 16px;
   }
 }
 
 @media (max-width:320px) {
 
   .classLogoLink {
-      height: 85%;
+    height: 85%;
 
-      & .classTituloH1 {
-          font-size: 18px;
-      }
+    & .classTituloH1 {
+      font-size: 18px;
+    }
   }
 
   .classBtnMenu {
-      width: 5rem;
-      font-size: small;
+    width: 5rem;
+    font-size: small;
   }
 
   .classBtnsMenuOptions ul li a {
-      height: 3rem;
-      font-size: 16px;
+    height: 3rem;
+    font-size: 16px;
   }
 }
 

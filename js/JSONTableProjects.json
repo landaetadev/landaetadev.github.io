@@ -1,11 +1,11 @@
 [
   {
-    "jsonTitle": "Oak Island <BR> ScapeRoom VR",
-    "jsonImgScreen": "UnityVRScapeRoom/ScapeRoomVR",
+    "jsonTitle": "Oak Island <BR> EscapeRoom VR",
+    "jsonImgScreen": "UnityEscapeRoomVR/EscapeRoomVR",
     "jsonTypeFileShow": "vid",
     "jsonFileShow": "UnityScapeRoom/OakScapeRoomVR720",
     "jsonLangs": "Maya3D &nbsp; Unity &nbsp; C# &nbsp; VR",
-    "jsonGitHub": "Unity.2022.3.25f1-OakIslandScapeRoomVR",
+    "jsonGitHub": "Unity-OakIslandEscapeRoomVR",
     "jsonWeb": "",
     "jsonDescript": "Proyecto de trabajo final para el Master en Tecnologías Interactivas en la U.P.V., el proyecto consiste en el desarrollo de un escape room inmersivo en realidad virtual, los elementos del escenario y los objetos interactivos fueron modelados en Maya 3D, mientras que la integración, funcionalidad y entorno del juego se realizaron en Unity. Una experiencia interactiva fluida, creando un entorno inmersivo donde los jugadores pueden explorar, interactuar y resolver acertijos en un espacio tridimensional."
   },

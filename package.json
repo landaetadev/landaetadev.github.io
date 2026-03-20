@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "DEPLOY_ENV=GH_PAGES npm run build && gh-pages -d dist -b gh-pages -t",
+    "deploy": "npm run build && rm -rf docs && mv dist docs",
     "astro": "astro"
   },
   "dependencies": {

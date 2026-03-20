@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://www.landaetadev.com',
+  site: 'https://landaetadev.com',
   base: '/',
 });

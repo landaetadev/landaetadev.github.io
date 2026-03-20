@@ -1,0 +1,30 @@
+---
+import { vIconsFile } from '../../public/js/index.js';
+const {vIconName, vH3Text} = Astro.props;
+---
+<h3>
+  <svg>
+    <use href={`${vIconsFile}${vIconName}`} />
+  </svg>
+  {vH3Text}
+</h3>
+
+<style>
+
+  h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-family: var(--vRubikSemiBold);
+    margin-bottom: 4rem;
+    
+    & svg {
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-right: 1rem;
+      stroke: var(--vFontColor);
+      stroke-width: 2;
+    }
+  }
+
+</style>

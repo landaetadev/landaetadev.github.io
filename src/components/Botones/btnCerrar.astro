@@ -1,0 +1,53 @@
+---
+import {vIconsFile} from '../../../public/js/index.js';
+---
+
+<script>
+  const vBtnClose = document.querySelectorAll(".cBtnClose");
+
+  vBtnClose.forEach(btnClose => {
+    btnClose.addEventListener("click", () => {
+      document.documentElement.style.overflowY = "visible";
+      document.body.classList.remove ('noScroll');
+    });
+  });
+
+
+</script>
+
+  <div class="cBtnClose">
+    <button title="Cerrar">
+      <svg><use href={`${vIconsFile}icoBtnClose`} /></svg>
+    </button>
+  </div>
+
+<style>
+
+  .cBtnClose {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: var(--vMaxWidthContent);
+    display: flex;
+
+    & button {
+      border: 5px solid var(--vBtnsCan1);
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & svg {
+          width: 2.5rem;
+          height: 2.5rem;
+          fill: red;
+          stroke-width: 5;
+      }
+    }
+  }
+
+</style>

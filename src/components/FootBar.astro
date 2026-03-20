@@ -1,0 +1,75 @@
+---
+import {vIconsFile} from '../../public/js/index.js';
+---
+
+<div class="cFootBar">
+  <div class="cIconsFootBar">
+    <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
+      <svg>
+        <use href={`${vIconsFile}icoGitHub`}>
+      </svg>
+    </a>
+
+    <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
+      <svg>
+        <use href={`${vIconsFile}icoLinkedIn`}>
+      </svg>
+    </a>
+    <a href="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
+      <svg>
+        <use href={`${vIconsFile}icoCV`}>
+      </svg>
+    </a>
+
+  </div>
+
+  <p>Sitio web desarrollado con
+    <img src="/astro.svg" alt="Astro logo">
+  </p>
+
+</div>
+
+<style>
+
+  .cFootBar {
+    background-color: rgb(var(--vBarBackColor));
+    width: 100%;
+    min-height: var(--vBarHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    color: var(--vFontColor);
+    font-family: var(--vRubikRegular);
+    font-size: 18px;
+
+    & .cIconsFootBar {
+      width: 9rem;
+      display: flex;
+      justify-content: space-between;
+      & a {
+        color: var(--vRubikRegular);
+        
+        & svg {
+          width: 2.5rem;
+          height: 2.5rem;
+          stroke-width: 2.5;
+        }
+      }
+    }
+
+    & p {
+      display: flex;
+      align-items: center;
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 5px;
+      }
+    }
+
+  }
+
+</style>

@@ -1,0 +1,47 @@
+---
+const { dataJsonEstudios } = Astro.props;
+import PuntoBarra from '../../PuntoBarra.astro';
+
+const vUniversityLine = dataJsonEstudios.jsonCity
+  ? `${dataJsonEstudios.jsonUniversity} - ${dataJsonEstudios.jsonCity}`
+  : dataJsonEstudios.jsonUniversity;
+---
+<div class="cEstudiosCard">
+
+  <PuntoBarra />
+
+  <div class="cEstudios">
+    <p>{dataJsonEstudios.jsonCourse}</p>
+    <p>{vUniversityLine}</p>
+    <p>{dataJsonEstudios.jsonTime}</p>
+  </div>
+
+</div>
+
+<style>
+  .cEstudiosCard {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+
+    & .cEstudios{
+      width: 39rem;
+      padding-bottom: 1.5rem;
+
+      & p {
+        font-family: var(--vRubikRegular);
+        font-size: 22px;
+        margin-left: 1rem;
+        margin-bottom: .5rem;
+        line-height: 2rem;
+
+        @media (width <= 600px) {
+          font-size: 18px;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+
+</style>

@@ -1,0 +1,23 @@
+[
+  {
+    "jsonTime": "2011 -2014",
+    "jsonCompany": "Ambulancias Metromed C.A.",
+    "jsonCity": "Caracas",
+    "jsonJobTitle": "Asistente de sistemas",
+    "jsonDescrip": "Soporte técnico, administración y soporte de redes, reparación e instalación de hardware."
+  },
+  {
+    "jsonTime": "2005 – 2007",
+    "jsonCompany": "Clínica Felix Boada",
+    "jsonCity": "Caracas",
+    "jsonJobTitle": "Asistente de sistemas",
+    "jsonDescrip": "Soporte técnico, administración y soporte de redes, programación en Visual Basic 6."
+  },
+  {
+    "jsonTime": "2002",
+    "jsonCompany": "Seguros La Previsora",
+    "jsonCity": "Caracas",
+    "jsonJobTitle": "Prácticas Laborales",
+    "jsonDescrip": "Programador en Visual Basic 6 para el desarrollo de sistema de control de productores de seguros para el departamento de mercadeo de la empresa."
+  }
+]

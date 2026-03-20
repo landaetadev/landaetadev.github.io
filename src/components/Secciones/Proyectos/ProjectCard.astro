@@ -1,0 +1,122 @@
+---
+const { dataJsonProyectos } = Astro.props;
+import BtnLinkSmall from '../../Botones/btnLinkSmall.astro';
+const vProjectsFolder = "/assets/images/projectsFiles/"
+const vGitHubFolder = "https://github.com/landaetadev/"
+---
+
+<script>
+
+  const vBtnVideo = document.querySelectorAll('.cBtnVideo');
+  const vContainers = document.querySelectorAll('.cProjectContainer');
+  vBtnVideo.forEach((btnVideo, index) => {
+    btnVideo.addEventListener('click', () => {
+      vContainers[index].classList.add('cShowContainer');
+      document.documentElement.style.overflowY = "hidden";
+      document.body.classList.add ('noScroll');
+    });
+  });
+
+</script>
+
+<div class="cProjectCard">
+  <h3 class="cCardTitle">{dataJsonProyectos.jsonTitle}</h3>
+
+  <picture class="cCardImage">
+    <source srcset={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.avif`} />
+    <img 
+      src={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.webp`} 
+      alt={`${dataJsonProyectos.jsonTitle}`} />
+  </picture>
+  <div class="cCardLang">{dataJsonProyectos.jsonLangs}</div>
+
+
+  <div class="cCardLinks">
+    <BtnLinkSmall 
+      vClass="cBtnVideo" 
+      vIcoBtn="icoLinkVideo"
+      vText="Video"
+    />
+
+    <BtnLinkSmall 
+      vClass="cBtnGitHub" 
+      vIcoBtn="icoGitHub"
+      vText="GitHub"
+      vHref={`${vGitHubFolder}${dataJsonProyectos.jsonGitHub}`}
+    />
+
+    {dataJsonProyectos.jsonWeb !== "" && (
+      <BtnLinkSmall 
+        vClass="cBtnLinkWeb"
+        vIcoBtn="icoLinkWeb"
+        vText="Web"
+        vHref={`https://${dataJsonProyectos.jsonWeb}`}
+      />
+    )}
+  </div>
+
+</div>
+
+<style>
+
+  & .cProjectCard {
+    padding: 1rem;
+    width: 19rem;
+    height: 33rem;
+    border: 3px solid var(--vBtnsCan2);
+    background-color: rgb(var(--vBarBackColor));
+    box-shadow: var(--vBtnsCan1) 0px 0px 2px 4px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .cCardTitle {
+      width: 100%;
+      height: 4rem;
+      font-family: var(--vRubikRegular);
+      color: var(--vFontColor);
+      font-size: 20px;
+      line-height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    & .cCardImage {
+      height: 20rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--vFontColor);
+    
+      & img {
+        max-width: 90%;
+        max-height: 95%;
+      }
+    }
+
+    & .cCardLang {
+      width: 100%;
+      height: 4rem;
+      font-family: var(--vRubikRegular);
+      color: var(--vFontColor);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      padding-left: 0.5rem;
+    }
+
+    & .cCardLinks {
+      height: 5rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+</style>

@@ -1,0 +1,46 @@
+---
+import { Ancle } from '../../../pages/index.astro';
+import SubTituloH3 from '../../SubTituloH3.astro';
+import HabilidadesCard from './HabilidadesCard.astro';
+import JsonHabilidades from "../../../../public/js/JSONHabilidades.json";
+---
+
+<Ancle vIdAncle="idAncleHabilidades" />
+
+<div class="cHabilidades">
+  <SubTituloH3 vIconName="icoHabilidades" vH3Text="Habilidades" />
+
+  <div class="cHabilidadesFlex">
+    {JsonHabilidades.map((item) => (
+      <HabilidadesCard dataJsonHabilidades={item} />
+    ))}
+  </div>
+
+</div>
+
+<style>
+
+  .cHabilidades {
+    padding: 2rem 0;
+    color: var(--vBtnsCan2);
+    min-height: var(--vMinHeightClassScreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--vHighBorder);
+    border-image: var(--vBorderImage) 1;
+
+    & .cHabilidadesFlex {
+      width: 100%;
+      max-width: var(--vMaxWidthContent);
+      min-height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+
+</style>

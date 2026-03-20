@@ -1,0 +1,1 @@
+export const vIconsFile = "/assets/images/icons.svg#";

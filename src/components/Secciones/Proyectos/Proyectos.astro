@@ -1,0 +1,52 @@
+---
+import { Ancle } from '../../../pages/index.astro';
+import SubTituloH3 from '../../SubTituloH3.astro';
+import ProjectContainer from './ProjectContainer.astro';
+import ProjectCard from './ProjectCard.astro';
+import JsonProyectos from "../../../../public/js/JSONProjectos.json";
+---
+
+<Ancle vIdAncle="idAncleProyectos" />
+
+<div class="cProyectos">
+
+  <SubTituloH3 vIconName="icoProyectos" vH3Text="Proyectos" />
+
+  <div class="cProyectosFlex">
+    {JsonProyectos.map((item) => (
+      <ProjectCard dataJsonProyectos={item} />
+    ))}
+  </div>
+
+  {JsonProyectos.map((item) => (
+      <ProjectContainer dataJsonProyectos={item} />
+    ))}
+
+</div>
+
+<style>
+
+  .cProyectos {
+    padding: 2rem 0;
+    color: var(--vBtnsCan2);
+    min-height: var(--vMinHeightClassScreen);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--vHighBorder);
+    border-image: var(--vBorderImage) 1;
+
+    & .cProyectosFlex {
+      width: 100%;
+      max-width: var(--vMaxWidthContent);
+      min-height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+    }
+  }
+
+</style>

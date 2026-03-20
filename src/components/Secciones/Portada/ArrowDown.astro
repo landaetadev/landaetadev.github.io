@@ -1,0 +1,46 @@
+<a href="#idAncleProyectos" class="cArrowDown">
+  <svg>
+    <use href="/assets/images/icons.svg#icoAnglesDown" />
+  </svg>
+</a>
+
+<style>
+
+  .cArrowDown {
+    position: absolute;
+    bottom: 8rem;
+    z-index: 1;
+    animation: animArrow 2.5s ease-in-out infinite;
+    @media ( width <= 1000px) {
+      bottom: 3rem;
+    }
+
+    & svg {
+      width: 4rem;
+      height: 4rem;
+      stroke-width: 2.5;
+    }
+  }
+
+  @keyframes animArrow {
+    0% {
+      transform: translateY(0);
+      stroke: var(--vBtnsCan1);
+    }
+    25% {
+      stroke: var(--vBtnsCan2);
+    }
+    50% {
+      transform: translateY(2rem);
+      stroke: var(--vBtnsCan1);
+    }
+    75% {
+      stroke: var(--vBtnsCan2);
+    }
+    100% {
+      transform: translateY(0);
+      stroke: var(--vBtnsCan1);
+    }
+  }
+
+</style>

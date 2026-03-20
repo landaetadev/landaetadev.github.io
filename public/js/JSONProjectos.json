@@ -1,0 +1,62 @@
+[
+  {
+    "jsonTitle": "Oak Island EscapeRoom VR",
+    "jsonImgScreen": "UnityEscapeRoomVR/EscapeRoomVR",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "UnityEscapeRoom/videos/OakEscapeRoom",
+    "jsonLangs": "Maya3D - Unity - C#",
+    "jsonGitHub": "Unity-OakIslandEscapeRoomVR",
+    "jsonWeb": "",
+    "jsonDescript": "Proyecto de trabajo final para el Master en Tecnologías Interactivas en la U.P.V., el proyecto consiste en el desarrollo de un escape room inmersivo en realidad virtual, los elementos del escenario y los objetos interactivos fueron modelados en Maya 3D, mientras que la integración, funcionalidad y entorno del juego se realizaron en Unity. Una experiencia interactiva fluida, creando un entorno inmersivo donde los jugadores pueden explorar, interactuar y resolver acertijos en un espacio tridimensional."
+  },
+  {
+    "jsonTitle": "MuseumApp",
+    "jsonImgScreen": "XCodeMuseumApp/MuseumApp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "XCodeMuseumApp/videos/MuseumApp",
+    "jsonLangs": "XCode - JSON - QR",
+    "jsonGitHub": "XCode-iFab2020-MuseumApp",
+    "jsonWeb": "",
+    "jsonDescript": "Proyecto de trabajo final para la Especialización en Tecnologías Interactivas en la U.P.V., se trata se una app que se encarga de leer códigos QR’s, con el dato obtenido realiza una búsqueda en un archivo JSON donde se encuentran las direcciones web del contenido a mostrar."
+  },
+  {
+    "jsonTitle": "Flappy Flying",
+    "jsonImgScreen": "XCodeFlappyFlyingApp/FlappyFlyingApp",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "XCodeFlappyFlyingApp/videos/FlappyFlyingApp",
+    "jsonLangs": "XCode",
+    "jsonGitHub": "XCode-FlappyFlying",
+    "jsonWeb": "",
+    "jsonDescript": "Flappy Flying, la idea del juego Flappy Bird aprediendo un poco de programación de videojuegos en Xcode para iOS."
+  },
+  {
+    "jsonTitle": "Breakout",
+    "jsonImgScreen": "UnityBreakout/Breakout",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "UnityBreakout/videos/Breakout",
+    "jsonLangs": "Unity",
+    "jsonGitHub": "Unity.2021.3.14f1-Breakout",
+    "jsonWeb": "",
+    "jsonDescript": "Breakout, antiguo videojuego de Atari, diseñado en Unity para PC."
+  },
+  {
+    "jsonTitle": "Ajedrez 3D",
+    "jsonImgScreen": "Maya3DChess/3DChess",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "Maya3DChess/videos/Chess3D",
+    "jsonLangs": "Maya3D",
+    "jsonGitHub": "",
+    "jsonWeb": "",
+    "jsonDescript": "Tablero de ajedrez diseñado en Maya 3D."
+  },
+  {
+    "jsonTitle": "MacFreeware",
+    "jsonImgScreen": "WebMacFreeware/MacFreeware",
+    "jsonTypeFileShow": "vid",
+    "jsonFileShow": "WebMacFreeware/videos/MacFreeware",
+    "jsonLangs": "HTML - CSS - JS - JSON",
+    "jsonGitHub": "MacFreewares",
+    "jsonWeb": "www.landaetadev.com/MacFreewares/",
+    "jsonDescript": "Web Site mostrando un listado de aplcaciones de libre uso para sistema operativo Mac."
+  }
+]

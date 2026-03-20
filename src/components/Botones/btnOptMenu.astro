@@ -1,0 +1,71 @@
+---
+import { vIconsFile } from '../../../public/js/index.js';
+const { vIcoBtn, vText, vHref, vTarget="" } = Astro.props;
+---
+
+<script>
+  const vBtnOptMenu = document.querySelectorAll(".cBtnOptMenu");
+  const vMenuNav = document.querySelector(".cMenuNav")
+  vBtnOptMenu.forEach(btn => {
+    btn.addEventListener("click", () => {
+      vMenuNav?.classList.toggle("activo");
+      document.documentElement.style.overflowY = "visible";
+      document.body.classList.remove ('noScroll');
+    });
+  });
+
+</script>
+
+  <a href={vHref} class="cBtnOptMenu" target={vTarget} title={vText}>
+    <svg>
+      <use href={`${vIconsFile}${vIcoBtn}`}>
+    </svg>
+    {vText}
+  </a>
+
+<style>
+
+.cBtnOptMenu {
+  width: 9rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--vBtnsCan1);
+  border-radius: .75rem;
+  background-color: var(--vBtnsCan2);
+  color: var(--vBtnsCan1);
+  font-family: var(--vRubikRegular);
+  font-size: 16px;
+  font-weight: 900;
+  @media (width <= 1200px) {
+    height: 5rem;
+    width: 100%;
+    border-radius: 0;
+    padding-top: 0;
+    font-size: 24px;
+  }
+
+  &:hover {
+    background-color: var(--vBtnsCanHover);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+  }
+
+
+  & svg {
+    width: 2rem;
+    height: 2rem;
+    stroke: var(--vBtnsCan1);
+    stroke-width: 2.5;
+    margin-right: 5px;
+
+    @media (width <= 1200px) {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 10px;
+    }
+  }
+}
+
+</style>

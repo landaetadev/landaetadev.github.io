@@ -1,0 +1,33 @@
+---
+import BtnLinkLarge from '../Botones/btnLinkLarge.astro';
+---
+
+<script>
+  const vBtnMenu = document.querySelector("#idBtnMenu");
+  const vMenuNav = document.querySelector(".cMenuNav")
+
+  vBtnMenu?.addEventListener("click", () => {
+    vMenuNav?.classList.toggle("activo");
+    document.body.classList.toggle("noScroll");
+  });
+
+</script>
+
+<div id="idBtnMenu">
+  <BtnLinkLarge vIcoBtn="icoMenu" vText="Menu"/>
+</div>
+
+<style>
+
+  #idBtnMenu {
+    position: relative;
+    right: 0;
+    display: flex;
+    visibility: hidden;
+
+    @media ( width <= 1200px ) {
+      visibility: visible;
+    }
+  }
+
+</style>

@@ -1,0 +1,43 @@
+---
+import LogoH1 from './LogoH1.astro';
+import MenuNav from './MenuNav.astro';
+import BtnMenu from '../Botones/btnMenu.astro';
+---
+<header>
+  <div class="cLogoMenu">
+    <LogoH1 />
+    <BtnMenu />
+    <MenuNav />
+  </div>
+</header>
+
+
+<style>
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--vBarHeight);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(var(--vBarBackColor) / 98%);
+    border-bottom: var(--vHighBorder);
+    border-image: var(--vBorderImage) 1;
+    z-index: 2;
+    
+    & .cLogoMenu {
+      position: relative;
+      width: 100%;
+      max-width: var(--vMaxWidthContent);
+      height: var(--vBarHeight);
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+</style>

@@ -1,7 +1,7 @@
 ---
 const { dataJsonProyectos } = Astro.props;
 import BtnLinkSmall from '../../Botones/btnLinkSmall.astro';
-const vProjectsFolder = "/assets/images/projectsFiles/"
+import {vProjectsFolder} from '../../../../public/js/index';
 const vGitHubFolder = "https://github.com/landaetadev/"
 ---
 
@@ -23,9 +23,9 @@ const vGitHubFolder = "https://github.com/landaetadev/"
   <h3 class="cCardTitle">{dataJsonProyectos.jsonTitle}</h3>
 
   <picture class="cCardImage">
-    <source srcset={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.avif`} />
+    <source srcset={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.avif`} type="image/avif"/>
     <img 
-      src={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.webp`} 
+      src={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.webp`}
       alt={`${dataJsonProyectos.jsonTitle}`} />
   </picture>
   <div class="cCardLang">{dataJsonProyectos.jsonLangs}</div>

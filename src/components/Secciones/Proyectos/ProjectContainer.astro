@@ -1,5 +1,6 @@
 ---
 const { dataJsonProyectos } = Astro.props;
+import {vProjectsFolder} from '../../../../public/js/index';
 import BtnCerrar from '../../Botones/btnCerrar.astro';
 let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/FilesProjects/"
 ---
@@ -17,8 +18,8 @@ let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Fi
   });
 
   function funcPauseVideo() {
-      const cVideo = document.querySelectorAll<HTMLVideoElement>('.cVideo');
-      cVideo.forEach(video => {
+      const vVideo = document.querySelectorAll<HTMLVideoElement>('.cVideo');
+      vVideo.forEach(video => {
         video.pause();
         video.currentTime = 0;
       });
@@ -30,7 +31,8 @@ let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Fi
   <BtnCerrar />
   <div class="cProject">
     <h3 class="cTitle">{dataJsonProyectos.jsonTitle}</h3>
-    <video controls preload="none" class="cVideo" >
+    <video controls preload="none" class="cVideo" 
+    poster={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}Poster.avif`}>
       <source src={`${letVideoFolder}${dataJsonProyectos.jsonFileShow}.webm`} type="video/webm" />
       <source src={`${letVideoFolder}${dataJsonProyectos.jsonFileShow}.mp4`} type="video/mp4" />
     </video>
@@ -72,19 +74,19 @@ let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Fi
         padding-bottom: 1rem;
       }
 
-      & video{
-        background-color: black;
-        padding: 1.5rem 0;
-        width: 1280px;
-        max-width: 100%;
-        max-height: 720px;
+      & video {
+        background-color:  black;
+        width: 100%;
+        max-width: 1280px;
+        aspect-ratio: 16 / 9;
+        display: block;
       }
 
       & .cDescript{
         max-width: 1000px;
         font-family: var(--vRubikRegular);
         font-size: 20px;
-        padding: 1rem .5rem 0 .5rem;
+        padding: 2rem .5rem 0 .5rem;
         line-height: 1.5;
       }
     }

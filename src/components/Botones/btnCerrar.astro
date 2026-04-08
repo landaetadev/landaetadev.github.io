@@ -12,7 +12,6 @@ import {vIconsFile} from '../../../public/js/index.js';
     });
   });
 
-
 </script>
 
   <div class="cBtnClose">
@@ -31,10 +30,11 @@ import {vIconsFile} from '../../../public/js/index.js';
     display: flex;
 
     & button {
+      --vSize: 4rem;
       border: 5px solid var(--vBtnsCan1);
       border-radius: 50%;
-      width: 4rem;
-      height: 4rem;
+      width: var(--vSize);
+      height: var(--vSize);
       margin-left: 1rem;
       margin-top: 1rem;
       display: flex;
@@ -42,10 +42,10 @@ import {vIconsFile} from '../../../public/js/index.js';
       justify-content: center;
 
       & svg {
-          width: 2.5rem;
-          height: 2.5rem;
-          fill: red;
-          stroke-width: 5;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: var(--vBtnsCan1);
+        stroke-width: 5;
       }
     }
   }

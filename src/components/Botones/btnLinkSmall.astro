@@ -4,14 +4,14 @@ const { vIcoBtn, vText, vClass, vHref} = Astro.props;
 ---
 
 {vHref !== "" ? (
-  <a href={vHref} class={`cBtnLinkSmall ${vClass}`} target="_blank" title={vText}>
-    <svg>
+  <a href={vHref} class={`cBtnLinkSmall ${vClass}`} target="_blank" aria-label={vText} >
+    <svg aria-hidden="true">
       <use href={`${vIconsFile}${vIcoBtn}`}></use>
     </svg>
   </a>
 ) : (
-  <button class={`cBtnLinkSmall ${vClass}`} title={vText}>
-    <svg>
+  <button class={`cBtnLinkSmall ${vClass}`} aria-label={vText}>
+    <svg aria-hidden="true">
       <use href={`${vIconsFile}${vIcoBtn}`}></use>
     </svg>
   </button>
@@ -39,8 +39,9 @@ const { vIcoBtn, vText, vClass, vHref} = Astro.props;
     }
 
     & svg {
-      width: 2rem;
-      height: 2rem;
+      --vSize: 2rem;
+      width: var(--vSize);
+      height: var(--vSize);
       stroke: var(--vBtnsCan1);
       fill: var(--vBtnsCan1);
       stroke-width: 2.5;

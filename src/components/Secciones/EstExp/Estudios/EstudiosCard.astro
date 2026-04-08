@@ -1,0 +1,20 @@
+---
+import "../indexEstExp.css";
+import JSONEstudios from "../../../../../public/js/JSONEstudios.json";
+import PuntoBarra from '../../../PuntoBarra.astro';
+---
+
+{JSONEstudios.map((item) => {
+  return (
+    <div class="cEstudioCard">
+      <PuntoBarra />
+      <div class="cEstudio">
+        <p>{item.jsonCourse}</p>
+        <p>{item.jsonUniversity}
+          {item.jsonCity != null ? <> - {item.jsonCity}</> : null}
+        </p>
+        <p>{item.jsonTime}</p>
+      </div>
+    </div>
+  );
+})}

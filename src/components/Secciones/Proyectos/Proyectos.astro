@@ -1,9 +1,9 @@
 ---
-import { Ancle } from '../../../pages/index.astro';
-import SubTituloH3 from '../../SubTituloH3.astro';
+import { Ancle, SubTituloH3 } from '../../../pages/index.astro';
 import ProjectContainer from './ProjectContainer.astro';
 import ProjectCard from './ProjectCard.astro';
-import JsonProyectos from "../../../../public/js/JSONProjectos.json";
+import JSONProyectos from "../../../../public/js/JSONProjectos.json";
+export { JSONProyectos };
 ---
 
 <Ancle vIdAncle="idAncleProyectos" />
@@ -13,14 +13,10 @@ import JsonProyectos from "../../../../public/js/JSONProjectos.json";
   <SubTituloH3 vIconName="icoProyectos" vH3Text="Proyectos" />
 
   <div class="cProyectosFlex">
-    {JsonProyectos.map((item) => (
-      <ProjectCard dataJsonProyectos={item} />
-    ))}
+    <ProjectCard />
   </div>
 
-  {JsonProyectos.map((item) => (
-      <ProjectContainer dataJsonProyectos={item} />
-    ))}
+  <ProjectContainer />
 
 </div>
 

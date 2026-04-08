@@ -1,7 +1,7 @@
 ---
-const { dataJsonProyectos } = Astro.props;
-import BtnLinkSmall from '../../Botones/btnLinkSmall.astro';
+import JSONProyectos from "../../../../public/js/JSONProjectos.json";
 import {vProjectsFolder} from '../../../../public/js/index';
+import BtnLinkSmall from '../../Botones/btnLinkSmall.astro';
 const vGitHubFolder = "https://github.com/landaetadev/"
 ---
 
@@ -19,53 +19,45 @@ const vGitHubFolder = "https://github.com/landaetadev/"
 
 </script>
 
-<div class="cProjectCard">
-  <h3 class="cCardTitle">{dataJsonProyectos.jsonTitle}</h3>
+{JSONProyectos.map((item) => {
+  return (
 
-  <picture class="cCardImage">
-    <source srcset={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.avif`} type="image/avif"/>
-    <img 
-      src={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}.webp`}
-      alt={`${dataJsonProyectos.jsonTitle}`} />
-  </picture>
-  <div class="cCardLang">{dataJsonProyectos.jsonLangs}</div>
+    <div class="cProjectCard">
 
+      <h3 class="cCardTitle">{item.jsonTitle}</h3>
 
-  <div class="cCardLinks">
-    <BtnLinkSmall 
-      vClass="cBtnVideo" 
-      vIcoBtn="icoLinkVideo"
-      vText="Video"
-    />
+      <picture class="cCardImage">
+        <source srcset={`${vProjectsFolder}${item.jsonImgScreen}.avif`} type="image/avif"/>
+        <img src={`${vProjectsFolder}${item.jsonImgScreen}.webp`} alt={`${item.jsonTitle}`} />
+      </picture>
+      <div class="cCardLang">{item.jsonLangs}</div>
 
-    <BtnLinkSmall 
-      vClass="cBtnGitHub" 
-      vIcoBtn="icoGitHub"
-      vText="GitHub"
-      vHref={`${vGitHubFolder}${dataJsonProyectos.jsonGitHub}`}
-    />
+      <div class="cCardLinks">
+        <BtnLinkSmall vClass="cBtnVideo" vIcoBtn="icoLinkVideo" vText="Video" />
 
-    {dataJsonProyectos.jsonWeb !== "" && (
-      <BtnLinkSmall 
-        vClass="cBtnLinkWeb"
-        vIcoBtn="icoLinkWeb"
-        vText="Web"
-        vHref={`https://${dataJsonProyectos.jsonWeb}`}
-      />
-    )}
-  </div>
+        <BtnLinkSmall vClass="cBtnGitHub" vIcoBtn="icoGitHub" vText="GitHub" 
+          vHref={`${vGitHubFolder}${item.jsonGitHub}`} />
 
-</div>
+        {item.jsonWeb !== "" && (
+          <BtnLinkSmall vClass="cBtnLinkWeb" vIcoBtn="icoLinkWeb" vText="Web"
+            vHref={`https://${item.jsonWeb}`} />
+        )}
+      </div>
+
+    </div>
+
+  );
+})}
 
 <style>
 
-  & .cProjectCard {
+  .cProjectCard {
     padding: 1rem;
     width: 19rem;
     height: 33rem;
     border: 3px solid var(--vBtnsCan2);
     background-color: rgb(var(--vBarBackColor));
-    box-shadow: var(--vBtnsCan1) 0px 0px 2px 4px;
+    box-shadow: var(--vBtnsCan1) 0px 0px 3px 3px;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;

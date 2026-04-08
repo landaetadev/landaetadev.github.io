@@ -2,7 +2,7 @@
   {
     "jsonIcono": "icoDesktop",
     "jsonArea": "Diseño Web",
-    "jsonSoftwares": "HTML - CSS - JS Bootstrap - Wordpress Prestashop"
+    "jsonSoftwares": "HTML - CSS - JS - Bootstrap Wordpress - Prestashop"
   },
   {
     "jsonIcono": "icoMobile",
@@ -22,16 +22,16 @@
   {
     "jsonIcono": "icoNetwork",
     "jsonArea": "Servidores y Redes",
-    "jsonSoftwares": "Configuración - Administración - Unix Windows Server"
+    "jsonSoftwares": "Configuración Administración - Unix Windows Server"
   },
   {
     "jsonIcono": "icoUnity",
     "jsonArea": "Diseño 3D",
-    "jsonSoftwares": "Maya 3D - Unity OnShape"
+    "jsonSoftwares": "Maya 3D - Unity - OnShape"
   },
   {
     "jsonIcono": "icoTools",
     "jsonArea": "Herramientas",
-    "jsonSoftwares": "Visual Studio Code GitHub"
+    "jsonSoftwares": "Visual Studio Code - GitHub"
   }
 ]

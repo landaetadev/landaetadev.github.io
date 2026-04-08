@@ -1,5 +1,5 @@
 ---
-const { dataJsonProyectos } = Astro.props;
+import JSONProyectos from "../../../../public/js/JSONProjectos.json";
 import {vProjectsFolder} from '../../../../public/js/index';
 import BtnCerrar from '../../Botones/btnCerrar.astro';
 let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/FilesProjects/"
@@ -24,27 +24,31 @@ let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Fi
         video.currentTime = 0;
       });
   }
-  
 </script>
 
-<div class="cProjectContainer">
-  <BtnCerrar />
-  <div class="cProject">
-    <h3 class="cTitle">{dataJsonProyectos.jsonTitle}</h3>
-    <video controls preload="none" class="cVideo" 
-    poster={`${vProjectsFolder}${dataJsonProyectos.jsonImgScreen}Poster.avif`}>
-      <source src={`${letVideoFolder}${dataJsonProyectos.jsonFileShow}.webm`} type="video/webm" />
-      <source src={`${letVideoFolder}${dataJsonProyectos.jsonFileShow}.mp4`} type="video/mp4" />
-    </video>
-    <p class="cDescript">{dataJsonProyectos.jsonDescript}</p>
-  </div>
-  
-</div>
-
+{JSONProyectos.map((item) => {
+  return (
+    <div class="cProjectContainer">
+      <BtnCerrar />
+      <div class="cProject">
+        <h3 class="cProjectTitle">{item.jsonTitle}</h3>
+        <video controls preload="none" class="cVideo" 
+        poster={`${vProjectsFolder}${item.jsonImgScreen}Poster.avif`}>
+          <source src={`${letVideoFolder}${item.jsonFileShow}.webm`} type="video/webm" />
+          <source src={`${letVideoFolder}${item.jsonFileShow}.mp4`} type="video/mp4" />
+        </video>
+        <p class="cDescript">{item.jsonDescript}</p>
+      </div>
+    </div>
+  )
+})}
 
 <style>
   .cProjectContainer {
-    background-image: var(--vUrlBackgroundImage);
+    background-image: image-set(
+      url("/assets/images/backgrounds/001.avif") type("image/avif"),
+      url("/assets/images/backgrounds/001.webp") type("image/webp")
+    );
     position: fixed;
     top: 0;
     left: 100%;
@@ -67,7 +71,7 @@ let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Fi
       align-items: center;
 
 
-      & .cTitle{
+      & .cProjectTitle{
         font-family: var(--vRubikSemiBold);
         font-size: 28px;
         text-align: center;
@@ -75,7 +79,7 @@ let letVideoFolder = "https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Fi
       }
 
       & video {
-        background-color:  black;
+        background-color: black;
         width: 100%;
         max-width: 1280px;
         aspect-ratio: 16 / 9;

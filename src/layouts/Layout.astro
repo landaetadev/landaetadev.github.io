@@ -48,15 +48,8 @@
 		src: url(/assets/fonts/Rubik-SemiBold.ttf) format("truetype");
 		font-display: swap;
 	}
-	
 
 	:root {
-
-		--vUrlBackgroundImage: image-set(
-			url("/assets/images/backgrounds/001.avif") type("image/avif"),
-			url("/assets/images/backgrounds/001.webp") type("image/webp"),
-			url("/assets/images/backgrounds/001.jpg") type("image/jpeg")
-		);
 
 		--vAardvarkCafe: "AardvarkCafe";
 		--vFrutiger: "Frutiger";
@@ -80,6 +73,7 @@
 
 		--vHighBorder: 4px solid;
 		--vBorderImage: linear-gradient(90deg, var(--vHabColorHR1), var(--vHabColorHR2), var(--vHabColorHR1));
+
 	}
 
 	* {
@@ -90,7 +84,10 @@
 
 	html, body {
 		scroll-behavior: smooth;
-		background-image: var(--vUrlBackgroundImage);
+		background-image: image-set(
+      url("/assets/images/backgrounds/001.avif") type("image/avif"),
+      url("/assets/images/backgrounds/001.webp") type("image/webp")
+    );
 
 		& a:link, a:visited, a:hover, a:active {
       text-decoration: none;

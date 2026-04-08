@@ -3,24 +3,27 @@
     "jsonCourse": "Master en Tecnologías Interactivas y Fabricación Digital",
     "jsonUniversity": "Universidad Politécnica de Valencia",
     "jsonCity": null,
-    "jsonTime": "2022 -2025"
+    "jsonTime": "2022 - 2025"
   },
   {
     "jsonCourse": "Especialización en Tecnologías Interactivas",
     "jsonUniversity": "Universidad Politécnica de Valencia",
     "jsonCity": null,
     "jsonTime": "2019 - 2021"
-  },{
+  },
+  {
     "jsonCourse": "Master en Ingeniería de Computadores y Redes",
     "jsonUniversity": "Universidad Politécnica de Valencia",
     "jsonCity": null,
     "jsonTime": "2017 - 2019"
-  },{
+  },
+  {
     "jsonCourse": "Licenciado en Computación",
     "jsonUniversity": "Universidad Nueva Esparta",
     "jsonCity": "Caracas",
     "jsonTime": "2003 - 2007"
-  },{
+  },
+  {
     "jsonCourse": "T.S.U. en Computación",
     "jsonUniversity": "Instituto Universitario Nueva Esparta",
     "jsonCity": "Caracas",

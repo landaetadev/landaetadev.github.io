@@ -1,8 +1,6 @@
 ---
-import { Ancle } from '../../../pages/index.astro';
-import SubTituloH3 from '../../SubTituloH3.astro';
-import HabilidadesCard from './HabilidadesCard.astro';
-import JsonHabilidades from "../../../../public/js/JSONHabilidades.json";
+import { Ancle, SubTituloH3 } from '../../../pages/index.astro';
+import HabilidadesCards from './HabilidadesCards.astro';
 ---
 
 <Ancle vIdAncle="idAncleHabilidades" />
@@ -11,9 +9,7 @@ import JsonHabilidades from "../../../../public/js/JSONHabilidades.json";
   <SubTituloH3 vIconName="icoHabilidades" vH3Text="Habilidades" />
 
   <div class="cHabilidadesFlex">
-    {JsonHabilidades.map((item) => (
-      <HabilidadesCard dataJsonHabilidades={item} />
-    ))}
+    <HabilidadesCards/>
   </div>
 
 </div>

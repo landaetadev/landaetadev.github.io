@@ -3,7 +3,7 @@ import { vIconsFile } from '../../public/js/index.js';
 const {vIconName, vH3Text} = Astro.props;
 ---
 <h3>
-  <svg>
+  <svg aria-hidden="true">
     <use href={`${vIconsFile}${vIconName}`} />
   </svg>
   {vH3Text}
@@ -19,8 +19,9 @@ const {vIconName, vH3Text} = Astro.props;
     margin-bottom: 4rem;
     
     & svg {
-      width: 3.5rem;
-      height: 3.5rem;
+      --vSize: 3.5rem;
+      width: var(--vSize);
+      height: var(--vSize);
       margin-right: 1rem;
       stroke: var(--vFontColor);
       stroke-width: 2;

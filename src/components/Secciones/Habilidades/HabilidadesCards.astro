@@ -1,28 +1,31 @@
 ---
 import { vIconsFile } from '../../../../public/js/index.js';
-const { dataJsonHabilidades } = Astro.props;
+import JSONHabilidades from "../../../../public/js/JSONHabilidades.json";
 ---
 
-<div class="cHabilidad">
-  <div class="cHabiIcono">
-    <svg>
-      <use href={`${vIconsFile}${dataJsonHabilidades.jsonIcono}`}>
-    </svg>
-  </div>
-  <h3 class="cHabiNombre">{dataJsonHabilidades.jsonArea}</h3>
-  <p class="cHabiDetalles">{dataJsonHabilidades.jsonSoftwares}</p>
-</div>
+{JSONHabilidades.map((item) => {
+  return (
+    <div class="cHabilidadCard">
+      <div class="cHabiIcono">
+        <svg aria-hidden="true">
+          <use href={`${vIconsFile}${item.jsonIcono}`}></use>
+        </svg>
+      </div>
+      <h3 class="cHabiNombre">{item.jsonArea}</h3>
+      <p class="cHabiDetalles">{item.jsonSoftwares}</p>
+    </div>
+  );
+})}
 
 <style>
 
-  .cHabilidad {
+  .cHabilidadCard {
     border: 5px solid  var(--vHabColorHR1);
     background-color: var(--vHabColorHR2);
     color: var(--vHabColorHR1);
-    box-shadow: var(--vHabColorHR3, 1) 0px 0px 1px 1px;
+    box-shadow: var(--vHabColorHR3, 1) 0px 0px 3px 3px;
     border-radius: 2rem;
-    min-width: 210px;
-    width: 18rem;
+    width: 19rem;
     height: 22rem;
 
     & .cHabiIcono {
@@ -31,9 +34,10 @@ const { dataJsonHabilidades } = Astro.props;
       justify-content: center;
 
       & svg {
+        --vSise: 4rem;
+        width: var(--vSise);
+        height: var(--vSise);
         margin-top: 1rem;
-        width: 4rem;
-        height: 4rem;
         fill: var(--vHabColorHR1);
         stroke: var(--vHabColorHR1);
         stroke-width: 2.5;
@@ -53,7 +57,7 @@ const { dataJsonHabilidades } = Astro.props;
       height: 35%;
       text-align: center;
       font-family: var(--vFrutiger);
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold;
       padding: 0 1rem;
       line-height: 1.8rem;

@@ -11,8 +11,9 @@
     justify-content: center;
 
     & .cPunto {
-      width: 23px;
-      height: 23px;
+      --vSize: 23px;
+      width: var(--vSize);
+      height: var(--vSize);
       border-radius: 50%;
       position: absolute;
       background-color: var(--vHabColorHR2);
@@ -22,7 +23,7 @@
 
     & .cBarra {
       width: 1rem;
-      height: calc(100% + 10px);
+      height: calc(100% + 5px);
       position: relative;
       border-radius: .5rem;
       background-color: var(--vHabColorHR2);

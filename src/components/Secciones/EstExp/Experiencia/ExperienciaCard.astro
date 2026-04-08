@@ -1,0 +1,19 @@
+---
+import "../indexEstExp.css";
+import PuntoBarra from '../../../PuntoBarra.astro';
+import JSONExperiencia from "../../../../../public/js/JSONExperiencia.json";
+---
+
+{JSONExperiencia.map ((item) => {
+  return (
+    <div class="cExperienciaCard">
+      <PuntoBarra />
+      <div class="cExperiencia">
+        <p>{item.jsonTime} - {item.jsonCompany} - {item.jsonCity}</p>
+        <p>{item.jsonJobTitle}</p>
+        <p>{item.jsonDescrip}</p>
+      </div>
+    </div>
+  );
+})}
+

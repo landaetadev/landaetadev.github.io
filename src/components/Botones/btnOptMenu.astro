@@ -17,7 +17,7 @@ const { vIcoBtn, vText, vHref, vTarget="" } = Astro.props;
 </script>
 
   <a href={vHref} class="cBtnOptMenu" target={vTarget} title={vText}>
-    <svg>
+    <svg aria-hidden="true">
       <use href={`${vIconsFile}${vIcoBtn}`}>
     </svg>
     {vText}
@@ -54,15 +54,17 @@ const { vIcoBtn, vText, vHref, vTarget="" } = Astro.props;
 
 
   & svg {
-    width: 2rem;
-    height: 2rem;
+    --vSize: 2rem;
+    width: var(--vSize);
+    height: var(--vSize);
     stroke: var(--vBtnsCan1);
     stroke-width: 2.5;
     margin-right: 5px;
 
     @media (width <= 1200px) {
-      width: 3rem;
-      height: 3rem;
+      --vSize: 3rem;
+      width: var(--vSize);
+      height: var(--vSize);
       margin-right: 10px;
     }
   }

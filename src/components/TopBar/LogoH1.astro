@@ -16,7 +16,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 3rem;
+      --vheight: 3rem;
+      height: var(--vheight);
+      @media (width <= 600px) {
+        height: calc(var(--vheight) - .5rem )
+      }
     }
 
     & h1 {
@@ -24,7 +28,11 @@
       font-family: var(--vAardvarkCafe);
       color: var(--vFontColor);
       text-shadow: 2px 2px var(--vBtnsCan1);
-      font-size: 40px;
+      --vFontSize: 40px;
+      font-size: var(--vFontSize);
+      @media (width <= 600px){
+        font-size: calc(var(--vFontSize) - 8px);
+      }
     }
   }
 

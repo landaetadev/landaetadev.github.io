@@ -53,8 +53,10 @@ const vGitHubFolder = "https://github.com/landaetadev/"
 
   .cProjectCard {
     padding: 1rem;
-    width: 19rem;
-    height: 33rem;
+    --vWidthCard: 19rem;
+    --vHeightCard: 33rem;
+    width: var(--vWidthCard);
+    height: var(--vHeightCard);
     border: 3px solid var(--vBtnsCan2);
     background-color: rgb(var(--vBarBackColor));
     box-shadow: var(--vBtnsCan1) 0px 0px 3px 3px;
@@ -63,27 +65,39 @@ const vGitHubFolder = "https://github.com/landaetadev/"
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media ( width <= 400px ) {
+      width: calc(var(--vWidthCard) - 3rem);
+      height: calc(var(--vHeightCard) - 3rem);
+    }
 
     & .cCardTitle {
       width: 100%;
       height: 4rem;
       font-family: var(--vRubikRegular);
       color: var(--vFontColor);
-      font-size: 20px;
+      --vFontSize: 20px;
+      font-size: var(--vFontSize);
       line-height: 2rem;
       display: flex;
       justify-content: center;
       align-items: center;
       text-align: center;
+      @media ( width <= 400px ) {
+        font-size: calc(var(--vFontSize) - 4px);
+      }
     }
 
     & .cCardImage {
-      height: 20rem;
+      --vHeight: 20rem;
+      height: var(--vHeight);
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       color: var(--vFontColor);
+      @media ( width <= 400px ) {
+        height: calc(var(--vHeight) - 4rem);
+      }
     
       & img {
         max-width: 90%;
@@ -96,10 +110,14 @@ const vGitHubFolder = "https://github.com/landaetadev/"
       height: 4rem;
       font-family: var(--vRubikRegular);
       color: var(--vFontColor);
-      font-size: 20px;
+      --vFontSize: 20px;
+      font-size: var(--vFontSize);
       display: flex;
       align-items: center;
       padding-left: 0.5rem;
+      @media ( width <= 400px ) {
+        font-size: calc(var(--vFontSize) - 2px);
+      }
     }
 
     & .cCardLinks {

@@ -20,7 +20,12 @@
       width: var(--vSize);
       height: var(--vSize);
       stroke-width: 2.5;
+      @media (width <= 600px) {
+        width: calc(var(--vSize) - 1rem);
+        height: calc(var(--vSize) - 1rem);
+      }
     }
+    
   }
 
   @keyframes animArrow {

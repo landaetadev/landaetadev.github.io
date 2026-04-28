@@ -3,23 +3,25 @@
 <style>
 
   .cTituloH2 {
+    --vFontSize: 36px;
+    
     width: 100%;
     margin-bottom: 2rem;
     font-family: var(--vRubikSemiBold);
     color: var(--vFontColor);
     text-align: left;
-    font-size: 36px;
+    font-size: var(--vFontSize);
     @media (width <= 600px) {
       color: var(--vFontColor);
-      font-size: 32px;
+      font-size: calc(var(--vFontSize) - 10px);
     }
 
     & span {
       color: var(--vHabColorHR2);
-      font-size: 40px;
+      font-size: calc(var(--vFontSize) + 4px);
       @media (width <= 600px) {
         color: var(--vHabColorHR2);
-        font-size: 32px;
+        font-size: calc(var(--vFontSize) - 6px);
       }
     }
   }

@@ -17,6 +17,9 @@ const {vIconName, vH3Text} = Astro.props;
     font-size: 2.5rem;
     font-family: var(--vRubikSemiBold);
     margin-bottom: 4rem;
+    @media ( width <= 400px ) {
+      font-size: 2rem;
+    }
     
     & svg {
       --vSize: 3.5rem;
@@ -25,7 +28,12 @@ const {vIconName, vH3Text} = Astro.props;
       margin-right: 1rem;
       stroke: var(--vFontColor);
       stroke-width: 2;
+      @media ( width <= 400px ) {
+        width: calc(var(--vSize) - .5rem);
+        height: calc(var(--vSize) - .5rem);
+      }
     }
+    
   }
 
 </style>

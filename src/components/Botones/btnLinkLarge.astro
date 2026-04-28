@@ -14,8 +14,10 @@ const { vIcoBtn, vText, vHref, vTarget="" } = Astro.props;
 <style>
 
   .cBtnLinkLarge {
-    width: 9rem;
-    height: 3rem;
+    --vWidth: 9rem;
+    width: var(--vWidth);
+    --vHeight: 3rem;
+    height: var(--vHeight);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +26,14 @@ const { vIcoBtn, vText, vHref, vTarget="" } = Astro.props;
     background-color: var(--vBtnsCan2);
     color: var(--vBtnsCan1);
     font-family: var(--vRubikRegular);
-    font-size: 16px;
+    --vFontSize: 16px;
+    font-size: var(--vFontSize);
     font-weight: 900;
+    @media (width <= 600px) {
+      width: calc(var(--vWidth) - 1rem);
+      height: calc(var(--vHeight) - 0.5rem);
+      font-size: calc(var(--vFontSize) - 2px);
+    }
 
     &:hover {
       background-color: var(--vBtnsCanHover);

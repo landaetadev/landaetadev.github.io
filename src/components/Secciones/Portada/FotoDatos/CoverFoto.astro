@@ -7,6 +7,9 @@
 
   .cCoverFoto {
     width: 15rem;
+    @media ( width <= 600px ) {
+      width: 10rem;
+    }
 
     & img {
       border-radius: 100%;
@@ -14,6 +17,8 @@
       width: 100%;
       height: auto;
       aspect-ratio: 1/1;
+    }
+    @media ( width <= 600px ) {
     }
   }
 

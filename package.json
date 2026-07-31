@@ -8,10 +8,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^6.1.10",
+    "astro": "^7.1.6",
     "gh-pages": "^6.3.0"
-  },
-  "overrides": {
-    "vite": "^7.0.0"
   }
 }

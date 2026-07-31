@@ -1,6 +1,7 @@
 # generated types
 .astro/
 dist/
+docs/
 
 # dependencies
 node_modules/

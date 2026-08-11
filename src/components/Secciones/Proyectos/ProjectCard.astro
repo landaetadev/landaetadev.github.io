@@ -35,8 +35,10 @@ const vGitHubFolder = "https://github.com/landaetadev/"
       <div class="cCardLinks">
         <BtnLinkSmall vClass="cBtnVideo" vIcoBtn="icoLinkVideo" vText="Video" />
 
-        <BtnLinkSmall vClass="cBtnGitHub" vIcoBtn="icoGitHub" vText="GitHub" 
-          vHref={`${vGitHubFolder}${item.jsonGitHub}`} />
+        {item.jsonGitHub !== "" && (
+          <BtnLinkSmall vClass="cBtnGitHub" vIcoBtn="icoGitHub" vText="GitHub" 
+            vHref={`${vGitHubFolder}${item.jsonGitHub}`} />
+        )}
 
         {item.jsonWeb !== "" && (
           <BtnLinkSmall vClass="cBtnLinkWeb" vIcoBtn="icoLinkWeb" vText="Web"

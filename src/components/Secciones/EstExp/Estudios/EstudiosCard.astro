@@ -9,11 +9,12 @@ import PuntoBarra from '@/components/PuntoBarra.astro';
     <div class="cEstudioCard">
       <PuntoBarra />
       <div class="cEstudio">
-        <p>{item.jsonCourse}</p>
         <p>{item.jsonUniversity}
           {item.jsonCity != null ? <> - {item.jsonCity}</> : null}
+          &nbsp; &nbsp; {item.jsonTime}
         </p>
-        <p>{item.jsonTime}</p>
+        <p>{item.jsonCourse}</p>
+        
       </div>
     </div>
   );

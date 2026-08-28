@@ -1,5 +1,5 @@
 ---
-import { vIconsFile } from '@/js/index.js';
+import { vIconsFolder } from '@/js/index.js';
 import JSONHabilidades from "@/js/JSONHabilidades.json";
 ---
 
@@ -8,7 +8,7 @@ import JSONHabilidades from "@/js/JSONHabilidades.json";
     <div class="cHabilidadCard">
       <div class="cHabiIcono">
         <svg aria-hidden="true">
-          <use href={`${vIconsFile}${item.jsonIcono}`}></use>
+          <use href={`${vIconsFolder}icnsAbilities.svg#${item.jsonIcono}`}></use>
         </svg>
       </div>
       <h3 class="cHabiNombre">{item.jsonArea}</h3>

@@ -10,5 +10,8 @@
   "dependencies": {
     "astro": "^7.1.6",
     "gh-pages": "^6.3.0"
+  },
+  "devDependencies": {
+    "vite-plugin-supersvg": "^0.0.7"
   }
 }

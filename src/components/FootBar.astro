@@ -1,23 +1,23 @@
 ---
-import {vIconsFile} from '@/js/index.js';
+import { vIconsFolder, vLinks} from '@/js/index.js';
 ---
 
 <div class="cFootBar">
   <div class="cIconsFootBar">
-    <a href="https://github.com/landaetadev" target="_blank" class="btnGitHub" title="GitHub">
+    <a href={vLinks.GitHub}  target="_blank" class="btnGitHub" title="GitHub">
       <svg>
-        <use href={`${vIconsFile}icoGitHub`} />
+        <use href={`${vIconsFolder}icnsLinks.svg#icoGitHub`} />
       </svg>
     </a>
 
-    <a href="https://www.linkedin.com/in/olandaeta/" target="_blank" class="btnLinkedIn" title="LinkedIn">
+    <a href={vLinks.LinkedIn} target="_blank" class="btnLinkedIn" title="LinkedIn">
       <svg>
-        <use href={`${vIconsFile}icoLinkedIn`} />
+        <use href={`${vIconsFolder}icnsLinks.svg#icoLinkedIn`} />
       </svg>
     </a>
-    <a href="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/CVOL.pdf" target="_blank" class="btnDocCV" title="Curriculum">
+    <a href={vLinks.CV} target="_blank" class="btnDocCV" title="Curriculum">
       <svg>
-        <use href={`${vIconsFile}icoCV`} />
+        <use href={`${vIconsFolder}icnsLinks.svg#icoCV`} />
       </svg>
     </a>
 

@@ -1,12 +1,12 @@
 ---
-import { vIconsFile } from "@/js/index.js"
+import { vIconsFolder } from "@/js/index.js";
 const { vIcoBtn, vText, vHref, vTarget="" } = Astro.props;
 
 ---
 
   <a href={vHref} class="cBtnLinkLarge" target={vTarget} title={vText}>
     <svg aria-hidden="true">
-      <use href={`${vIconsFile}${vIcoBtn}`} />
+      <use href={`${vIconsFolder}${vIcoBtn}`} />
     </svg>
     {vText}
   </a>

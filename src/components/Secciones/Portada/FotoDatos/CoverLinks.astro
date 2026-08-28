@@ -1,20 +1,21 @@
 ---
+import { vLinks } from '@/js/index.js';
 import { BtnLinkLarge } from '@/pages/index.astro';
 ---
 <div class="cCoverLinks">
-  <BtnLinkLarge vIcoBtn="icoGitHub" 
+  <BtnLinkLarge vIcoBtn="icnsLinks.svg#icoGitHub" 
                 vText="GitHub" 
-                vHref="https://github.com/landaetadev" 
+                vHref={vLinks.GitHub} 
                 vTarget="_blank"/>
 
-  <BtnLinkLarge vIcoBtn="icoLinkedIn" 
+  <BtnLinkLarge vIcoBtn="icnsLinks.svg#icoLinkedIn" 
                 vText="LinkedIn" 
-                vHref="https://www.linkedin.com/in/olandaeta/" 
+                vHref={vLinks.LinkedIn} 
                 vTarget="_blank"/>
 
-  <BtnLinkLarge vIcoBtn="icoCV" 
+  <BtnLinkLarge vIcoBtn="icnsLinks.svg#icoCV" 
                 vText="CV" 
-                vHref="https://filedn.eu/lUfpa3BpLa45XCcSIQyWRHF/WWW/Portfolio/Orlando_Landaeta_CV.pdf"
+                vHref={vLinks.CV}
                 vTarget="_blank"/>
 </div>
 

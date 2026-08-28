@@ -1,10 +1,10 @@
 ---
-import { vIconsFile } from '@/js/index.js';
+import { vIconsFolder } from '@/js/index.js';
 const {vIconName, vH3Text} = Astro.props;
 ---
 <h3>
   <svg aria-hidden="true">
-    <use href={`${vIconsFile}${vIconName}`} />
+    <use href={`${vIconsFolder}${vIconName}`} />
   </svg>
   {vH3Text}
 </h3>

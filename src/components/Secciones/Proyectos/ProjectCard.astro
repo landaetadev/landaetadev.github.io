@@ -1,6 +1,6 @@
 ---
 import JSONProyectos from "@/js/JSONProjectos.json";
-import {vProjectsFolder} from '@/js/index';
+import { vProjectsFolder } from '@/js/index.js';
 import BtnLinkSmall from '@/components/Botones/btnLinkSmall.astro';
 const vGitHubFolder = "https://github.com/landaetadev/"
 ---
@@ -33,15 +33,15 @@ const vGitHubFolder = "https://github.com/landaetadev/"
       <div class="cCardLang">{item.jsonLangs}</div>
 
       <div class="cCardLinks">
-        <BtnLinkSmall vClass="cBtnVideo" vIcoBtn="icoLinkVideo" vText="Video" />
+        <BtnLinkSmall vClass="cBtnVideo" vIcoBtn="icnsProjects.svg#icoLinkVideo" vText="Video" />
 
         {item.jsonGitHub !== "" && (
-          <BtnLinkSmall vClass="cBtnGitHub" vIcoBtn="icoGitHub" vText="GitHub" 
+          <BtnLinkSmall vClass="cBtnGitHub" vIcoBtn="icnsLinks.svg#icoGitHub" vText="GitHub" 
             vHref={`${vGitHubFolder}${item.jsonGitHub}`} />
         )}
 
         {item.jsonWeb !== "" && (
-          <BtnLinkSmall vClass="cBtnLinkWeb" vIcoBtn="icoLinkWeb" vText="Web"
+          <BtnLinkSmall vClass="cBtnLinkWeb" vIcoBtn="icnsProjects.svg#icoLinkWeb" vText="Web"
             vHref={`https://${item.jsonWeb}`} />
         )}
       </div>

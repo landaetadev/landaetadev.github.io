@@ -1,0 +1,24 @@
+---
+import { vIconsFolder} from '@/js/index.js';
+const {vHref, vTitle, vIcoBtn} = Astro.props;
+---
+
+<a href={vHref}  target="_blank" class="" title={vTitle}>
+  <svg>
+    <use href={`${vIconsFolder}${vIcoBtn}`} />
+  </svg>
+</a>
+
+<style>
+
+a {
+  color: var(--vRubikRegular);
+  
+  & svg {
+    --vSize: 2.5rem;
+    width: var(--vSize);
+    height: var(--vSize);
+    stroke-width: 2.5;
+  }
+}
+</style>

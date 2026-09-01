@@ -1,25 +1,26 @@
 ---
-import { vIconsFolder, vLinks} from '@/js/index.js';
+import FootBarLink from '@/components/FootBar/FootBarLink.astro';
+import { vLinks} from '@/js/index.js';
 ---
 
 <div class="cFootBar">
+  
   <div class="cIconsFootBar">
-    <a href={vLinks.GitHub}  target="_blank" class="btnGitHub" title="GitHub">
-      <svg>
-        <use href={`${vIconsFolder}icnsLinks.svg#icoGitHub`} />
-      </svg>
-    </a>
-
-    <a href={vLinks.LinkedIn} target="_blank" class="btnLinkedIn" title="LinkedIn">
-      <svg>
-        <use href={`${vIconsFolder}icnsLinks.svg#icoLinkedIn`} />
-      </svg>
-    </a>
-    <a href={vLinks.CV} target="_blank" class="btnDocCV" title="Curriculum">
-      <svg>
-        <use href={`${vIconsFolder}icnsLinks.svg#icoCV`} />
-      </svg>
-    </a>
+    <FootBarLink 
+      vHref={vLinks.GitHub} 
+      vTitle="GitHub" 
+      vIcoBtn="icnsLinks.svg#icoGitHub"
+    />
+    <FootBarLink 
+      vHref={vLinks.LinkedIn} 
+      vTitle="LinkedIn" 
+      vIcoBtn="icnsLinks.svg#icoLinkedIn"
+    />
+    <FootBarLink 
+      vHref={vLinks.CV} 
+      vTitle="CV" 
+      vIcoBtn="icnsLinks.svg#icoCV"
+    />
 
   </div>
 

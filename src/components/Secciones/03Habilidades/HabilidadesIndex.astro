@@ -1,28 +1,22 @@
 ---
 import { Ancle, SubTituloH3 } from '@/pages/index.astro';
-import ProjectContainer from '@/components/Secciones/Proyectos/ProjectContainer.astro';
-import ProjectCard from '@/components/Secciones/Proyectos/ProjectCard.astro';
-import JSONProyectos from "@/js/JSONProjectos.json";
-export { JSONProyectos };
+import HabilidadesCards from '@/components/Secciones/03Habilidades/HabilidadesCards.astro';
 ---
 
-<Ancle vIdAncle="idAncleProyectos" />
+<Ancle vIdAncle="idAncleHabilidades" />
 
-<div class="cProyectos">
+<div class="cHabilidades">
+  <SubTituloH3 vIconName="icnsMenu.svg#icoHabilidades" vH3Text="Habilidades" />
 
-  <SubTituloH3 vIconName="icnsMenu.svg#icoProyectos" vH3Text="Proyectos" />
-
-  <div class="cProyectosFlex">
-    <ProjectCard />
+  <div class="cHabilidadesFlex">
+    <HabilidadesCards/>
   </div>
-
-  <ProjectContainer />
 
 </div>
 
 <style>
 
-  .cProyectos {
+  .cHabilidades {
     padding: 2rem 0;
     color: var(--vBtnsCan2);
     min-height: var(--vMinHeightClassScreen);
@@ -33,7 +27,7 @@ export { JSONProyectos };
     border-bottom: var(--vHighBorder);
     border-image: var(--vBorderImage) 1;
 
-    & .cProyectosFlex {
+    & .cHabilidadesFlex {
       width: 100%;
       max-width: var(--vMaxWidthContent);
       min-height: 500px;

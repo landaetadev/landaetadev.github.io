@@ -1,23 +1,27 @@
 [
   {
     "jsonTime": "2011 - 2014",
-    "jsonCompany": "Ambulancias Metromed C.A.",
+    "jsonCompany": "Ambulancias Metromed",
     "jsonCity": "Caracas",
     "jsonJobTitle": "Asistente de sistemas",
-    "jsonDescrip": "Soporte técnico, administración y soporte de redes, reparación e instalación de hardware."
+    "jsonDescrip": ["- Soporte informático a los usuarios, hardware y software.",
+                    "- Administración de redes.",
+                    "- Administración de servidores, permisos, Active Directory."]
   },
   {
-    "jsonTime": "2005 – 2007",
-    "jsonCompany": "Clínica Felix Boada",
+    "jsonTime": "2011 - 2014",
+    "jsonCompany": "Clínica Félix Boada ",
     "jsonCity": "Caracas",
     "jsonJobTitle": "Asistente de sistemas",
-    "jsonDescrip": "Soporte técnico, administración y soporte de redes, programación en Visual Basic 6."
+    "jsonDescrip": ["- Soporte informático a los usuarios, hardware y software.",
+                    "- Administración de redes.",
+                    "- Administración de servidores, permisos, Active Directory y copias de seguridad."]
   },
   {
     "jsonTime": "2002",
     "jsonCompany": "Seguros La Previsora",
     "jsonCity": "Caracas",
-    "jsonJobTitle": "Prácticas Laborales",
-    "jsonDescrip": "Programador en Visual Basic 6 para el desarrollo de sistema de control de productores de seguros para el departamento de mercadeo de la empresa."
+    "jsonJobTitle": "Programador",
+    "jsonDescrip": ["- Programador en Visual Basic 6 para el desarrollo de sistema de control de productores de seguros para el departamento de mercadeo de la empresa."]
   }
 ]

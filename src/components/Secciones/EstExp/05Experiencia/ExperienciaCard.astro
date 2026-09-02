@@ -11,7 +11,9 @@ import JSONExperiencia from "@/js/JSONExperiencia.json";
       <div class="cExperiencia">
         <p>{item.jsonTime} - {item.jsonCompany} - {item.jsonCity}</p>
         <p>{item.jsonJobTitle}</p>
-        <p>{item.jsonDescrip}</p>
+        {item.jsonDescrip.map((itemLine) => {
+          return <p>{itemLine}</p>;
+        })}
       </div>
     </div>
   );
